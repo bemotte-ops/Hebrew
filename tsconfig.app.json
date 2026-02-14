@@ -4,8 +4,8 @@
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
     "target": "es2023",
     "useDefineForClassFields": true,
-    "lib": ["ES2023", "DOM", "DOM.Iterable"],
-    "module": "ESNext",
+    "lib": ["es2023", "DOM", "DOM.Iterable"],
+    "module": "esNext",
     "types": ["vite/client"],
     "skipLibCheck": true,
 
