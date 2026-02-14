@@ -1,6 +1,7 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Импорт базовых стилей Tailwind напрямую для гарантии работы сборки */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 :root {
   --text: #6b6375;
@@ -8,7 +9,7 @@
   --bg: #fff;
   --border: #e5e4e7;
   --code-bg: #f4f3ec;
-  --accent: #0d9488; /* Изменил на Teal для соответствия вашей гамме */
+  --accent: #0d9488; 
   --accent-bg: rgba(13, 148, 136, 0.1);
   --accent-border: rgba(13, 148, 136, 0.5);
   --social-bg: rgba(244, 243, 236, 0.5);
@@ -52,16 +53,19 @@
 
 body {
   margin: 0;
+  padding: 0;
   background-color: var(--bg);
+  color: var(--text);
 }
 
-/* Центрирование контейнера согласно вашему запросу */
+/* Принудительное применение стилей к корневому элементу */
 #root {
   width: 1126px;
   max-width: 100%;
   margin: 0 auto;
-  border-inline: 1px solid var(--border);
-  min-height: 100svh;
+  border-left: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -69,7 +73,7 @@ body {
 }
 
 h1, h2, h3 {
-  font-family: var(--heading);
+  font-family: var(--heading) !important;
   color: var(--text-h);
 }
 
