@@ -1,13 +1,44 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
+    <title>Иврит: Код Бытия</title>
+
+    <!-- Подключаем Tailwind через CDN для обхода ошибок сборки PostCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Подключаем шрифты Playfair Display (Serif) и Inter (Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <script>
+      // Настройка конфигурации Tailwind CDN для соответствия вашим стилям в Canvas
+      window.tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ['Playfair Display', 'serif'],
+              sans: ['Inter', 'sans-serif'],
+            },
+          },
+        },
+      }
+    </script>
+    
+    <style>
+      /* Дополнительная страховка: предотвращаем мерцание нестилизованного контента до загрузки скриптов */
+      body { background-color: #fff; }
+      @media (prefers-color-scheme: dark) {
+        body { background-color: #16171d; }
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>
+    <!-- Точка входа в React приложение -->
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
