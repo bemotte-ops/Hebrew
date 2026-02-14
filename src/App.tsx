@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BookOpen, Hash, History, Shapes, Info, ChevronRight, Star } from 'lucide-react';
+import { Hash, History, Shapes, Info, ChevronRight, Star, Globe, Zap, ScrollText } from 'lucide-react';
 
 interface Letter {
   letter: string;
@@ -13,8 +13,6 @@ interface Letter {
 }
 
 const App: React.FC = () => {
-  const [selectedLetter, setSelectedLetter] = useState<Letter | null>(null);
-
   const alphabet: Letter[] = [
     {
       letter: 'א',
@@ -34,14 +32,14 @@ const App: React.FC = () => {
       evolution: 'Иероглиф плана дома. Символизирует концепцию сосуда, семьи и внутреннего пространства.',
       number: 2,
       examples: ['בית (Байт) — Дом', 'בן (Бен) — Сын'],
-      philosophy: 'Двойственность и творение. Начало Торы (Берешит).'
+      philosophy: 'Двойственность и творение. Начало Тора.'
     },
     {
       letter: 'ג',
       name: 'Гимель',
       proto: '𓄿',
       meaning: 'Верблюд / Подъем',
-      evolution: 'Шея верблюда или нога. Означает движение, путешествие и вознаграждение (гмилут).',
+      evolution: 'Шея верблюда или нога. Означает движение, путешествие и вознаграждение.',
       number: 3,
       examples: ['גמל (Гамаль) — Верблюд', 'גדול (Гадоль) — Большой'],
       philosophy: 'Связующее звено между противоположностями.'
@@ -51,7 +49,7 @@ const App: React.FC = () => {
       name: 'Далет',
       proto: '𓇯',
       meaning: 'Дверь',
-      evolution: 'Вход в шатер. Символизирует выбор, переход и смирение (даль — бедняк).',
+      evolution: 'Вход в шатер. Символизирует выбор, переход и смирение.',
       number: 4,
       examples: ['דלת (Делет) — Дверь', 'דרך (Дерех) — Путь'],
       philosophy: 'Проход из одного состояния в другое.'
@@ -61,125 +59,236 @@ const App: React.FC = () => {
       name: 'Хей',
       proto: '𓀠',
       meaning: 'Окно / Дыхание',
-      evolution: 'Человек с поднятыми руками или проем. Символизирует откровение и божественное присутствие.',
+      evolution: 'Человек с поднятыми руками. Символизирует жизнь и божественное присутствие.',
       number: 5,
       examples: ['הוא (Ху) — Он', 'הללויה (Аллилуйя)'],
       philosophy: 'Дыхание жизни, мягкость звука.'
+    },
+    {
+      letter: 'ו',
+      name: 'Вав',
+      proto: '𓏳',
+      meaning: 'Крючок / Гвоздь',
+      evolution: 'Символ соединения. Используется как союз "и".',
+      number: 6,
+      examples: ['וורд (Веред) — Роза', 'ו (Ве-) — союз "и"'],
+      philosophy: 'Сила, соединяющая небо и землю.'
+    },
+    {
+      letter: 'ז',
+      name: 'Заин',
+      proto: '𓏴',
+      meaning: 'Оружие / Меч',
+      evolution: 'Изображение кинжала. Символизирует защиту и разделение.',
+      number: 7,
+      examples: ['זמן (Зман) — Время', 'זהב (Захав) — Золото'],
+      philosophy: 'Духовная борьба и священное время.'
+    },
+    {
+      letter: 'ח',
+      name: 'Хет',
+      proto: '𓉗',
+      meaning: 'Забор / Ограда',
+      evolution: 'Стены шатра. Символизирует разделение между внешним и внутренним.',
+      number: 8,
+      examples: ['חיים (Хаим) — Жизнь', 'חכמה (Хохма) — Мудрость'],
+      philosophy: 'Динамика жизни внутри защищенного пространства.'
+    },
+    {
+      letter: 'ט',
+      name: 'Тет',
+      proto: '𓇠',
+      meaning: 'Корзина / Узел',
+      evolution: 'Свернутый предмет или корзина. Означает скрытое добро.',
+      number: 9,
+      examples: ['טוב (Тов) — Хорошо', 'טל (Таль) — Роса'],
+      philosophy: 'Потенциал, скрытый внутри материи.'
+    },
+    {
+      letter: 'י',
+      name: 'Йод',
+      proto: '𓂝',
+      meaning: 'Рука (кисть)',
+      evolution: 'Самая маленькая буква, происходящая от жеста руки. Начало любого действия.',
+      number: 10,
+      examples: ['יד (Яд) — Рука', 'ישראל (Исраэль)'],
+      philosophy: 'Точка бесконечности, из которой всё исходит.'
+    },
+    {
+      letter: 'כ',
+      name: 'Каф',
+      proto: '𓂬',
+      meaning: 'Ладонь',
+      evolution: 'Открытая ладонь. Означает принятие, форму или возможность.',
+      number: 20,
+      examples: ['כוח (Коах) — Сила', 'כוכב (Кохав) — Звезда'],
+      philosophy: 'Реализация потенциала в конкретную форму.'
+    },
+    {
+      letter: 'ל',
+      name: 'Ламед',
+      proto: '𓋿',
+      meaning: 'Посох / Обучение',
+      evolution: 'Изображение пастушьего посоха. Самая высокая буква, стремящаяся вверх.',
+      number: 30,
+      examples: ['לב (Лев) — Сердце', 'ללמוד (Лильмод) — Учиться'],
+      philosophy: 'Стремление сердца к познанию высшей истины.'
     }
   ];
 
-  // Set initial letter if none selected
-  if (!selectedLetter && alphabet.length > 0) {
-    setSelectedLetter(alphabet[0]);
-  }
+  const [selectedLetter, setSelectedLetter] = useState<Letter>(alphabet[0]);
 
   return (
-    <div className="min-h-screen bg-stone-50 text-stone-900">
-      {/* Header */}
-      <header className="relative bg-stone-900 text-stone-100 py-20 px-6 overflow-hidden">
+    <div className="min-h-screen bg-emerald-50 text-emerald-950 font-sans">
+      <header className="relative bg-gradient-to-br from-cyan-600 via-teal-600 to-emerald-700 text-white py-24 px-6 overflow-hidden shadow-2xl">
         <div className="max-w-6xl mx-auto relative z-10 text-center">
-          <h1 className="text-5xl md:text-7xl font-serif mb-6 tracking-tight">Иврит: Код Бытия</h1>
-          <p className="text-xl text-stone-400 max-w-2xl mx-auto">
-            Исследуйте древнюю связь языка с иероглифами и его внутреннюю философию.
+          <h1 className="text-6xl md:text-8xl font-serif mb-6 tracking-tight drop-shadow-2xl">
+            Иврит: Код Бытия
+          </h1>
+          <p className="text-xl md:text-2xl text-cyan-50 max-w-3xl mx-auto leading-relaxed font-light">
+            Язык, где каждая буква — это число, а каждое слово — математическая формула реальности.
           </p>
         </div>
       </header>
 
-      {/* Philosophy Section */}
-      <section className="py-16 px-6 max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
-        <div className="space-y-6">
-          <h2 className="text-3xl font-serif flex items-center gap-3">
-            <History className="text-amber-700" /> Происхождение
-          </h2>
-          <p className="text-stone-700 leading-relaxed text-lg">
-            Иврит произошел от протосинайского письма. Каждая буква — это не просто звук, а символ. 
-            Понимая, что буква <strong>Алеф</strong> — это бык, вы начинаете видеть логику в словах, связанных с силой и первенством.
-          </p>
+      <section className="py-20 px-6 max-w-6xl mx-auto space-y-20">
+        <div className="grid md:grid-cols-2 gap-16 items-center">
+          <div className="space-y-6">
+            <h2 className="text-4xl font-serif text-teal-800 flex items-center gap-3">
+              <Globe className="text-cyan-500" /> Древо Языка
+            </h2>
+            <div className="prose prose-emerald text-lg text-emerald-900/80 leading-relaxed">
+              <p>
+                Иврит принадлежит к <strong>семитской языковой семье</strong>. Он был возрожден спустя 2000 лет, сохранив древнюю логику.
+              </p>
+            </div>
+            <div className="bg-cyan-100/50 p-6 rounded-2xl border-l-4 border-cyan-500">
+              <h4 className="font-bold text-cyan-800 mb-2 flex items-center gap-2">
+                <ScrollText size={18} /> Связь с Египтом
+              </h4>
+              <p className="text-sm text-teal-900">
+                Древнейшее <strong>Протосинайское письмо</strong> адаптировало египетские иероглифы под семитские звуки, создав первый в мире алфавит.
+              </p>
+            </div>
+          </div>
+          <div className="relative">
+            <div className="bg-white p-4 rounded-[2rem] shadow-2xl rotate-2">
+              <div className="bg-teal-900 text-white p-8 rounded-[1.5rem] aspect-square flex flex-col justify-center">
+                <h3 className="text-3xl font-serif mb-4">Эволюция символа</h3>
+                <div className="flex justify-between items-center text-5xl">
+                  <span className="opacity-40 tracking-widest text-cyan-300">{selectedLetter.proto}</span>
+                  <ChevronRight />
+                  <span className="text-7xl font-serif">{selectedLetter.letter}</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="bg-white p-8 rounded-2xl border border-stone-200 shadow-sm">
-          <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
-            <Shapes className="text-amber-700" /> Смысловые Корни
-          </h3>
-          <p className="text-stone-600">
-            В иврите корень слова (Шореш) обычно состоит из 3-х согласных. 
-            Вся грамматика строится на "нанизывании" смыслов на этот корень.
-          </p>
+
+        <div className="bg-gradient-to-br from-teal-800 to-emerald-900 rounded-[3rem] p-10 md:p-16 text-white shadow-xl relative overflow-hidden">
+          <div className="max-w-3xl relative z-10">
+            <h2 className="text-4xl font-serif mb-8 flex items-center gap-4">
+              <Zap className="text-cyan-400" /> Магия Трех Букв
+            </h2>
+            <div className="space-y-6 text-teal-50 text-lg">
+              <p>В иврите почти каждое слово вырастает из <strong>трехбуквенного корня (Шореш)</strong>. Это генетический код смысла.</p>
+              <div className="bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/20 mt-8">
+                <h4 className="text-cyan-300 font-black uppercase tracking-widest text-sm mb-6">Корень С-Ф-Р (ס-פ-ר)</h4>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-white">
+                  <div className="flex justify-between border-b border-white/10 pb-2 font-serif">
+                    <span>Сефер (ספר) — Книга</span>
+                  </div>
+                  <div className="flex justify-between border-b border-white/10 pb-2 font-serif">
+                    <span>Миспар (מספר) — Число</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Alphabet Grid */}
-      <section className="bg-stone-100 py-16 px-6">
+      <section className="bg-teal-50 py-20 px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 mb-12">
+          <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-12 gap-3 mb-16">
             {alphabet.map((item) => (
               <button
                 key={item.letter}
                 onClick={() => setSelectedLetter(item)}
-                className={`p-6 rounded-xl transition-all duration-300 flex flex-col items-center ${
-                  selectedLetter?.letter === item.letter 
-                  ? 'bg-amber-800 text-white shadow-lg scale-105' 
-                  : 'bg-white hover:border-amber-500 border border-stone-200'
+                className={`p-4 rounded-xl transition-all duration-300 flex flex-col items-center border-2 ${
+                  selectedLetter.letter === item.letter 
+                  ? 'bg-gradient-to-b from-cyan-500 to-teal-600 text-white shadow-lg border-cyan-300' 
+                  : 'bg-white hover:border-cyan-400 border-white text-emerald-800 shadow-sm'
                 }`}
               >
-                <span className="text-4xl font-serif mb-1">{item.letter}</span>
-                <span className="text-sm font-semibold">{item.name}</span>
-                <span className="text-xs opacity-50">{item.number}</span>
+                <span className="text-3xl font-serif">{item.letter}</span>
+                <span className="text-[9px] font-bold uppercase tracking-tight">{item.name}</span>
               </button>
             ))}
           </div>
 
-          {selectedLetter && (
-            <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-stone-200 animate-in fade-in zoom-in duration-300">
-              <div className="grid md:grid-cols-3 gap-10">
-                <div className="flex flex-col items-center justify-center border-b md:border-b-0 md:border-r border-stone-100 pb-8 md:pb-0 text-center">
-                  <div className="mb-6">
-                    <p className="text-xs uppercase text-stone-400 mb-2">Иероглиф</p>
-                    <div className="text-6xl bg-stone-50 w-24 h-24 flex items-center justify-center rounded-full border border-stone-200">
-                      {selectedLetter.proto}
-                    </div>
-                  </div>
-                  <ChevronRight className="rotate-90 md:rotate-0 text-stone-300 mb-6 hidden md:block" />
-                  <div>
-                    <p className="text-xs uppercase text-stone-400 mb-2">Современная буква</p>
-                    <div className="text-8xl font-serif text-amber-900">{selectedLetter.letter}</div>
+          <div className="bg-white rounded-[3rem] p-8 md:p-12 shadow-2xl border border-teal-50 relative">
+            <div className="grid md:grid-cols-3 gap-12">
+              <div className="flex flex-col items-center justify-center border-b md:border-b-0 md:border-r border-teal-100 pb-10 md:pb-0 text-center">
+                <div className="mb-8">
+                  <p className="text-[11px] uppercase text-cyan-600 mb-3 tracking-[0.2em] font-black">Прото-форма</p>
+                  <div className="text-7xl bg-cyan-50 w-24 h-24 flex items-center justify-center rounded-2xl border border-cyan-100 text-teal-600">
+                    {selectedLetter.proto}
                   </div>
                 </div>
+                <div>
+                  <p className="text-[11px] uppercase text-cyan-600 mb-3 tracking-[0.2em] font-black">Буква</p>
+                  <div className="text-9xl font-serif text-teal-900">{selectedLetter.letter}</div>
+                </div>
+              </div>
 
-                <div className="md:col-span-2 space-y-6">
-                  <div className="flex justify-between items-start">
-                    <div>
-                      <h3 className="text-4xl font-serif font-bold">{selectedLetter.name}</h3>
-                      <p className="text-amber-700 text-xl italic">{selectedLetter.meaning}</p>
-                    </div>
-                    <div className="bg-stone-900 text-white px-4 py-2 rounded-lg flex items-center gap-2">
-                      <Hash size={18} /> <span className="text-xl font-bold">{selectedLetter.number}</span>
-                    </div>
+              <div className="md:col-span-2 space-y-8">
+                <div className="flex justify-between items-start flex-wrap gap-4">
+                  <div>
+                    <h3 className="text-5xl font-serif font-bold text-emerald-950">{selectedLetter.name}</h3>
+                    <p className="text-cyan-600 text-2xl font-medium tracking-wide mt-1 underline decoration-teal-200 underline-offset-8">
+                      {selectedLetter.meaning}
+                    </p>
+                  </div>
+                  <div className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-6 py-2 rounded-xl flex flex-col items-center shadow-md">
+                    <span className="text-[10px] uppercase font-black opacity-70">Гематрия</span>
+                    <span className="text-3xl font-black">{selectedLetter.number}</span>
+                  </div>
+                </div>
+                
+                <div className="space-y-6">
+                  <div>
+                    <h4 className="flex items-center gap-3 font-black text-teal-800 text-sm uppercase tracking-widest mb-3">
+                      <Info size={18} className="text-cyan-500"/> Суть и История
+                    </h4>
+                    <p className="text-emerald-900/80 text-xl leading-relaxed font-light">{selectedLetter.evolution}</p>
                   </div>
                   
-                  <div className="space-y-4">
-                    <div>
-                      <h4 className="flex items-center gap-2 font-bold text-stone-400 text-sm uppercase"><Info size={16}/> История</h4>
-                      <p className="text-stone-700 text-lg leading-relaxed">{selectedLetter.evolution}</p>
+                  <div className="grid sm:grid-cols-2 gap-6">
+                    <div className="bg-emerald-50 p-6 rounded-2xl border border-emerald-100">
+                      <h4 className="text-[10px] font-black text-teal-700 uppercase mb-3">Примеры</h4>
+                      <ul className="space-y-2">
+                        {selectedLetter.examples.map(ex => (
+                          <li key={ex} className="flex items-center gap-2 text-emerald-950 font-bold">
+                            <Star size={10} className="text-cyan-500 fill-cyan-500"/> {ex}
+                          </li>
+                        ))}
+                      </ul>
                     </div>
-                    <div className="grid sm:grid-cols-2 gap-4">
-                      <div className="bg-stone-50 p-4 rounded-xl">
-                        <h4 className="text-xs font-bold text-amber-800 uppercase mb-2">Примеры слов</h4>
-                        <ul className="space-y-1">
-                          {selectedLetter.examples.map(ex => <li key={ex} className="flex items-center gap-2 text-stone-800"><Star size={10}/> {ex}</li>)}
-                        </ul>
-                      </div>
-                      <div className="bg-stone-50 p-4 rounded-xl">
-                        <h4 className="text-xs font-bold text-amber-800 uppercase mb-2">Философия</h4>
-                        <p className="text-stone-800 text-sm">{selectedLetter.philosophy}</p>
-                      </div>
+                    <div className="bg-cyan-50 p-6 rounded-2xl border border-cyan-100 italic">
+                      <p className="text-emerald-900">«{selectedLetter.philosophy}»</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          )}
+          </div>
         </div>
       </section>
+
+      <footer className="py-12 text-center text-teal-800/40 text-sm font-medium">
+        © 2026 Иврит: Код Бытия • Связь восстановлена
+      </footer>
     </div>
   );
 };
