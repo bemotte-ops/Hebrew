@@ -255,52 +255,7 @@ const App: React.FC = () => {
           </div>
         </section>
 
-        {/* Gematria Calculation Block */}
-        <section className="bg-teal-50 p-10 md:p-14 rounded-[4rem] border border-teal-200 relative overflow-hidden">
-          <div className="relative z-10 space-y-10">
-            <div className="flex items-center gap-4 text-teal-700">
-              <Calculator size={40} />
-              <h2 className="text-3xl font-serif font-bold text-teal-600">Гематрия</h2>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-white p-8 rounded-[2.5rem] shadow-sm space-y-6">
-                <h4 className="text-xl font-bold text-slate-800">Слово «Любовь» (Ахава)</h4>
-                <div className="text-4xl font-serif text-teal-600 border-b pb-4">אהבה</div>
-                <div className="space-y-2 font-mono text-sm text-slate-500">
-                  <div className="flex justify-between"><span>Алеф (א)</span> <span>1</span></div>
-                  <div className="flex justify-between"><span>Хей (ה)</span> <span>5</span></div>
-                  <div className="flex justify-between"><span>Бет (ב)</span> <span>2</span></div>
-                  <div className="flex justify-between"><span>Хей (ה)</span> <span>5</span></div>
-                </div>
-                <div className="pt-4 border-t flex justify-between font-bold text-2xl text-teal-700">
-                  <span>ИТОГО:</span> <span>1 + 5 + 2 + 5 = 13</span>
-                </div>
-              </div>
-
-              <div className="bg-white p-8 rounded-[2.5rem] shadow-sm space-y-6">
-                <h4 className="text-xl font-bold text-slate-800">Слово «Единый» (Эхад)</h4>
-                <div className="text-4xl font-serif text-teal-600 border-b pb-4">אחד</div>
-                <div className="space-y-2 font-mono text-sm text-slate-500">
-                  <div className="flex justify-between"><span>Алеф (א)</span> <span>1</span></div>
-                  <div className="flex justify-between"><span>Хет (ח)</span> <span>8</span></div>
-                  <div className="flex justify-between"><span>Далет (ד)</span> <span>4</span></div>
-                </div>
-                <div className="pt-4 border-t flex justify-between font-bold text-2xl text-teal-700">
-                  <span>ИТОГО:</span> <span>1 + 8 + 4 = 13</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="text-center p-8 bg-teal-600 text-white rounded-3xl shadow-xl">
-              <p className="text-xl font-serif italic">
-                "Совпадение этих чисел говорит о том, что в культуре иврита Любовь и Единство — это одна и та же математическая и духовная величина."
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Alphabet Explorer (Compact) */}
+                {/* Alphabet Explorer (Compact) */}
         <section className="space-y-8">
           <div className="text-center space-y-3">
             <h2 className="text-4xl font-serif font-bold text-teal-600">Алфавит</h2>
@@ -370,6 +325,51 @@ const App: React.FC = () => {
                 <span className="text-3xl font-serif text-teal-600">{s}</span>
               </div>
             ))}
+          </div>
+        </section>
+
+        {/* Gematria Calculation Block */}
+        <section className="bg-teal-50 p-10 md:p-14 rounded-[4rem] border border-teal-200 relative overflow-hidden">
+          <div className="relative z-10 space-y-10">
+            <div className="flex items-center gap-4 text-teal-700">
+              <Calculator size={40} />
+              <h2 className="text-3xl font-serif font-bold text-teal-600">Гематрия</h2>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-white p-8 rounded-[2.5rem] shadow-sm space-y-6">
+                <h4 className="text-xl font-bold text-slate-800">Слово «Любовь» (Ахава)</h4>
+                <div className="text-4xl font-serif text-teal-600 border-b pb-4">אהבה</div>
+                <div className="space-y-2 font-mono text-sm text-slate-500">
+                  <div className="flex justify-between"><span>Алеф (א)</span> <span>1</span></div>
+                  <div className="flex justify-between"><span>Хей (ה)</span> <span>5</span></div>
+                  <div className="flex justify-between"><span>Бет (ב)</span> <span>2</span></div>
+                  <div className="flex justify-between"><span>Хей (ה)</span> <span>5</span></div>
+                </div>
+                <div className="pt-4 border-t flex justify-between font-bold text-2xl text-teal-700">
+                  <span>ИТОГО:</span> <span>1 + 5 + 2 + 5 = 13</span>
+                </div>
+              </div>
+
+              <div className="bg-white p-8 rounded-[2.5rem] shadow-sm space-y-6">
+                <h4 className="text-xl font-bold text-slate-800">Слово «Единый» (Эхад)</h4>
+                <div className="text-4xl font-serif text-teal-600 border-b pb-4">אחד</div>
+                <div className="space-y-2 font-mono text-sm text-slate-500">
+                  <div className="flex justify-between"><span>Алеф (א)</span> <span>1</span></div>
+                  <div className="flex justify-between"><span>Хет (ח)</span> <span>8</span></div>
+                  <div className="flex justify-between"><span>Далет (ד)</span> <span>4</span></div>
+                </div>
+                <div className="pt-4 border-t flex justify-between font-bold text-2xl text-teal-700">
+                  <span>ИТОГО:</span> <span>1 + 8 + 4 = 13</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center p-8 bg-teal-600 text-white rounded-3xl shadow-xl">
+              <p className="text-xl font-serif italic">
+                "Совпадение этих чисел говорит о том, что в культуре иврита Любовь и Единство — это одна и та же математическая и духовная величина."
+              </p>
+            </div>
           </div>
         </section>
       </main>
