@@ -346,7 +346,8 @@ const App: React.FC = () => {
                       </div>
                     </div>
                   </div>             
-          </div>
+            </div>
+          </div>  
         </section>
 
         {/* Пять Букв Софит */}
