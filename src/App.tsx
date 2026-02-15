@@ -351,7 +351,7 @@ const App: React.FC = () => {
                             <h4 className="text-[10px] font-bold text-teal-600 uppercase mb-3 flex items-center gap-2 tracking-widest">
                                 <Zap size={14} /> Эволюция символа
                             </h4>
-                            <p className="text-slate-500 text-xl font-bold leading-relaxed">{selectedLetter.evolution}</p>
+                            <p className="text-slate-500 text-xl leading-relaxed">{selectedLetter.evolution}</p>
                         </div>
                     </div>
                     
@@ -359,7 +359,7 @@ const App: React.FC = () => {
                         <h4 className="text-[10px] font-bold text-teal-600 uppercase mb-3 flex items-center gap-2 tracking-widest">
                             <ScrollText size={14} /> Философский смысл
                         </h4>
-                        <p className="text-slate-500 text-xl font-bold leading-relaxed">
+                        <p className="text-slate-500 text-xl leading-relaxed">
                           {selectedLetter.philosophy}
                         </p>
                     </div>
