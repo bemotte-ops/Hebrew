@@ -295,7 +295,7 @@ const App: React.FC = () => {
                   className={`group relative py-3 rounded-2xl transition-all flex flex-col items-center justify-center border-2 ${
                     selectedLetter.letter === item.letter
                       ? 'bg-teal-600 text-white border-teal-600 shadow-lg -translate-y-1'
-                      : 'bg-white hover:bg-slate-50 border-teal-200 text-indigo-900'
+                      : 'bg-white hover:bg-slate-50 border-slate-100 text-indigo-900'
                   }`}
                 >
                   <span className="text-2xl font-serif font-bold">{item.letter}</span>
@@ -310,7 +310,7 @@ const App: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-stretch">
                 
                 {/* ЛЕВАЯ КОЛОНКА: Визуализация (4/12) */}
-                <div className="md:col-span-4 flex flex-col items-center justify-between bg-slate-50 rounded-[2.5rem] p-10 border border-slate-100 min-h-[480px]">
+                <div className="md:col-span-4 flex flex-col items-center justify-between bg-slate-50 rounded-[2.5rem] p-10 border border-indigo-900 min-h-[480px]">
                   
                   {/* Архетип */}
                   <div className="text-center space-y-2">
@@ -333,7 +333,7 @@ const App: React.FC = () => {
                     <div className="text-[10rem] font-serif text-teal-600 font-bold leading-none">
                       {selectedLetter.letter}
                     </div>
-                    <div className="text-indigo-900 text-[10px] font-bold uppercase tracking-widest">
+                    <div className="text-indigo-900 text-xl font-patrick uppercase tracking-widest">
                       Гематрия: {selectedLetter.number}
                     </div>
                   </div>
@@ -347,11 +347,11 @@ const App: React.FC = () => {
                             {selectedLetter.name} — <span className="text-indigo-900">{selectedLetter.meaning}</span>
                           </h3>
                         </div>
-                        <div className="bg-teal-50 p-8 rounded-[2rem] border border-teal-200 backdrop-blur-sm">
+                        <div className="bg-white p-8 rounded-[2rem] border border-teal-200 backdrop-blur-sm">
                             <h4 className="text-[10px] font-bold text-teal-600 uppercase mb-3 flex items-center gap-2 tracking-widest">
                                 <Zap size={14} /> Эволюция символа
                             </h4>
-                            <p className="text-slate-500 text-xl font-patrick leading-relaxed">{selectedLetter.evolution}</p>
+                            <p className="text-slate-500 text-xl font-serif leading-relaxed">{selectedLetter.evolution}</p>
                         </div>
                     </div>
                     
@@ -359,7 +359,7 @@ const App: React.FC = () => {
                         <h4 className="text-[10px] font-bold text-teal-600 uppercase mb-3 flex items-center gap-2 tracking-widest">
                             <ScrollText size={14} /> Философский смысл
                         </h4>
-                        <p className="text-slate-500 text-xl font-patrick leading-relaxed">
+                        <p className="text-slate-500 text-xl font-serif leading-relaxed">
                           {selectedLetter.philosophy}
                         </p>
                     </div>
@@ -375,7 +375,7 @@ const App: React.FC = () => {
                              ))}
                           </div>
                        </div>
-                       <div className="bg-slate-50 p-6 rounded-2xl border border-indigo-900">
+                       <div className="bg-white p-6 rounded-2xl border border-indigo-900">
                           <span className="text-[9px] uppercase font-bold text-indigo-900 block mb-3 flex items-center gap-2">
                              <Info size={12} /> Заметка
                           </span>
