@@ -314,8 +314,8 @@ const App: React.FC = () => {
                   
                   {/* Архетип */}
                   <div className="text-center space-y-2">
-                    <span className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] block">Архетип</span>
-                    <div className="text-8xl text-indigo-900/10 transform hover:scale-110 transition-transform duration-500 cursor-default">
+                    <span className="text-[10px] font-bold text-indigo-900 uppercase tracking-[0.2em] block">Архетип</span>
+                    <div className="text-10xl text-indigo-900 transform hover:scale-110 transition-transform duration-500 cursor-default">
                       {selectedLetter.proto}
                     </div>
                   </div>
@@ -323,17 +323,17 @@ const App: React.FC = () => {
                   {/* Визуальный разделитель */}
                   <div className="flex flex-col items-center">
                     <div className="h-8 w-px bg-gradient-to-b from-slate-200 to-transparent"></div>
-                    <ChevronDown className="text-teal-400 animate-pulse my-2" size={24} />
+                    <ChevronDown className="text-slate-500 animate-pulse my-2" size={24} />
                     <div className="h-8 w-px bg-gradient-to-t from-slate-200 to-transparent"></div>
                   </div>
 
                   {/* Современная форма */}
                   <div className="text-center space-y-4">
-                    <span className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] block">Современная форма</span>
+                    <span className="text-[10px] font-bold text-teal-600 uppercase tracking-[0.2em] block">Современная форма</span>
                     <div className="text-[10rem] font-serif text-teal-600 font-bold leading-none">
                       {selectedLetter.letter}
                     </div>
-                    <div className="inline-block px-4 py-1 bg-teal-100 text-teal-700 rounded-full text-[10px] font-black uppercase tracking-widest">
+                    <div className="text-indigo-900 text-[10px] font-bold uppercase tracking-widest">
                       Гематрия: {selectedLetter.number}
                     </div>
                   </div>
