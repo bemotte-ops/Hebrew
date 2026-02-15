@@ -73,7 +73,7 @@ const App: React.FC = () => {
 
       {/* Header Section */}
       <header className="relative pt-20 pb-24 px-6 bg-gradient-to-b from-teal-50 to-white overflow-hidden">
-        <div className="absolute inset-0 z-0 opacity-10">
+        <div className="absolute inset-0 z-0 opacity-40">
           <img 
             src={headerImage} 
             alt="Parchment Background" 
@@ -87,7 +87,7 @@ const App: React.FC = () => {
             <p className="text-teal-700">Код Мироздания </p>
           </h1>
           <p className="text-lg md:text-xl text-slate-500 max-w-2xl mx-auto leading-relaxed">
-            Исследуйте архитектуру древнейшего языка, где каждая буква является одновременно числом, символом и ключом к пониманию культуры
+            Исследуйте архитектуру древнейшего языка, где каждая буква является одновременно числом, символом и ключом к пониманию законов Жизни
           </p>
         </div>
       </header>
@@ -547,7 +547,7 @@ const App: React.FC = () => {
       {/* Footer Section */}
       <footer className="bg-indigo-900 text-white py-24 mt-20 relative overflow-hidden">
          {/* Фоновая текстура футера с GitHub */}
-         <div className="absolute inset-0 z-0 opacity-10">
+         <div className="absolute inset-0 z-0 opacity-30">
            <img 
               src={footerImage} 
               alt="Текстура камня"
@@ -564,7 +564,7 @@ const App: React.FC = () => {
               אבגדהוזחטיכלмנסעפצקרשת
             </div>
             <p className="text-slate-400 text-[10px] uppercase tracking-[0.3em] px-4">
-              © 2026 Лингвистический проект "Код Бытия" • СИНХРОНИЗИРОВАНО С GITHUB
+              © 2026 Лингвистический проект "Код Бытия"
             </p>
             <p className="text-teal-600 font-patrick text-sm italic">
                 Вначале было Слово...
