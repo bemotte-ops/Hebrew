@@ -24,6 +24,7 @@ interface Letter {
   name: string;
   proto: string;
   meaning: string;
+  cyrillic: string;
   evolution: string;
   number: number;
   examples: string[];
@@ -439,7 +440,7 @@ const App: React.FC = () => {
         <section className="bg-white p-10 md:p-14 rounded-[4rem] border border-teal-200 relative overflow-hidden">
           <div className="relative z-10 space-y-10">
             <div className="text-center space-y-3">
-              <h2 className="text-4xl font-patrick text-teal-700">Гематрия: числовой код</h2>
+              <h2 className="text-4xl font-patrick text-teal-600">Гематрия: числовой код</h2>
             </div>
 
             <div className="grid md:grid-cols-2 gap-8">
