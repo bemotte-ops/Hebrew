@@ -63,7 +63,8 @@ const App: React.FC = () => {
       <header className="relative pt-20 pb-24 px-6 bg-gradient-to-b from-teal-50 to-white overflow-hidden">
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <h1 className="text-5xl md:text-7xl font-serif font-bold mb-6 tracking-tight text-indigo-950">
-            Иврит: <span className="text-teal-600">Язык Первооснов</span>
+            Иврит
+            <span className="text-teal-600">Язык Первооснов</span>
           </h1>
           <p className="text-lg md:text-xl text-slate-500 max-w-2xl mx-auto leading-relaxed">
             Исследуйте архитектуру древнейшего языка, где каждая буква является одновременно числом, символом и ключом к пониманию культуры.
