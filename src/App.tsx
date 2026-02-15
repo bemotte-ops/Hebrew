@@ -72,7 +72,7 @@ const App: React.FC = () => {
     <div className="min-h-screen bg-slate-50 text-slate-800 font-sans selection:bg-teal-100">
 
       {/* Header Section */}
-      <header className="relative pt-20 pb-24 px-6 bg-gradient-to-b from-teal-50 to-white overflow-hidden">
+      <header className="relative pt-20 pb-24 px-6 bg-white/90 overflow-hidden rounded-b-[2.5rem]">
         <div className="absolute inset-0 z-0 opacity-40">
           <img 
             src={headerImage} 
@@ -84,9 +84,9 @@ const App: React.FC = () => {
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <h1 className="text-5xl md:text-8xl font-patrick mb-6 tracking-tight text-indigo-900">
             Иврит
-            <p className="text-teal-700">Код Мироздания </p>
+            <p className="text-teal-700">Код Бытия </p>
           </h1>
-          <p className="text-lg md:text-xl text-slate-500 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-slate-800 max-w-2xl mx-auto leading-relaxed">
             Исследуйте архитектуру древнейшего языка, где каждая буква является одновременно числом, символом и ключом к пониманию законов Жизни
           </p>
         </div>
@@ -545,7 +545,7 @@ const App: React.FC = () => {
       </main>
 
       {/* Footer Section */}
-      <footer className="bg-indigo-900 text-white py-24 mt-20 relative overflow-hidden">
+      <footer className="bg-indigo-900 text-white py-24 mt-20 rounded-t-[2.5rem] relative overflow-hidden">
          {/* Фоновая текстура футера с GitHub */}
          <div className="absolute inset-0 z-0 opacity-30">
            <img 
@@ -560,7 +560,7 @@ const App: React.FC = () => {
          
          <div className="max-w-4xl mx-auto px-6 text-center space-y-8 relative z-10">
             {/* Адаптивная декоративная строка алфавита */}
-            <div className="text-teal-500 text-2xl md:text-4xl font-serif tracking-[0.3em] md:tracking-[1em] opacity-40 select-none break-all whitespace-normal max-w-full overflow-hidden">
+            <div className="text-teal-600 text-2xl md:text-4xl font-serif tracking-[0.3em] md:tracking-[1em] opacity-40 select-none break-all whitespace-normal max-w-full overflow-hidden">
               אבגדהוזחטיכלмנסעפצקרשת
             </div>
             <p className="text-slate-400 text-[10px] uppercase tracking-[0.3em] px-4">
@@ -576,3 +576,4 @@ const App: React.FC = () => {
 };
 
 export default App;
+
