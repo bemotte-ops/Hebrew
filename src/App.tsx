@@ -191,7 +191,7 @@ const App: React.FC = () => {
                 
                 <div className="flex items-center justify-around py-4">
                   <div className="text-center">
-                    <span className="text-5xl block mb-1 text-slate-500">𓃾</span>
+                    <span className="text-8xl block mb-1 text-slate-500">𓃾</span>
                     <span className="text-[10px] uppercase font-bold text-slate-400">Иероглиф</span>
                   </div>
                   <ArrowRight className="text-slate-400" />
@@ -220,7 +220,7 @@ const App: React.FC = () => {
 
                 <div className="flex items-center justify-around py-4">
                   <div className="text-center">
-                    <span className="text-5xl block mb-1 text-slate-500">𓁹</span>
+                    <span className="text-8xl block mb-1 text-slate-500">𓁹</span>
                     <span className="text-[10px] uppercase font-bold text-slate-400">Иероглиф</span>
                   </div>
                   <ArrowRight className="text-slate-400" />
@@ -310,7 +310,7 @@ const App: React.FC = () => {
         <section className="bg-white p-10 rounded-[3rem] border border-teal-200">
           <h2 className="text-4xl font-patrick mb-4 text-teal-700">Пять Букв Софит (Окончания)</h2>
           <p className="text-slate-600 leading-relaxed mb-6">
-            В иврите пять букв — <strong>Каф, Мем, Нун, Пе и Цади</strong> — меняют форму, если стоят в конце слова. Это помогает визуально разделять слова.
+            В иврите пять букв — <strong>Каф, Мем, Нун, Пе и Цади</strong> — меняют форму, если стоят в конце слова. Это помогает визуально разделять слова
           </p>
           <div className="flex gap-4">
             {['ך', 'ם', 'ן', 'ף', 'ץ'].map(s => (
@@ -329,7 +329,7 @@ const App: React.FC = () => {
             </div>
 
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-white p-8 rounded-[2.5rem] shadow-sm space-y-6">
+              <div className="bg-teal-50 p-8 rounded-[2.5rem] shadow-sm space-y-6 border border-teal-200">
                 <h4 className="text-xl font-patrick text-indigo-900">Слово «Любовь» (Ахава)</h4>
                 <div className="text-4xl font-serif text-teal-600 border-b pb-4">אהבה</div>
                 <div className="space-y-2 font-mono text-sm text-slate-500">
@@ -343,7 +343,7 @@ const App: React.FC = () => {
                 </div>
               </div>
 
-              <div className="bg-white p-8 rounded-[2.5rem] shadow-sm space-y-6">
+              <div className="bg-teal-50 p-8 rounded-[2.5rem] shadow-sm space-y-6 border border-teal-200">
                 <h4 className="text-xl font-patrick text-indigo-900">Слово «Единый» (Эхад)</h4>
                 <div className="text-4xl font-serif text-teal-600 border-b pb-4">אחד</div>
                 <div className="space-y-2 font-mono text-sm text-slate-500">
