@@ -343,29 +343,29 @@ const App: React.FC = () => {
                 <div className="md:col-span-8 flex flex-col justify-between gap-6">
                     <div className="space-y-4">
                         <div className="flex justify-between items-start">
-                          <h3 className="text-5xl font-patrick text-indigo-950">
-                            {selectedLetter.name} — <span className="text-teal-600">{selectedLetter.meaning}</span>
+                          <h3 className="text-5xl font-patrick text-teal-600">
+                            {selectedLetter.name} — <span className="text-indigo-900">{selectedLetter.meaning}</span>
                           </h3>
                         </div>
-                        <div className="bg-teal-50/50 p-8 rounded-[2rem] border border-teal-100/50 backdrop-blur-sm">
+                        <div className="bg-teal-50 p-8 rounded-[2rem] border border-teal-200 backdrop-blur-sm">
                             <h4 className="text-[10px] font-bold text-teal-600 uppercase mb-3 flex items-center gap-2 tracking-widest">
                                 <Zap size={14} /> Эволюция символа
                             </h4>
-                            <p className="text-slate-700 text-xl font-patrick leading-relaxed">{selectedLetter.evolution}</p>
+                            <p className="text-slate-500 text-xl font-patrick leading-relaxed">{selectedLetter.evolution}</p>
                         </div>
                     </div>
                     
-                    <div className="bg-white p-8 rounded-[2rem] border border-slate-100 shadow-sm flex-grow">
+                    <div className="bg-white p-8 rounded-[2rem] border border-teal-200 shadow-sm flex-grow">
                         <h4 className="text-[10px] font-bold text-teal-600 uppercase mb-3 flex items-center gap-2 tracking-widest">
                             <ScrollText size={14} /> Философский смысл
                         </h4>
-                        <p className="text-slate-600 text-xl font-patrick leading-relaxed italic border-l-4 border-teal-200 pl-6">
+                        <p className="text-slate-500 text-xl font-patrick leading-relaxed">
                           {selectedLetter.philosophy}
                         </p>
                     </div>
 
                     <div className="grid grid-cols-2 gap-4">
-                       <div className="bg-indigo-50/30 p-6 rounded-2xl border border-indigo-100/50">
+                       <div className="bg-white p-6 rounded-2xl border border-indigo-900">
                           <span className="text-[9px] uppercase font-bold text-indigo-900 block mb-3 flex items-center gap-2">
                              <Star size={12} /> Примеры слов
                           </span>
@@ -375,11 +375,11 @@ const App: React.FC = () => {
                              ))}
                           </div>
                        </div>
-                       <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
-                          <span className="text-[9px] uppercase font-bold text-slate-500 block mb-3 flex items-center gap-2">
+                       <div className="bg-slate-50 p-6 rounded-2xl border border-indigo-900">
+                          <span className="text-[9px] uppercase font-bold text-indigo-900 block mb-3 flex items-center gap-2">
                              <Info size={12} /> Заметка
                           </span>
-                          <p className="text-[11px] text-slate-500 leading-normal">{selectedLetter.historyNote}</p>
+                          <p className="text-[11px] text-indigo-900 leading-normal">{selectedLetter.historyNote}</p>
                        </div>
                     </div>
                 </div>
