@@ -65,7 +65,7 @@ const App: React.FC = () => {
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-100 text-teal-700 text-[10px] font-bold tracking-[0.2em] uppercase mb-6">
             <Compass size={14} /> Лингвистический Атлас
           </div>
-          <h1 className="text-5xl md:text-7xl font-serif font-bold mb-6 tracking-tight text-slate-900">
+          <h1 className="text-5xl md:text-7xl font-serif font-bold mb-6 tracking-tight text-indigo-800">
             Иврит: <span className="text-teal-600">Язык Первооснов</span>
           </h1>
           <p className="text-lg md:text-xl text-slate-500 max-w-2xl mx-auto leading-relaxed">
@@ -83,7 +83,7 @@ const App: React.FC = () => {
           <section className="bg-white p-8 md:p-12 rounded-[2.5rem] shadow-sm border border-slate-100 space-y-8">
             <div className="flex items-center gap-4 text-teal-600">
               <div className="p-3 bg-teal-50 rounded-2xl"><History size={32} /></div>
-              <h2 className="text-3xl font-serif font-bold">1. Древо Жизни Языков</h2>
+              <h2 className="text-3xl font-serif font-bold text-teal-600">Древо Жизни Языков</h2>
             </div>
             <p className="text-slate-600 leading-relaxed text-lg">
               Иврит является жемчужиной семитской семьи, чья история насчитывает более трех тысячелетий. Он неразрывно связан с <strong>Арамейским</strong> языком — лингва франка Древнего Ближнего Востока, на котором написаны части Талмуда. В то же время, <strong>Арабский</strong> язык является его ближайшим живым родственником: их грамматические структуры, системы корней и многие базовые слова практически идентичны.
@@ -117,7 +117,7 @@ const App: React.FC = () => {
           <section className="bg-white p-8 md:p-12 rounded-[2.5rem] shadow-sm border border-slate-100 space-y-6">
             <div className="flex items-center gap-4 text-teal-600">
               <div className="p-3 bg-teal-50 rounded-2xl"><ArrowLeftRight size={32} /></div>
-              <h2 className="text-3xl font-serif font-bold">2. Вспять Потоку Времени</h2>
+              <h2 className="text-3xl font-serif font-bold text-teal-600">Вспять Потоку Времени</h2>
             </div>
             <p className="text-slate-600 leading-relaxed text-lg">
               Иврит пишется и читается <strong>справа налево</strong>, что поначалу кажется непривычным. Эта традиция восходит к временам, когда тексты высекались на камне: молоток держали в правой руке, а зубило в левой, двигаясь естественным образом. Такое направление письма считается «движением к сердцу», подчеркивая интроспективный характер языка. Книги на иврите открываются «с конца», приглашая читателя в иное измерение восприятия.
@@ -128,7 +128,7 @@ const App: React.FC = () => {
           <section className="bg-white p-8 md:p-12 rounded-[2.5rem] shadow-sm border border-slate-100 space-y-8">
             <div className="flex items-center gap-4 text-teal-600">
               <div className="p-3 bg-teal-50 rounded-2xl"><Library size={32} /></div>
-              <h2 className="text-3xl font-serif font-bold">3. Магия Трёх Букв</h2>
+              <h2 className="text-3xl font-serif font-bold text-teal-600">Магия Трёх Букв</h2>
             </div>
             <p className="text-slate-600 leading-relaxed text-lg">
               Фундаментом иврита является концепция <strong>Шореша</strong> — трехбуквенного согласного корня. Это уникальный механизм, где одно ядро смысла порождает десятки слов: существительные, глаголы и прилагательные. Ниже приведен пример того, как корень К-Т-Б расцветает в разные значения.
@@ -174,67 +174,128 @@ const App: React.FC = () => {
           </section>
         </div>
 
-        {/* Evolution Section: ALEF and AIN */}
-        <section className="bg-teal-600 rounded-[3rem] p-10 md:p-16 text-white relative overflow-hidden shadow-xl">
-          <div className="relative z-10">
-            <h2 className="text-3xl font-serif font-bold mb-8">От Иероглифа к Цифре</h2>
-            <p className="text-teal-50 text-lg leading-relaxed mb-10 opacity-90">
-              Каждая буква современного иврита — это результат долгой эволюции <strong>Протосинайского письма</strong>. Около 1800 г. до н.э. семитские рабочие адаптировали египетские иероглифы, используя первую букву названия предмета. Так изображение головы быка стало буквой Алеф.
+        {/* Evolution Section: ALEF and AIN (Fixed ReferenceError and updated design) */}
+        <section className="bg-teal-50 p-10 md:p-14 rounded-[4rem] border border-teal-200 relative overflow-hidden">
+          <div className="relative z-10 space-y-10">
+            <div className="flex items-center gap-4 text-teal-700">
+              <Zap size={40} />
+              <h2 className="text-3xl font-serif font-bold">От Иероглифа к Цифре</h2>
+            </div>
+            
+            <p className="text-slate-600 text-lg leading-relaxed max-w-3xl">
+              Каждая буква современного иврита — это результат долгой эволюции <strong>Протосинайского письма</strong>. 
+              Около 1800 г. до н.э. семитские рабочие адаптировали египетские иероглифы, используя первую букву названия предмета. Так изображение головы быка стало буквой Алеф.
             </p>
-            <div className="grid md:grid-cols-2 gap-12">
-              {/* Alef Evolution */}
-              <div className="space-y-4">
-                <div className="flex items-center gap-3 mb-2">
-                  <Zap className="text-teal-300" size={24} />
-                  <h3 className="text-xl font-bold">Эволюция Алеф (Бык)</h3>
+
+            <div className="grid md:grid-cols-2 gap-8">
+              {/* Alef Evolution Card */}
+              <div className="bg-white p-8 rounded-[2.5rem] shadow-sm space-y-6 border border-slate-100">
+                <div className="flex items-center justify-between border-b pb-4">
+                  <h4 className="text-xl font-bold text-slate-800">Алеф (Бык)</h4>
+                  <span className="px-3 py-1 bg-teal-50 text-teal-700 rounded-full text-xs font-bold uppercase tracking-wider">Голова силы</span>
                 </div>
-                <p className="text-teal-100 leading-relaxed mb-6 opacity-90">
-                  Первая буква родилась из головы быка. Рога и морда со временем превратились в перекрещенные линии. В латыни этот символ перевернулся рогами вниз, став буквой «A».
+                
+                <div className="flex items-center justify-around py-4">
+                  <div className="text-center">
+                    <span className="text-5xl block mb-1 text-slate-300">𓃾</span>
+                    <span className="text-[10px] uppercase font-bold text-slate-400">Иероглиф</span>
+                  </div>
+                  <ArrowRight className="text-teal-200" />
+                  <div className="text-center">
+                    <span className="text-6xl block mb-1 font-serif text-teal-600">א</span>
+                    <span className="text-[10px] uppercase font-bold text-slate-400">Иврит</span>
+                  </div>
+                  <ArrowRight className="text-teal-200" />
+                  <div className="text-center">
+                    <span className="text-5xl block mb-1 font-serif text-slate-800 font-bold">A</span>
+                    <span className="text-[10px] uppercase font-bold text-slate-400">Латынь</span>
+                  </div>
+                </div>
+
+                <p className="text-sm text-slate-500 leading-relaxed border-t pt-4">
+                  Рога и морда быка со временем превратились в перекрещенные линии. В латыни символ перевернулся рогами вниз, став буквой «A».
                 </p>
-                <div className="flex items-center gap-6 bg-white/10 p-5 rounded-2xl border border-white/20">
-                  <div className="text-center flex-1">
-                    <span className="text-5xl block mb-1">𓃾</span>
-                    <span className="text-[9px] uppercase font-bold opacity-60">Иероглиф</span>
+              </div>
+
+              {/* Ain Evolution Card */}
+              <div className="bg-white p-8 rounded-[2.5rem] shadow-sm space-y-6 border border-slate-100">
+                <div className="flex items-center justify-between border-b pb-4">
+                  <h4 className="text-xl font-bold text-slate-800">Аин (Глаз)</h4>
+                  <span className="px-3 py-1 bg-teal-50 text-teal-700 rounded-full text-xs font-bold uppercase tracking-wider">Прозрение</span>
+                </div>
+
+                <div className="flex items-center justify-around py-4">
+                  <div className="text-center">
+                    <span className="text-5xl block mb-1 text-slate-300">𓁹</span>
+                    <span className="text-[10px] uppercase font-bold text-slate-400">Иероглиф</span>
                   </div>
-                  <div className="text-2xl opacity-30">→</div>
-                  <div className="text-center flex-1">
-                    <span className="text-5xl block mb-1 font-serif text-teal-200">א</span>
-                    <span className="text-[9px] uppercase font-bold opacity-60">Иврит</span>
+                  <ArrowRight className="text-teal-200" />
+                  <div className="text-center">
+                    <span className="text-6xl block mb-1 font-serif text-teal-600">ע</span>
+                    <span className="text-[10px] uppercase font-bold text-slate-400">Иврит</span>
                   </div>
-                  <div className="text-2xl opacity-30">→</div>
-                  <div className="text-center flex-1">
-                    <span className="text-5xl block mb-1 font-serif">A</span>
-                    <span className="text-[9px] uppercase font-bold opacity-60">Латынь</span>
+                  <ArrowRight className="text-teal-200" />
+                  <div className="text-center">
+                    <span className="text-5xl block mb-1 font-serif text-slate-800 font-bold">O</span>
+                    <span className="text-[10px] uppercase font-bold text-slate-400">Латынь</span>
                   </div>
+                </div>
+
+                <p className="text-sm text-slate-500 leading-relaxed border-t pt-4">
+                  Буква Аин изначально рисовалась как глаз со зрачком. В греческом и латыни она упростилась до идеального круга — буквы «O».
+                </p>
+              </div>
+            </div>
+
+            <div className="text-center p-6 bg-white/50 border border-teal-100 text-teal-800 rounded-3xl">
+              <p className="text-sm font-medium italic">
+                Интересный факт: Почти весь латинский алфавит — это «перевернутые» или «отзеркаленные» образы древних букв иврита.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Gematria Calculation Block */}
+        <section className="bg-teal-50 p-10 md:p-14 rounded-[4rem] border border-teal-200 relative overflow-hidden">
+          <div className="relative z-10 space-y-10">
+            <div className="flex items-center gap-4 text-teal-700">
+              <Calculator size={40} />
+              <h2 className="text-3xl font-serif font-bold text-teal-600">Гематрия</h2>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-white p-8 rounded-[2.5rem] shadow-sm space-y-6">
+                <h4 className="text-xl font-bold text-slate-800">Слово «Любовь» (Ахава)</h4>
+                <div className="text-4xl font-serif text-teal-600 border-b pb-4">אהבה</div>
+                <div className="space-y-2 font-mono text-sm text-slate-500">
+                  <div className="flex justify-between"><span>Алеф (א)</span> <span>1</span></div>
+                  <div className="flex justify-between"><span>Хей (ה)</span> <span>5</span></div>
+                  <div className="flex justify-between"><span>Бет (ב)</span> <span>2</span></div>
+                  <div className="flex justify-between"><span>Хей (ה)</span> <span>5</span></div>
+                </div>
+                <div className="pt-4 border-t flex justify-between font-bold text-2xl text-teal-700">
+                  <span>ИТОГО:</span> <span>1 + 5 + 2 + 5 = 13</span>
                 </div>
               </div>
 
-              {/* Ain Evolution */}
-              <div className="space-y-4">
-                <div className="flex items-center gap-3 mb-2">
-                  <Eye className="text-teal-300" size={24} />
-                  <h3 className="text-xl font-bold">Эволюция Аин (Глаз)</h3>
+              <div className="bg-white p-8 rounded-[2.5rem] shadow-sm space-y-6">
+                <h4 className="text-xl font-bold text-slate-800">Слово «Единый» (Эхад)</h4>
+                <div className="text-4xl font-serif text-teal-600 border-b pb-4">אחד</div>
+                <div className="space-y-2 font-mono text-sm text-slate-500">
+                  <div className="flex justify-between"><span>Алеф (א)</span> <span>1</span></div>
+                  <div className="flex justify-between"><span>Хет (ח)</span> <span>8</span></div>
+                  <div className="flex justify-between"><span>Далет (ד)</span> <span>4</span></div>
                 </div>
-                <p className="text-teal-100 leading-relaxed mb-6 opacity-90">
-                  Буква Аин («Глаз») изначально рисовалась как глаз с зрачком. В греческом и латыни она упростилась до идеального круга — буквы «O».
-                </p>
-                <div className="flex items-center gap-6 bg-white/10 p-5 rounded-2xl border border-white/20">
-                  <div className="text-center flex-1">
-                    <span className="text-5xl block mb-1">𓁹</span>
-                    <span className="text-[9px] uppercase font-bold opacity-60">Иероглиф</span>
-                  </div>
-                  <div className="text-2xl opacity-30">→</div>
-                  <div className="text-center flex-1">
-                    <span className="text-5xl block mb-1 font-serif text-teal-200">ע</span>
-                    <span className="text-[9px] uppercase font-bold opacity-60">Иврит</span>
-                  </div>
-                  <div className="text-2xl opacity-30">→</div>
-                  <div className="text-center flex-1">
-                    <span className="text-5xl block mb-1 font-serif">O</span>
-                    <span className="text-[9px] uppercase font-bold opacity-60">Латынь</span>
-                  </div>
+                <div className="pt-4 border-t flex justify-between font-bold text-2xl text-teal-700">
+                  <span>ИТОГО:</span> <span>1 + 8 + 4 = 13</span>
                 </div>
               </div>
+            </div>
+
+            <div className="text-center p-8 bg-teal-600 text-white rounded-3xl shadow-xl">
+              <p className="text-xl font-serif italic">
+                "Совпадение этих чисел говорит о том, что в культуре иврита Любовь и Единство — это одна и та же математическая и духовная величина."
+              </p>
             </div>
           </div>
         </section>
@@ -242,7 +303,7 @@ const App: React.FC = () => {
         {/* Alphabet Explorer (Compact) */}
         <section className="space-y-8">
           <div className="text-center space-y-3">
-            <h2 className="text-4xl font-serif font-bold">Алфавит и Гематрия</h2>
+            <h2 className="text-4xl font-serif font-bold text-teal-600">Алфавит</h2>
             <p className="text-slate-500">Нажмите на букву, чтобы узнать её историю и смысл.</p>
           </div>
 
@@ -299,7 +360,7 @@ const App: React.FC = () => {
 
         {/* Sophit Explaination */}
         <section className="bg-slate-100 p-10 rounded-[3rem] border border-slate-200">
-          <h2 className="text-2xl font-serif font-bold mb-4">Пять Букв Софит (Окончания)</h2>
+          <h2 className="text-2xl font-serif font-bold mb-4 text-teal-600">Пять Букв Софит (Окончания)</h2>
           <p className="text-slate-600 leading-relaxed mb-6">
             В иврите пять букв — <strong>Каф, Мем, Нун, Пе и Цади</strong> — меняют форму, если стоят в конце слова. Это помогает визуально разделять слова.
           </p>
@@ -309,51 +370,6 @@ const App: React.FC = () => {
                 <span className="text-3xl font-serif text-teal-600">{s}</span>
               </div>
             ))}
-          </div>
-        </section>
-
-        {/* Gematria Calculation Block */}
-        <section className="bg-teal-50 p-10 md:p-14 rounded-[4rem] border border-teal-200 relative overflow-hidden">
-          <div className="relative z-10 space-y-10">
-            <div className="flex items-center gap-4 text-teal-700">
-              <Calculator size={40} />
-              <h2 className="text-3xl font-serif font-bold">Расшифровка: Почему 13?</h2>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-white p-8 rounded-[2.5rem] shadow-sm space-y-6">
-                <h4 className="text-xl font-bold text-slate-800">Слово «Любовь» (Ахава)</h4>
-                <div className="text-4xl font-serif text-teal-600 border-b pb-4">אהבה</div>
-                <div className="space-y-2 font-mono text-sm text-slate-500">
-                  <div className="flex justify-between"><span>Алеф (א)</span> <span>1</span></div>
-                  <div className="flex justify-between"><span>Хей (ה)</span> <span>5</span></div>
-                  <div className="flex justify-between"><span>Бет (ב)</span> <span>2</span></div>
-                  <div className="flex justify-between"><span>Хей (ה)</span> <span>5</span></div>
-                </div>
-                <div className="pt-4 border-t flex justify-between font-bold text-2xl text-teal-700">
-                  <span>ИТОГО:</span> <span>1 + 5 + 2 + 5 = 13</span>
-                </div>
-              </div>
-
-              <div className="bg-white p-8 rounded-[2.5rem] shadow-sm space-y-6">
-                <h4 className="text-xl font-bold text-slate-800">Слово «Единый» (Эхад)</h4>
-                <div className="text-4xl font-serif text-teal-600 border-b pb-4">אחד</div>
-                <div className="space-y-2 font-mono text-sm text-slate-500">
-                  <div className="flex justify-between"><span>Алеф (א)</span> <span>1</span></div>
-                  <div className="flex justify-between"><span>Хет (ח)</span> <span>8</span></div>
-                  <div className="flex justify-between"><span>Далет (ד)</span> <span>4</span></div>
-                </div>
-                <div className="pt-4 border-t flex justify-between font-bold text-2xl text-teal-700">
-                  <span>ИТОГО:</span> <span>1 + 8 + 4 = 13</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="text-center p-8 bg-teal-600 text-white rounded-3xl shadow-xl">
-              <p className="text-xl font-serif italic">
-                "Совпадение этих чисел говорит о том, что в культуре иврита Любовь и Единство — это одна и та же математическая и духовная величина."
-              </p>
-            </div>
           </div>
         </section>
       </main>
