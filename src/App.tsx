@@ -59,8 +59,14 @@ const App: React.FC = () => {
   ];
 
   const sofitLetters = alphabet.filter(l => l.suffix);
-
   const [selectedLetter, setSelectedLetter] = useState<Letter>(alphabet[0]);
+
+  const headerImage = "https://raw.githubusercontent.com/bemotte-ops/Hebrew/main/src/parchment-bg.png"; 
+  const footerImage = "https://raw.githubusercontent.com/bemotte-ops/Hebrew/main/src/footer-texture.png";
+
+  const handleImageError = (e: React.SyntheticEvent<HTMLImageElement, Event>) => {
+    e.currentTarget.style.display = 'none';
+  };
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-800 font-sans selection:bg-teal-100">
@@ -70,7 +76,7 @@ const App: React.FC = () => {
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <h1 className="text-5xl md:text-8xl font-patrick mb-6 tracking-tight text-indigo-900">
             Иврит
-            <p className="text-teal-700">Язык Первооснов </p>
+            <p className="text-teal-700">Код Мироздания </p>
           </h1>
           <p className="text-lg md:text-xl text-slate-500 max-w-2xl mx-auto leading-relaxed">
             Исследуйте архитектуру древнейшего языка, где каждая буква является одновременно числом, символом и ключом к пониманию культуры
@@ -530,27 +536,28 @@ const App: React.FC = () => {
 
       </main>
 
-      {/* Footer */}
-      <footer className="bg-indigo-950 text-white py-24 relative overflow-hidden">
-         <div className="absolute inset-0 opacity-10">
+      {/* Footer Section */}
+      <footer className="bg-indigo-900 text-white py-24 mt-20 relative overflow-hidden">
+         {/* Фоновая текстура футера с GitHub */}
+         <div className="absolute inset-0 z-0 opacity-10">
            <img 
-              src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&q=80&w=2000" 
+              src={footerImage} 
               alt="Текстура камня"
               className="w-full h-full object-cover"
+              onError={handleImageError}
            />
+           {/* Наложение цвета и размытия */}
+           <div className="absolute inset-0 bg-indigo-900/40 backdrop-blur-[1px]"></div>
          </div>
-         <div className="max-w-4xl mx-auto px-6 text-center space-y-12 relative z-10">
-            <div className="text-teal-500 text-5xl font-serif tracking-[1em] opacity-30 select-none animate-pulse">
-              אבгדהוזחтиכלמנסעפצקרשת
+         
+         <div className="max-w-4xl mx-auto px-6 text-center space-y-8 relative z-10">
+            {/* Адаптивная декоративная строка алфавита */}
+            <div className="text-teal-500 text-2xl md:text-4xl font-serif tracking-[0.3em] md:tracking-[1em] opacity-40 select-none break-all whitespace-normal max-w-full overflow-hidden">
+              אבגדהוזחטיכלмנסעפצקרשת
             </div>
-            <div className="space-y-4">
-              <p className="text-slate-400 text-xs uppercase tracking-[0.5em] font-patrick">
-                © 2026 Лингвистический проект "Код Бытия"
-              </p>
-              <p className="text-teal-500 font-patrick text-sm italic">
-                Вначале было Слово...
-              </p>
-            </div>
+            <p className="text-slate-400 text-[10px] uppercase tracking-[0.3em] px-4">
+              © 2026 Лингвистический проект "Код Бытия" • СИНХРОНИЗИРОВАНО С GITHUB
+            </p>
          </div>
       </footer>
     </div>
