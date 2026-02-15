@@ -67,12 +67,12 @@ const App: React.FC = () => {
             <p className="text-teal-700">Язык Первооснов </p>
           </h1>
           <p className="text-lg md:text-xl text-slate-500 max-w-2xl mx-auto leading-relaxed">
-            Исследуйте архитектуру древнейшего языка, где каждая буква является одновременно числом, символом и ключом к пониманию культуры.
+            Исследуйте архитектуру древнейшего языка, где каждая буква является одновременно числом, символом и ключом к пониманию культуры
           </p>
         </div>
       </header>
 
-      <main className="max-w-5xl mx-auto pb-24 px-6 space-y-15 mt-15">
+      <main className="max-w-5xl mx-auto pb-24 px-6 space-y-16 mt-16">
 
         {/* Sequence Blocks */}
         <div className="space-y-12">
@@ -83,7 +83,7 @@ const App: React.FC = () => {
               <h2 className="text-4xl font-patrick text-teal-700">Древо Жизни Языков</h2>
             </div>
             <p className="text-slate-600 leading-relaxed text-lg">
-              Иврит является жемчужиной семитской семьи, чья история насчитывает более трех тысячелетий. Он неразрывно связан с <strong>Арамейским</strong> языком — лингва франка Древнего Ближнего Востока, на котором написаны части Талмуда. В то же время, <strong>Арабский</strong> язык является его ближайшим живым родственником: их грамматические структуры, системы корней и многие базовые слова практически идентичны.
+              Иврит является жемчужиной семитской семьи, чья история насчитывает более трех тысячелетий. Он неразрывно связан с <strong>Арамейским</strong> языком — лингва франка Древнего Ближнего Востока, на котором написаны части Талмуда. В то же время, <strong>Арабский</strong> язык является его ближайшим живым родственником: их грамматические структуры, системы корней и многие базовые слова практически идентичны
             </p>
 
             {/* Linguistic Scheme */}
@@ -116,7 +116,7 @@ const App: React.FC = () => {
               <h2 className="text-4xl font-patrick text-teal-700">Вспять Потоку Времени</h2>
             </div>
             <p className="text-slate-600 leading-relaxed text-lg">
-              Иврит пишется и читается <strong>справа налево</strong>, что поначалу кажется непривычным. Эта традиция восходит к временам, когда тексты высекались на камне: молоток держали в правой руке, а зубило в левой, двигаясь естественным образом. Такое направление письма считается «движением к сердцу», подчеркивая интроспективный характер языка. Книги на иврите открываются «с конца», приглашая читателя в иное измерение восприятия.
+              Иврит пишется и читается <strong>справа налево</strong>, что поначалу кажется непривычным. Эта традиция восходит к временам, когда тексты высекались на камне: молоток держали в правой руке, а зубило в левой, двигаясь естественным образом. Такое направление письма считается «движением к сердцу», подчеркивая интроспективный характер языка. Книги на иврите открываются «с конца», приглашая читателя в иное измерение восприятия
             </p>
           </section>
 
@@ -126,7 +126,7 @@ const App: React.FC = () => {
               <h2 className="text-4xl font-patrick text-teal-700">Магия Трёх Букв</h2>
             </div>
             <p className="text-slate-600 leading-relaxed text-lg">
-              Фундаментом иврита является концепция <strong>Шореша</strong> — трехбуквенного согласного корня. Это уникальный механизм, где одно ядро смысла порождает десятки слов: существительные, глаголы и прилагательные. Ниже приведен пример того, как корень К-Т-Б расцветает в разные значения.
+              Фундаментом иврита является концепция <strong>Шореша</strong> — трехбуквенного согласного корня. Это уникальный механизм, где одно ядро смысла порождает десятки слов: существительные, глаголы и прилагательные. Ниже приведен пример того, как корень К-Т-Б расцветает в разные значения
             </p>
 
             {/* Shoresh Table */}
@@ -178,7 +178,7 @@ const App: React.FC = () => {
             
             <p className="text-slate-600 text-lg leading-relaxed max-w-3xl">
               Каждая буква современного иврита — это результат долгой эволюции <strong>Протосинайского письма</strong>. 
-              Около 1800 г. до н.э. семитские рабочие адаптировали египетские иероглифы, используя первую букву названия предмета. Так изображение головы быка стало буквой Алеф.
+              Около 1800 г. до н.э. семитские рабочие адаптировали египетские иероглифы, используя первую букву названия предмета. Так изображение головы быка стало буквой Алеф
             </p>
 
             <div className="grid md:grid-cols-2 gap-8">
@@ -194,12 +194,12 @@ const App: React.FC = () => {
                     <span className="text-5xl block mb-1 text-slate-500">𓃾</span>
                     <span className="text-[10px] uppercase font-bold text-slate-400">Иероглиф</span>
                   </div>
-                  <ArrowRight className="text-teal-200" />
+                  <ArrowRight className="text-slate-400" />
                   <div className="text-center">
                     <span className="text-6xl block mb-1 font-serif text-teal-600">א</span>
                     <span className="text-[10px] uppercase font-bold text-slate-400">Иврит</span>
                   </div>
-                  <ArrowRight className="text-teal-200" />
+                  <ArrowRight className="text-slate-400" />
                   <div className="text-center">
                     <span className="text-5xl block mb-1 font-serif text-indigo-900 font-bold">A</span>
                     <span className="text-[10px] uppercase font-bold text-slate-400">Латынь</span>
@@ -207,7 +207,7 @@ const App: React.FC = () => {
                 </div>
 
                 <p className="text-sm text-slate-500 leading-relaxed border-t pt-4">
-                  Рога и морда быка со временем превратились в перекрещенные линии. В латыни символ перевернулся рогами вниз, став буквой «A».
+                  Рога и морда быка со временем превратились в перекрещенные линии. В латыни символ перевернулся рогами вниз, став буквой «A»
                 </p>
               </div>
 
@@ -223,12 +223,12 @@ const App: React.FC = () => {
                     <span className="text-5xl block mb-1 text-slate-500">𓁹</span>
                     <span className="text-[10px] uppercase font-bold text-slate-400">Иероглиф</span>
                   </div>
-                  <ArrowRight className="text-teal-200" />
+                  <ArrowRight className="text-slate-400" />
                   <div className="text-center">
                     <span className="text-6xl block mb-1 font-serif text-teal-600">ע</span>
                     <span className="text-[10px] uppercase font-bold text-slate-400">Иврит</span>
                   </div>
-                  <ArrowRight className="text-teal-200" />
+                  <ArrowRight className="text-slate-400" />
                   <div className="text-center">
                     <span className="text-5xl block mb-1 font-serif text-indigo-900 font-bold">O</span>
                     <span className="text-[10px] uppercase font-bold text-slate-400">Латынь</span>
@@ -236,21 +236,20 @@ const App: React.FC = () => {
                 </div>
 
                 <p className="text-sm text-slate-500 leading-relaxed border-t pt-4">
-                  Буква Аин изначально рисовалась как глаз со зрачком. В греческом и латыни она упростилась до идеального круга — буквы «O».
+                  Буква Аин изначально рисовалась как глаз со зрачком. В греческом и латыни она упростилась до идеального круга — буквы «O»
                 </p>
               </div>
             </div>
 
             <div className="text-center p-7 bg-teal-600 text-white rounded-3xl">
-              <p className="text-lg font-patrick">
-                Интересный факт: почти весь латинский алфавит — это «перевернутые» или «отзеркаленные» образы древних букв иврита
-              </p>
+              <p className="text-lg font-patrick">Интересный факт:</p>
+              <p className="text-lg font-patrick">почти весь латинский алфавит — это «перевернутые» или «отзеркаленные» образы древних букв иврита</p>
             </div>
           </div>
         </section>
 
                 {/* Alphabet Explorer (Compact) */}
-        <section className="space-y-8">
+        <section className="space-y-16">
           <div className="text-center space-y-3">
             <h2 className="text-4xl font-patrick text-teal-700">Генезис Символов</h2>
             <p className="text-slate-500">Нажмите на букву, чтобы узнать её историю и смысл</p>
