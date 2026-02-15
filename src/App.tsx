@@ -64,7 +64,7 @@ const App: React.FC = () => {
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <h1 className="text-5xl md:text-7xl font-serif font-bold mb-6 tracking-tight text-indigo-900">
             Иврит
-            <span className="text-teal-700">Язык Первооснов</span>
+            <p className="text-teal-700">Язык Первооснов </p>
           </h1>
           <p className="text-lg md:text-xl text-slate-500 max-w-2xl mx-auto leading-relaxed">
             Исследуйте архитектуру древнейшего языка, где каждая буква является одновременно числом, символом и ключом к пониманию культуры.
@@ -163,7 +163,7 @@ const App: React.FC = () => {
                 </tbody>
               </table>
               <div className="bg-teal-600 p-4 text-center text-white text-lg font-serif italic">
-                Общий корень: כ - ת - ב (Письменность)
+                Общий корень: <span className="text-2xl"> כ - ת - ב </span>(Письменность)
               </div>
             </div>
           </section>
