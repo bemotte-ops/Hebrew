@@ -380,9 +380,9 @@ const App: React.FC = () => {
                           <span className="text-[12px] uppercase font-bold text-indigo-900 block mb-3 flex items-center gap-2">
                              <Info size={12} /> Заметка
                           </span>
-                          <div className="space-y-1 font-patrick">
-                               <div className="text-sm text-slate-700">
-                                  Кириллица: информация из поля {selectedLetter.cyrillic}
+                          <div className="space-y-1">
+                               <div className="text-sm font-patrick text-indigo-900">
+                                  Кириллица: {selectedLetter.cyrillic}
                                </div>
                                <div className="text-sm text-indigo-900 leading-normal">
                                  {selectedLetter.historyNote}
