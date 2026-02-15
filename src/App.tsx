@@ -276,29 +276,36 @@ const App: React.FC = () => {
               ))}
             </div>
 
-            {/* Letter Content Card */}
-            <div className="bg-teal-50 rounded-[2.5rem] p-8 md:p-12 border border-teal-200 relative overflow-hidden">
-               <div className="grid md:grid-cols-12 gap-12 relative z-10">
-                  
-                  {/* LEFT COLUMN: VISUALS */}
-                  <div className="md:col-span-4 flex flex-col justify-between gap-6 items-center md:items-start">
-                    {/* Left Top: Hieroglyph */}
-                    <div className="w-full space-y-4">
-                      <span className="text-[10px] uppercase font-bold text-center text-teal-600 tracking-widest block text-center">Прото-иероглиф</span>
-                      <div className="w-full h-32 md:h-48 bg-white rounded-3xl flex items-center justify-center border border-teal-200 shadow-inner text-10xl text-slate-500">
+            {/* LEFT COLUMN: VISUALS */}
+            <div className="md:col-span-4 flex flex-col justify-between items-center pt-24 pb-4 h-full">
+                    
+                    {/* Item 1: Hieroglyph Section */}
+                    <div className="flex flex-col items-center w-full gap-8">
+                      <div className="flex flex-col items-center">
+                        <span className="text-[10px] uppercase font-bold text-indigo-900 tracking-[0.2em] block text-center opacity-60 mb-2">Прото-иероглиф</span>
+                        <div className="text-[11rem] text-indigo-900 leading-none select-none drop-shadow-sm opacity-25">
                         {selectedLetter.proto}
                       </div>
                     </div>
-                    {/* Left Bottom: Modern Letter */}
-                    <div className="flex-grow flex items-center justify-center w-full py-4"></div>
-                      <span className="text-[10px] uppercase font-bold text-center text-teal-600 tracking-widest block text-center">Современная форма</span>
-                      <div className="text-10xl font-serif text-teal-600 leading-none text-center font-bold">
+
+                    {/* Arrow Down */}
+                    <div className="text-slate-500 animate-bounce py-2">
+                      <ChevronDown size={32} />
+                    </div>
+
+                    {/* Item 2: Modern Letter Section */}
+                    <div className="flex flex-col items-center">
+                      <span className="text-[10px] uppercase font-bold text-teal-600 tracking-[0.2em] block text-center opacity-70 mb-2">Современная форма</span>
+                      <div className="text-[12rem] md:text-[14rem] font-serif text-teal-600 leading-[0.7] text-center font-bold filter drop-shadow-sm select-none">
                         {selectedLetter.letter}
                       </div>
-                      <div className="w-full space-y-4">
-                      <div className="bg-teal-600 text-white py-2 px-4 rounded-xl font-bold text-xs tracking-widest uppercase inline-block mx-auto md:mx-0">
+                    </div>
+
+                    {/* Item 3: Gematria - Styled as plain text indigo-900 */}
+                    <div className="w-full text-center pt-8">
+                      <span className="font-patrick text-indigo-900 text-xl tracking-tight">
                         Гематрия: {selectedLetter.number}
-                      </div>
+                      </span>
                     </div>
                   </div>
 
@@ -306,9 +313,9 @@ const App: React.FC = () => {
                   <div className="md:col-span-8 flex flex-col gap-10">
                     {/* Right Top: Evolution */}
                     <div className="space-y-4">
-                      <h3 className="text-4xl font-patrick text-indigo-900 flex flex-wrap items-center gap-3">
+                      <h3 className="text-4xl font-patrick text-teal-600 flex flex-wrap items-center gap-3">
                          {selectedLetter.name} 
-                         <span className="text-teal-600 text-2xl">— {selectedLetter.meaning}</span>
+                         <span className="text-indigo-900 text-2xl">— {selectedLetter.meaning}</span>
                       </h3>
                       <div className="bg-white/60 p-6 rounded-3xl border border-teal-200">
                         <h4 className="text-[10px] font-bold text-teal-600 uppercase mb-3 flex items-center gap-2">
