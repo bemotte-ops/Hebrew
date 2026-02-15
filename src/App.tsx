@@ -285,6 +285,7 @@ const App: React.FC = () => {
                         <span className="text-[10px] uppercase font-bold text-indigo-900 tracking-[0.2em] block text-center opacity-60 mb-2">Прото-иероглиф</span>
                         <div className="text-[11rem] text-indigo-900 leading-none select-none drop-shadow-sm opacity-25">
                         {selectedLetter.proto}
+                        </div>
                       </div>
                     </div>
 
@@ -307,7 +308,6 @@ const App: React.FC = () => {
                         Гематрия: {selectedLetter.number}
                       </span>
                     </div>
-                  </div>
 
                   {/* RIGHT COLUMN: TEXT */}
                   <div className="md:col-span-8 flex flex-col gap-10">
@@ -345,10 +345,7 @@ const App: React.FC = () => {
                         </div>
                       </div>
                     </div>
-                  </div>
-
-               </div>
-            </div>
+                  </div>             
           </div>
         </section>
 
