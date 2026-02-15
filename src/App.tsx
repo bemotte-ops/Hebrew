@@ -177,7 +177,7 @@ const App: React.FC = () => {
         {/* Evolution Section: ALEF and AIN (Fixed ReferenceError and updated design) */}
         <section className="bg-white p-10 md:p-14 rounded-[4rem] border border-teal-200 relative overflow-hidden">
           <div className="relative z-10 space-y-10">
-            <div className="flex items-center gap-4 text-teal-700">
+            <div className="flex items-center justify-center gap-4 text-teal-700 w-full">
               <h2 className="text-4xl text-center font-patrick text-teal-700">От Иероглифа к Цифре</h2>
             </div>
             
@@ -328,8 +328,8 @@ const App: React.FC = () => {
                   </div>
 
                   {/* Современная форма */}
-                  <div className="text-center w-full flex flex-col items-center pt-4">
-                    <span className="text-[12px] font-bold text-teal-600 uppercase tracking-[0.2em] block mb-2">Современная форма</span>
+                  <div className="text-center w-full flex flex-col items-center">
+                    <span className="text-[12px] font-bold text-teal-600 uppercase tracking-[0.2em] block">Современная форма</span>
                     <div className="text-[10rem] font-serif text-teal-600 font-bold leading-none mb-4">
                       {selectedLetter.letter}
                     </div>
@@ -379,7 +379,7 @@ const App: React.FC = () => {
                           <span className="text-[12px] uppercase font-bold text-indigo-900 block mb-3 flex items-center gap-2">
                              <Info size={12} /> Заметка
                           </span>
-                          <p className="text-[11px] text-indigo-900 leading-normal">{selectedLetter.historyNote}</p>
+                          <p className="text-sm text-indigo-900 leading-normal">{selectedLetter.historyNote}</p>
                        </div>
                     </div>
                 </div>
@@ -390,8 +390,8 @@ const App: React.FC = () => {
         {/* Пять Букв Софит */}
         <section className="bg-white p-10 md:p-14 rounded-[4rem] border border-teal-200 shadow-sm">
           <div className="space-y-12">
-            <div className="flex items-center gap-4 text-indigo-900">
-              <h2 className="text-4xl font-patrick text-teal-600">Пять Букв Софит (Окончания)</h2>
+            <div className="flex items-center justify-center gap-4 text-indigo-900 w-full">
+              <h2 className="text-4xl text-center font-patrick text-teal-600">Пять Букв Софит (Окончания)</h2>
             </div>
             
             <p className="text-slate-600 text-lg leading-relaxed max-w-3xl">
@@ -437,7 +437,7 @@ const App: React.FC = () => {
 
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-teal-50 p-8 rounded-[2.5rem] shadow-sm space-y-6 border border-teal-200">
-                <h4 className="text-xl font-patrick text-indigo-900">Слово «Любовь» (Ахава)</h4>
+                <h4 className="text-xl font-patrick text-indigo-900">Слово «Любовь» [Ахава]</h4>
                 <div className="text-4xl font-serif text-teal-600 border-b pb-4">אהבה</div>
                 <div className="space-y-2 font-mono text-sm text-slate-500">
                   <div className="flex justify-between"><span>Алеф (א)</span> <span>1</span></div>
@@ -451,7 +451,7 @@ const App: React.FC = () => {
               </div>
 
               <div className="bg-teal-50 p-8 rounded-[2.5rem] shadow-sm space-y-6 border border-teal-200">
-                <h4 className="text-xl font-patrick text-indigo-900">Слово «Единый» (Эхад)</h4>
+                <h4 className="text-xl font-patrick text-indigo-900">Слово «Единый» [Эхад]</h4>
                 <div className="text-4xl font-serif text-teal-600 border-b pb-4">אחד</div>
                 <div className="space-y-2 font-mono text-sm text-slate-500">
                   <div className="flex justify-between"><span>Алеф (א)</span> <span>1</span></div>
