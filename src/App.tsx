@@ -314,7 +314,7 @@ const App: React.FC = () => {
                   
                   {/* Архетип */}
                   <div className="text-center space-y-1 w-full">
-                    <span className="text-[10px] font-bold text-indigo-900 uppercase tracking-[0.2em] block">Архетип</span>
+                    <span className="text-[16px] font-bold text-indigo-900 uppercase tracking-[0.2em] block">Архетип</span>
                     <div className="relative -mt-6 text-[11rem] leading-none text-indigo-900 transform hover:scale-105 transition-transform duration-500 cursor-default">
                       {selectedLetter.proto}
                     </div>
@@ -329,8 +329,8 @@ const App: React.FC = () => {
 
                   {/* Современная форма */}
                   <div className="text-center w-full flex flex-col items-center pt-4">
-                    <span className="text-[10px] font-bold text-teal-600 uppercase tracking-[0.2em] block mb-2">Современная форма</span>
-                    <div className="text-[10rem] font-serif text-teal-600 font-bold leading-none mb-8">
+                    <span className="text-[16px] font-bold text-teal-600 uppercase tracking-[0.2em] block mb-2">Современная форма</span>
+                    <div className="text-[10rem] font-serif text-teal-600 font-bold leading-none mb-6">
                       {selectedLetter.letter}
                     </div>
                     <div className="text-indigo-900 text-xl font-patrick uppercase tracking-widest">
@@ -351,7 +351,7 @@ const App: React.FC = () => {
                             <h4 className="text-[10px] font-bold text-teal-600 uppercase mb-3 flex items-center gap-2 tracking-widest">
                                 <Zap size={14} /> Эволюция символа
                             </h4>
-                            <p className="text-slate-500 text-xl leading-relaxed">{selectedLetter.evolution}</p>
+                            <p className="text-slate-500 text-lg leading-relaxed">{selectedLetter.evolution}</p>
                         </div>
                     </div>
                     
@@ -359,7 +359,7 @@ const App: React.FC = () => {
                         <h4 className="text-[10px] font-bold text-teal-600 uppercase mb-3 flex items-center gap-2 tracking-widest">
                             <ScrollText size={14} /> Философский смысл
                         </h4>
-                        <p className="text-slate-500 text-xl leading-relaxed">
+                        <p className="text-slate-500 text-lg leading-relaxed">
                           {selectedLetter.philosophy}
                         </p>
                     </div>
