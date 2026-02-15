@@ -88,7 +88,7 @@ const App: React.FC = () => {
               <h2 className="text-4xl font-patrick text-teal-700">Древо Жизни Языков</h2>
             </div>
             <p className="text-slate-600 leading-relaxed text-lg">
-              Иврит является жемчужиной семитской семьи, чья история насчитывает более трех тысячелетий. Он неразрывно связан с <strong>Арамейским</strong> языком — лингва франка Древнего Ближнего Востока, на котором написаны части Талмуда. В то же время, <strong>Арабский</strong> язык является его ближайшим живым родственником: их грамматические структуры, системы корней и многие базовые слова практически идентичны
+              Иврит является жемчужиной семитской семьи, чья история насчитывает более трех тысячелетий. Он неразрывно связан с <strong>Арамейским</strong> языком — международным языком Древнего Ближнего Востока, на котором написаны части Талмуда. В то же время, <strong>Арабский</strong> язык является его ближайшим живым родственником: их грамматические структуры, системы корней и многие базовые слова практически идентичны
             </p>
 
             {/* Linguistic Scheme */}
@@ -381,7 +381,7 @@ const App: React.FC = () => {
                           </span>
                           <div className="space-y-1 font-patrick">
                                <div className="text-sm text-slate-700">
-                                 <span className="font-patrick text-indigo-900">Кириллица:</span> {selectedLetter.cyrillic}
+                                  Кириллица: информация из поля {selectedLetter.cyrillic}
                                </div>
                                <div className="text-sm text-indigo-900 leading-normal">
                                  {selectedLetter.historyNote}
