@@ -314,7 +314,7 @@ const App: React.FC = () => {
                   
                   {/* Архетип */}
                   <div className="text-center space-y-1 w-full">
-                    <span className="text-[16px] font-bold text-indigo-900 uppercase tracking-[0.2em] block">Архетип</span>
+                    <span className="text-[12px] font-bold text-indigo-900 uppercase tracking-[0.2em] block">Архетип</span>
                     <div className="relative -mt-6 text-[11rem] leading-none text-indigo-900 transform hover:scale-105 transition-transform duration-500 cursor-default">
                       {selectedLetter.proto}
                     </div>
@@ -329,8 +329,8 @@ const App: React.FC = () => {
 
                   {/* Современная форма */}
                   <div className="text-center w-full flex flex-col items-center pt-4">
-                    <span className="text-[16px] font-bold text-teal-600 uppercase tracking-[0.2em] block mb-2">Современная форма</span>
-                    <div className="text-[10rem] font-serif text-teal-600 font-bold leading-none mb-6">
+                    <span className="text-[12px] font-bold text-teal-600 uppercase tracking-[0.2em] block mb-2">Современная форма</span>
+                    <div className="text-[10rem] font-serif text-teal-600 font-bold leading-none mb-4">
                       {selectedLetter.letter}
                     </div>
                     <div className="text-indigo-900 text-xl font-patrick uppercase tracking-widest">
@@ -348,35 +348,35 @@ const App: React.FC = () => {
                           </h3>
                         </div>
                         <div className="bg-white p-8 rounded-[2rem] border border-teal-200 backdrop-blur-sm">
-                            <h4 className="text-[10px] font-bold text-teal-600 uppercase mb-3 flex items-center gap-2 tracking-widest">
+                            <h4 className="text-[12px] font-bold text-teal-600 uppercase mb-3 flex items-center gap-2 tracking-widest">
                                 <Zap size={14} /> Эволюция символа
                             </h4>
-                            <p className="text-slate-500 text-lg leading-relaxed">{selectedLetter.evolution}</p>
+                            <p className="text-slate-500 text-sm leading-normal">{selectedLetter.evolution}</p>
                         </div>
                     </div>
                     
                     <div className="bg-white p-8 rounded-[2rem] border border-teal-200 shadow-sm flex-grow">
-                        <h4 className="text-[10px] font-bold text-teal-600 uppercase mb-3 flex items-center gap-2 tracking-widest">
+                        <h4 className="text-[12px] font-bold text-teal-600 uppercase mb-3 flex items-center gap-2 tracking-widest">
                             <ScrollText size={14} /> Философский смысл
                         </h4>
-                        <p className="text-slate-500 text-lg leading-relaxed">
+                        <p className="text-slate-500 text-sm leading-normal">
                           {selectedLetter.philosophy}
                         </p>
                     </div>
 
                     <div className="grid grid-cols-2 gap-4">
                        <div className="bg-white p-6 rounded-2xl border border-indigo-900">
-                          <span className="text-[9px] uppercase font-bold text-indigo-900 block mb-3 flex items-center gap-2">
+                          <span className="text-[12px] uppercase font-bold text-indigo-900 block mb-3 flex items-center gap-2">
                              <Star size={12} /> Примеры слов
                           </span>
                           <div className="flex flex-wrap gap-2">
                              {selectedLetter.examples.map(ex => (
-                               <span key={ex} className="text-xs font-medium text-indigo-900 bg-white px-3 py-1 rounded-lg shadow-sm border border-indigo-50">{ex}</span>
+                               <span key={ex} className="text-sm font-medium text-indigo-900 bg-white px-3 py-1 rounded-lg shadow-sm border border-indigo-50">{ex}</span>
                              ))}
                           </div>
                        </div>
                        <div className="bg-white p-6 rounded-2xl border border-indigo-900">
-                          <span className="text-[9px] uppercase font-bold text-indigo-900 block mb-3 flex items-center gap-2">
+                          <span className="text-[12px] uppercase font-bold text-indigo-900 block mb-3 flex items-center gap-2">
                              <Info size={12} /> Заметка
                           </span>
                           <p className="text-[11px] text-indigo-900 leading-normal">{selectedLetter.historyNote}</p>
