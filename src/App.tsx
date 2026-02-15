@@ -65,7 +65,7 @@ const App: React.FC = () => {
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-100 text-teal-700 text-[10px] font-bold tracking-[0.2em] uppercase mb-6">
             <Compass size={14} /> Лингвистический Атлас
           </div>
-          <h1 className="text-5xl md:text-7xl font-serif font-bold mb-6 tracking-tight text-indigo-800">
+          <h1 className="text-5xl md:text-7xl font-serif font-bold mb-6 tracking-tight text-indigo-900">
             Иврит: <span className="text-teal-600">Язык Первооснов</span>
           </h1>
           <p className="text-lg md:text-xl text-slate-500 max-w-2xl mx-auto leading-relaxed">
@@ -83,7 +83,7 @@ const App: React.FC = () => {
           <section className="bg-white p-8 md:p-12 rounded-[2.5rem] shadow-sm border border-slate-100 space-y-8">
             <div className="flex items-center gap-4 text-teal-600">
               <div className="p-3 bg-teal-50 rounded-2xl"><History size={32} /></div>
-              <h2 className="text-3xl font-serif font-bold text-teal-600">Древо Жизни Языков</h2>
+              <h2 className="text-3xl font-serif font-bold text-indigo-900">Древо Жизни Языков</h2>
             </div>
             <p className="text-slate-600 leading-relaxed text-lg">
               Иврит является жемчужиной семитской семьи, чья история насчитывает более трех тысячелетий. Он неразрывно связан с <strong>Арамейским</strong> языком — лингва франка Древнего Ближнего Востока, на котором написаны части Талмуда. В то же время, <strong>Арабский</strong> язык является его ближайшим живым родственником: их грамматические структуры, системы корней и многие базовые слова практически идентичны.
@@ -117,7 +117,7 @@ const App: React.FC = () => {
           <section className="bg-white p-8 md:p-12 rounded-[2.5rem] shadow-sm border border-slate-100 space-y-6">
             <div className="flex items-center gap-4 text-teal-600">
               <div className="p-3 bg-teal-50 rounded-2xl"><ArrowLeftRight size={32} /></div>
-              <h2 className="text-3xl font-serif font-bold text-teal-600">Вспять Потоку Времени</h2>
+              <h2 className="text-3xl font-serif font-bold text-indigo-900">Вспять Потоку Времени</h2>
             </div>
             <p className="text-slate-600 leading-relaxed text-lg">
               Иврит пишется и читается <strong>справа налево</strong>, что поначалу кажется непривычным. Эта традиция восходит к временам, когда тексты высекались на камне: молоток держали в правой руке, а зубило в левой, двигаясь естественным образом. Такое направление письма считается «движением к сердцу», подчеркивая интроспективный характер языка. Книги на иврите открываются «с конца», приглашая читателя в иное измерение восприятия.
@@ -128,7 +128,7 @@ const App: React.FC = () => {
           <section className="bg-white p-8 md:p-12 rounded-[2.5rem] shadow-sm border border-slate-100 space-y-8">
             <div className="flex items-center gap-4 text-teal-600">
               <div className="p-3 bg-teal-50 rounded-2xl"><Library size={32} /></div>
-              <h2 className="text-3xl font-serif font-bold text-teal-600">Магия Трёх Букв</h2>
+              <h2 className="text-3xl font-serif font-bold text-indigo-900">Магия Трёх Букв</h2>
             </div>
             <p className="text-slate-600 leading-relaxed text-lg">
               Фундаментом иврита является концепция <strong>Шореша</strong> — трехбуквенного согласного корня. Это уникальный механизм, где одно ядро смысла порождает десятки слов: существительные, глаголы и прилагательные. Ниже приведен пример того, как корень К-Т-Б расцветает в разные значения.
@@ -179,7 +179,7 @@ const App: React.FC = () => {
           <div className="relative z-10 space-y-10">
             <div className="flex items-center gap-4 text-teal-700">
               <Zap size={40} />
-              <h2 className="text-3xl font-serif font-bold">От Иероглифа к Цифре</h2>
+              <h2 className="text-3xl font-serif font-bold text-indigo-900">От Иероглифа к Цифре</h2>
             </div>
             
             <p className="text-slate-600 text-lg leading-relaxed max-w-3xl">
@@ -191,7 +191,7 @@ const App: React.FC = () => {
               {/* Alef Evolution Card */}
               <div className="bg-white p-8 rounded-[2.5rem] shadow-sm space-y-6 border border-slate-100">
                 <div className="flex items-center justify-between border-b pb-4">
-                  <h4 className="text-xl font-bold text-slate-800">Алеф (Бык)</h4>
+                  <h4 className="text-xl font-bold text-indigo-900">Алеф (Бык)</h4>
                   <span className="px-3 py-1 bg-teal-50 text-teal-700 rounded-full text-xs font-bold uppercase tracking-wider">Голова силы</span>
                 </div>
                 
@@ -207,7 +207,7 @@ const App: React.FC = () => {
                   </div>
                   <ArrowRight className="text-teal-200" />
                   <div className="text-center">
-                    <span className="text-5xl block mb-1 font-serif text-slate-800 font-bold">A</span>
+                    <span className="text-5xl block mb-1 font-serif text-indigo-900 font-bold">A</span>
                     <span className="text-[10px] uppercase font-bold text-slate-400">Латынь</span>
                   </div>
                 </div>
@@ -220,7 +220,7 @@ const App: React.FC = () => {
               {/* Ain Evolution Card */}
               <div className="bg-white p-8 rounded-[2.5rem] shadow-sm space-y-6 border border-slate-100">
                 <div className="flex items-center justify-between border-b pb-4">
-                  <h4 className="text-xl font-bold text-slate-800">Аин (Глаз)</h4>
+                  <h4 className="text-xl font-bold text-indigo-900">Аин (Глаз)</h4>
                   <span className="px-3 py-1 bg-teal-50 text-teal-700 rounded-full text-xs font-bold uppercase tracking-wider">Прозрение</span>
                 </div>
 
@@ -236,7 +236,7 @@ const App: React.FC = () => {
                   </div>
                   <ArrowRight className="text-teal-200" />
                   <div className="text-center">
-                    <span className="text-5xl block mb-1 font-serif text-slate-800 font-bold">O</span>
+                    <span className="text-5xl block mb-1 font-serif text-indigo-900 font-bold">O</span>
                     <span className="text-[10px] uppercase font-bold text-slate-400">Латынь</span>
                   </div>
                 </div>
@@ -258,7 +258,7 @@ const App: React.FC = () => {
                 {/* Alphabet Explorer (Compact) */}
         <section className="space-y-8">
           <div className="text-center space-y-3">
-            <h2 className="text-4xl font-serif font-bold text-teal-600">Алфавит</h2>
+            <h2 className="text-4xl font-serif font-bold text-indigo-900">Алфавит</h2>
             <p className="text-slate-500">Нажмите на букву, чтобы узнать её историю и смысл.</p>
           </div>
 
@@ -315,7 +315,7 @@ const App: React.FC = () => {
 
         {/* Sophit Explaination */}
         <section className="bg-slate-100 p-10 rounded-[3rem] border border-slate-200">
-          <h2 className="text-2xl font-serif font-bold mb-4 text-teal-600">Пять Букв Софит (Окончания)</h2>
+          <h2 className="text-2xl font-serif font-bold mb-4 text-indigo-900">Пять Букв Софит (Окончания)</h2>
           <p className="text-slate-600 leading-relaxed mb-6">
             В иврите пять букв — <strong>Каф, Мем, Нун, Пе и Цади</strong> — меняют форму, если стоят в конце слова. Это помогает визуально разделять слова.
           </p>
@@ -333,7 +333,7 @@ const App: React.FC = () => {
           <div className="relative z-10 space-y-10">
             <div className="flex items-center gap-4 text-teal-700">
               <Calculator size={40} />
-              <h2 className="text-3xl font-serif font-bold text-teal-600">Гематрия</h2>
+              <h2 className="text-3xl font-serif font-bold text-indigo-900">Гематрия</h2>
             </div>
 
             <div className="grid md:grid-cols-2 gap-8">
