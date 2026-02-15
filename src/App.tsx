@@ -14,7 +14,8 @@ import {
   Zap,
   Eye,
   ChevronDown,
-  Info
+  Info,
+  Star
 } from 'lucide-react';
 
 interface Letter {
