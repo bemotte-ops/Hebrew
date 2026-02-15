@@ -78,7 +78,7 @@ const App: React.FC = () => {
         <div className="space-y-12">
 
           {/* 1. History Block */}
-          <section className="bg-white p-8 md:p-12 rounded-[2.5rem] shadow-sm border border-slate-100 space-y-8">
+          <section className="bg-white p-8 md:p-12 rounded-[2.5rem] shadow-sm border border-teal-200 space-y-8">
             <div className="text-center space-y-3">
               <h2 className="text-4xl font-patrick text-teal-700">Древо Жизни Языков</h2>
             </div>
@@ -111,7 +111,7 @@ const App: React.FC = () => {
           </section>
 
           {/* 2. Direction Block */}
-          <section className="bg-white p-8 md:p-12 rounded-[2.5rem] shadow-sm border border-slate-100 space-y-6">
+          <section className="bg-white p-8 md:p-12 rounded-[2.5rem] shadow-sm border border-teal-200 space-y-6">
             <div className="text-center space-y-3">
               <h2 className="text-4xl font-patrick text-teal-700">Вспять Потоку Времени</h2>
             </div>
@@ -121,7 +121,7 @@ const App: React.FC = () => {
           </section>
 
           {/* 3. Shoresh Block */}
-          <section className="bg-white p-8 md:p-12 rounded-[2.5rem] shadow-sm border border-slate-100 space-y-8">
+          <section className="bg-white p-8 md:p-12 rounded-[2.5rem] shadow-sm border border-teal-200 space-y-8">
             <div className="text-center space-y-3">
               <h2 className="text-4xl font-patrick text-teal-700">Магия Трёх Букв</h2>
             </div>
@@ -173,7 +173,6 @@ const App: React.FC = () => {
         <section className="bg-white p-10 md:p-14 rounded-[4rem] border border-teal-200 relative overflow-hidden">
           <div className="relative z-10 space-y-10">
             <div className="flex items-center gap-4 text-teal-700">
-              <Zap size={40} />
               <h2 className="text-4xl font-patrick text-teal-700">От Иероглифа к Цифре</h2>
             </div>
             
@@ -192,7 +191,7 @@ const App: React.FC = () => {
                 
                 <div className="flex items-center justify-around py-4">
                   <div className="text-center">
-                    <span className="text-5xl block mb-1 text-slate-300">𓃾</span>
+                    <span className="text-5xl block mb-1 text-slate-500">𓃾</span>
                     <span className="text-[10px] uppercase font-bold text-slate-400">Иероглиф</span>
                   </div>
                   <ArrowRight className="text-teal-200" />
@@ -221,7 +220,7 @@ const App: React.FC = () => {
 
                 <div className="flex items-center justify-around py-4">
                   <div className="text-center">
-                    <span className="text-5xl block mb-1 text-slate-300">𓁹</span>
+                    <span className="text-5xl block mb-1 text-slate-500">𓁹</span>
                     <span className="text-[10px] uppercase font-bold text-slate-400">Иероглиф</span>
                   </div>
                   <ArrowRight className="text-teal-200" />
@@ -257,7 +256,7 @@ const App: React.FC = () => {
             <p className="text-slate-500">Нажмите на букву, чтобы узнать её историю и смысл</p>
           </div>
 
-          <div className="bg-white p-6 md:p-10 rounded-[3rem] shadow-sm border border-slate-100">
+          <div className="bg-white p-6 md:p-10 rounded-[3rem] shadow-sm border border-teal-200">
             {/* Grid with Numbers */}
             <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-11 gap-3 mb-12">
               {alphabet.map((item) => (
@@ -279,11 +278,11 @@ const App: React.FC = () => {
             </div>
 
             {/* Compact Letter Detail */}
-            <div className="bg-slate-50 rounded-[2.5rem] p-8 border border-slate-200">
+            <div className="bg-slate-50 rounded-[2.5rem] p-8 border border-teal-200">
               <div className="grid md:grid-cols-12 gap-10 items-start">
                 <div className="md:col-span-3 text-center space-y-4">
                   <div className="text-9xl font-serif text-teal-600 leading-none">{selectedLetter.letter}</div>
-                  <div className="bg-teal-100 text-teal-700 py-2 rounded-xl font-bold text-sm tracking-widest uppercase">
+                  <div className="bg-white text-teal-700 py-2 rounded-xl font-bold text-sm tracking-widest uppercase">
                     Число: {selectedLetter.number}
                   </div>
                   {selectedLetter.suffix && (
@@ -309,7 +308,7 @@ const App: React.FC = () => {
         </section>
 
         {/* Sophit Explaination */}
-        <section className="bg-slate-100 p-10 rounded-[3rem] border border-slate-200">
+        <section className="bg-white p-10 rounded-[3rem] border border-teal-200">
           <h2 className="text-4xl font-patrick mb-4 text-teal-700">Пять Букв Софит (Окончания)</h2>
           <p className="text-slate-600 leading-relaxed mb-6">
             В иврите пять букв — <strong>Каф, Мем, Нун, Пе и Цади</strong> — меняют форму, если стоят в конце слова. Это помогает визуально разделять слова.
@@ -324,10 +323,9 @@ const App: React.FC = () => {
         </section>
 
         {/* Gematria Calculation Block */}
-        <section className="bg-teal-50 p-10 md:p-14 rounded-[4rem] border border-teal-200 relative overflow-hidden">
+        <section className="bg-white p-10 md:p-14 rounded-[4rem] border border-teal-200 relative overflow-hidden">
           <div className="relative z-10 space-y-10">
-            <div className="flex items-center gap-4 text-teal-700">
-              <Calculator size={40} />
+            <div className="text-center space-y-3">
               <h2 className="text-4xl font-patrick text-teal-700">Гематрия</h2>
             </div>
 
