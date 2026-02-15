@@ -73,6 +73,14 @@ const App: React.FC = () => {
 
       {/* Header Section */}
       <header className="relative pt-20 pb-24 px-6 bg-gradient-to-b from-teal-50 to-white overflow-hidden">
+        <div className="absolute inset-0 z-0 opacity-10">
+          <img 
+            src={headerImage} 
+            alt="Parchment Background" 
+            className="w-full h-full object-cover"
+            onError={handleImageError}
+          />
+        </div>
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <h1 className="text-5xl md:text-8xl font-patrick mb-6 tracking-tight text-indigo-900">
             Иврит
