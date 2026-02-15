@@ -305,15 +305,15 @@ const App: React.FC = () => {
                   <div className="md:col-span-8 flex flex-col gap-10">
                     {/* Right Top: Evolution */}
                     <div className="space-y-4">
-                      <h3 className="text-4xl font-serif font-bold text-indigo-900 flex flex-wrap items-center gap-3">
+                      <h3 className="text-4xl font-patrick text-indigo-900 flex flex-wrap items-center gap-3">
                          {selectedLetter.name} 
                          <span className="text-teal-600 text-2xl">— {selectedLetter.meaning}</span>
                       </h3>
                       <div className="bg-white/60 p-6 rounded-3xl border border-teal-200">
                         <h4 className="text-[10px] font-bold text-teal-600 uppercase mb-3 flex items-center gap-2">
-                           <Zap size={14} /> Эволюция смысла
+                           <Zap size={14} /> Эволюция символа
                         </h4>
-                        <p className="text-slate-500 leading-relaxed text-lg italic font-patrick">
+                        <p className="text-slate-600 leading-relaxed text-lg font-patrick">
                           {selectedLetter.evolution}
                         </p>
                       </div>
@@ -325,7 +325,7 @@ const App: React.FC = () => {
                         <h4 className="text-[10px] font-bold text-teal-600 uppercase mb-4 flex items-center gap-2">
                           <ScrollText size={16} /> Философский смысл
                         </h4>
-                        <p className="text-slate-500 leading-relaxed text-lg">
+                        <p className="text-slate-600 leading-relaxed text-lg font-patrick">
                           {selectedLetter.philosophy}
                         </p>
                         <div className="mt-6 flex flex-wrap gap-2">
