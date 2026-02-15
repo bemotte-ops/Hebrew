@@ -381,12 +381,12 @@ const App: React.FC = () => {
                              <Info size={12} /> Заметка
                           </span>
                           <div className="space-y-1">
-                               <div className="text-sm font-patrick text-indigo-900">
-                                  Кириллица: {selectedLetter.cyrillic}
-                               </div>
-                               <div className="text-sm text-indigo-900 leading-normal">
+                              <div className="text-sm text-indigo-900 leading-normal">
                                  {selectedLetter.historyNote}
-                               </div>
+                              </div>
+                              <div className="text-sm font-patrick text-indigo-900">
+                                <strong>Кириллица:</strong> {selectedLetter.cyrillic}
+                              </div>
                           </div>
                         </div>
                     </div>
@@ -525,12 +525,6 @@ const App: React.FC = () => {
                 ))}
               </tbody>
             </table>
-          </div>
-          
-          <div className="p-6 bg-slate-50 rounded-2xl border border-dashed border-slate-200">
-             <p className="text-sm text-slate-500 text-center italic font-patrick">
-               * В таблице собраны все 22 буквы и 5 окончаний (софитов).
-             </p>
           </div>
         </section>        
 
