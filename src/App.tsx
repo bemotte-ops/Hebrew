@@ -62,9 +62,9 @@ const App: React.FC = () => {
       {/* Header Section */}
       <header className="relative pt-20 pb-24 px-6 bg-gradient-to-b from-teal-50 to-white overflow-hidden">
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          <h1 className="text-5xl md:text-7xl font-serif font-bold mb-6 tracking-tight text-indigo-950">
+          <h1 className="text-5xl md:text-7xl font-serif font-bold mb-6 tracking-tight text-indigo-900">
             Иврит
-            <span className="text-teal-600">Язык Первооснов</span>
+            <span className="text-teal-700">Язык Первооснов</span>
           </h1>
           <p className="text-lg md:text-xl text-slate-500 max-w-2xl mx-auto leading-relaxed">
             Исследуйте архитектуру древнейшего языка, где каждая буква является одновременно числом, символом и ключом к пониманию культуры.
@@ -80,8 +80,7 @@ const App: React.FC = () => {
           {/* 1. History Block */}
           <section className="bg-white p-8 md:p-12 rounded-[2.5rem] shadow-sm border border-slate-100 space-y-8">
             <div className="flex items-center gap-4 text-teal-600">
-              <div className="p-3 bg-teal-50 rounded-2xl"><History size={32} /></div>
-              <h2 className="text-3xl font-serif font-bold text-indigo-900">Древо Жизни Языков</h2>
+              <h2 className="text-3xl font-serif font-bold text-teal-700">Древо Жизни Языков</h2>
             </div>
             <p className="text-slate-600 leading-relaxed text-lg">
               Иврит является жемчужиной семитской семьи, чья история насчитывает более трех тысячелетий. Он неразрывно связан с <strong>Арамейским</strong> языком — лингва франка Древнего Ближнего Востока, на котором написаны части Талмуда. В то же время, <strong>Арабский</strong> язык является его ближайшим живым родственником: их грамматические структуры, системы корней и многие базовые слова практически идентичны.
@@ -114,8 +113,7 @@ const App: React.FC = () => {
           {/* 2. Direction Block */}
           <section className="bg-white p-8 md:p-12 rounded-[2.5rem] shadow-sm border border-slate-100 space-y-6">
             <div className="flex items-center gap-4 text-teal-600">
-              <div className="p-3 bg-teal-50 rounded-2xl"><ArrowLeftRight size={32} /></div>
-              <h2 className="text-3xl font-serif font-bold text-indigo-900">Вспять Потоку Времени</h2>
+              <h2 className="text-3xl font-serif font-bold text-teal-700">Вспять Потоку Времени</h2>
             </div>
             <p className="text-slate-600 leading-relaxed text-lg">
               Иврит пишется и читается <strong>справа налево</strong>, что поначалу кажется непривычным. Эта традиция восходит к временам, когда тексты высекались на камне: молоток держали в правой руке, а зубило в левой, двигаясь естественным образом. Такое направление письма считается «движением к сердцу», подчеркивая интроспективный характер языка. Книги на иврите открываются «с конца», приглашая читателя в иное измерение восприятия.
@@ -125,8 +123,7 @@ const App: React.FC = () => {
           {/* 3. Shoresh Block */}
           <section className="bg-white p-8 md:p-12 rounded-[2.5rem] shadow-sm border border-slate-100 space-y-8">
             <div className="flex items-center gap-4 text-teal-600">
-              <div className="p-3 bg-teal-50 rounded-2xl"><Library size={32} /></div>
-              <h2 className="text-3xl font-serif font-bold text-indigo-900">Магия Трёх Букв</h2>
+              <h2 className="text-3xl font-serif font-bold text-teal-700">Магия Трёх Букв</h2>
             </div>
             <p className="text-slate-600 leading-relaxed text-lg">
               Фундаментом иврита является концепция <strong>Шореша</strong> — трехбуквенного согласного корня. Это уникальный механизм, где одно ядро смысла порождает десятки слов: существительные, глаголы и прилагательные. Ниже приведен пример того, как корень К-Т-Б расцветает в разные значения.
@@ -165,7 +162,7 @@ const App: React.FC = () => {
                   </tr>
                 </tbody>
               </table>
-              <div className="bg-teal-50 p-4 text-center text-teal-700 text-sm font-bold">
+              <div className="bg-teal-600 p-4 text-center text-white text-lg font-serif italic">
                 Общий корень: כ - ת - ב (Письменность)
               </div>
             </div>
@@ -177,7 +174,7 @@ const App: React.FC = () => {
           <div className="relative z-10 space-y-10">
             <div className="flex items-center gap-4 text-teal-700">
               <Zap size={40} />
-              <h2 className="text-3xl font-serif font-bold text-indigo-900">От Иероглифа к Цифре</h2>
+              <h2 className="text-3xl font-serif font-bold text-teal-700">От Иероглифа к Цифре</h2>
             </div>
             
             <p className="text-slate-600 text-lg leading-relaxed max-w-3xl">
@@ -256,7 +253,7 @@ const App: React.FC = () => {
                 {/* Alphabet Explorer (Compact) */}
         <section className="space-y-8">
           <div className="text-center space-y-3">
-            <h2 className="text-4xl font-serif font-bold text-indigo-900">Алфавит</h2>
+            <h2 className="text-4xl font-serif font-bold text-teal-700">Алфавит</h2>
             <p className="text-slate-500">Нажмите на букву, чтобы узнать её историю и смысл.</p>
           </div>
 
@@ -313,7 +310,7 @@ const App: React.FC = () => {
 
         {/* Sophit Explaination */}
         <section className="bg-slate-100 p-10 rounded-[3rem] border border-slate-200">
-          <h2 className="text-2xl font-serif font-bold mb-4 text-indigo-900">Пять Букв Софит (Окончания)</h2>
+          <h2 className="text-2xl font-serif font-bold mb-4 text-teal-700">Пять Букв Софит (Окончания)</h2>
           <p className="text-slate-600 leading-relaxed mb-6">
             В иврите пять букв — <strong>Каф, Мем, Нун, Пе и Цади</strong> — меняют форму, если стоят в конце слова. Это помогает визуально разделять слова.
           </p>
@@ -331,7 +328,7 @@ const App: React.FC = () => {
           <div className="relative z-10 space-y-10">
             <div className="flex items-center gap-4 text-teal-700">
               <Calculator size={40} />
-              <h2 className="text-3xl font-serif font-bold text-indigo-900">Гематрия</h2>
+              <h2 className="text-3xl font-serif font-bold text-teal-700">Гематрия</h2>
             </div>
 
             <div className="grid md:grid-cols-2 gap-8">
