@@ -421,7 +421,7 @@ const App: React.FC = () => {
                     </div>
 
                     <div className="flex flex-col items-center gap-2">
-                      <div className="text-5xl font-serif text-teal-600 font-bold">{l.suffix}</div>
+                      <div className="text-5xl font-serif text-indigo-900">{l.suffix}</div>
                     </div>
                   </div>
                 </div>
@@ -483,7 +483,7 @@ const App: React.FC = () => {
         {/* 4. Full Alphabet Table Summary - Updated Styles */}
         <section className="bg-white p-8 md:p-12 rounded-[2.5rem] shadow-sm border border-teal-200 space-y-10">
           <div className="text-center w-full">
-            <h2 className="text-3xl font-patrick uppercase tracking-widest text-teal-600">
+            <h2 className="text-4xl font-patrick text-teal-600">
               Сводная матрица алфавита
             </h2>
           </div>
@@ -506,7 +506,7 @@ const App: React.FC = () => {
                     <tr className={`hover:bg-teal-50/30 transition-colors ${idx % 2 === 0 ? 'bg-white' : 'bg-slate-50/50'}`}>
                       <td className="px-6 py-4 text-center text-teal-600 font-patrick">{item.number}</td>
                       <td className="px-6 py-4 text-center text-3xl text-indigo-900 font-serif leading-none">{item.proto}</td>
-                      <td className="px-6 py-4 text-center text-3xl font-serif text-teal-600 font-bold">{item.letter}</td>
+                      <td className="px-6 py-4 text-center text-3xl font-serif text-teal-600">{item.letter}</td>
                       <td className="px-6 py-4 text-center text-indigo-900 font-patrick text-xl">{item.name}</td>
                       <td className="px-6 py-4 text-center text-slate-500">{item.cyrillic}</td>
                     </tr>
@@ -516,7 +516,7 @@ const App: React.FC = () => {
                       <tr className={`hover:bg-teal-50/30 transition-colors italic ${idx % 2 === 0 ? 'bg-white' : 'bg-slate-50/50'}`}>
                         <td className="px-6 py-4 text-center text-teal-400 font-patrick text-xs">{item.number}</td>
                         <td className="px-6 py-4 text-center text-indigo-900">—</td>
-                        <td className="px-6 py-4 text-center text-4xl font-serif text-teal-400 font-bold">{item.suffix}</td>
+                        <td className="px-6 py-4 text-center text-4xl font-serif text-teal-400">{item.suffix}</td>
                         <td className="px-6 py-4 text-center text-indigo-900 text-sm">{item.name} (Софит)</td>
                         <td className="px-6 py-4 text-center text-slate-500 text-xs">—</td>
                       </tr>
