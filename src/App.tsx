@@ -61,8 +61,8 @@ const App: React.FC = () => {
   const sofitLetters = alphabet.filter(l => l.suffix);
   const [selectedLetter, setSelectedLetter] = useState<Letter>(alphabet[0]);
 
-  const headerImage = "https://raw.githubusercontent.com/bemotte-ops/Hebrew/main/src/parchment-bg.png"; 
-  const footerImage = "https://raw.githubusercontent.com/bemotte-ops/Hebrew/main/src/footer-texture.png";
+  const headerImage = "https://raw.githubusercontent.com/bemotte-ops/Hebrew/main/parchment-bg.png"; 
+  const footerImage = "https://raw.githubusercontent.com/bemotte-ops/Hebrew/main/footer-texture.png";
 
   const handleImageError = (e: React.SyntheticEvent<HTMLImageElement, Event>) => {
     e.currentTarget.style.display = 'none';
@@ -565,6 +565,9 @@ const App: React.FC = () => {
             </div>
             <p className="text-slate-400 text-[10px] uppercase tracking-[0.3em] px-4">
               © 2026 Лингвистический проект "Код Бытия" • СИНХРОНИЗИРОВАНО С GITHUB
+            </p>
+            <p className="text-teal-600 font-patrick text-sm italic">
+                Вначале было Слово...
             </p>
          </div>
       </footer>
