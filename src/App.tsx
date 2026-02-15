@@ -62,10 +62,7 @@ const App: React.FC = () => {
       {/* Header Section */}
       <header className="relative pt-20 pb-24 px-6 bg-gradient-to-b from-teal-50 to-white overflow-hidden">
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-100 text-teal-700 text-[10px] font-bold tracking-[0.2em] uppercase mb-6">
-            <Compass size={14} /> Лингвистический Атлас
-          </div>
-          <h1 className="text-5xl md:text-7xl font-serif font-bold mb-6 tracking-tight text-indigo-900">
+          <h1 className="text-5xl md:text-7xl font-serif font-bold mb-6 tracking-tight text-indigo-950">
             Иврит: <span className="text-teal-600">Язык Первооснов</span>
           </h1>
           <p className="text-lg md:text-xl text-slate-500 max-w-2xl mx-auto leading-relaxed">
@@ -175,7 +172,7 @@ const App: React.FC = () => {
         </div>
 
         {/* Evolution Section: ALEF and AIN (Fixed ReferenceError and updated design) */}
-        <section className="bg-teal-50 p-10 md:p-14 rounded-[4rem] border border-teal-200 relative overflow-hidden">
+        <section className="bg-white p-10 md:p-14 rounded-[4rem] border border-teal-200 relative overflow-hidden">
           <div className="relative z-10 space-y-10">
             <div className="flex items-center gap-4 text-teal-700">
               <Zap size={40} />
@@ -189,7 +186,7 @@ const App: React.FC = () => {
 
             <div className="grid md:grid-cols-2 gap-8">
               {/* Alef Evolution Card */}
-              <div className="bg-white p-8 rounded-[2.5rem] shadow-sm space-y-6 border border-slate-100">
+              <div className="bg-teal-50 p-8 rounded-[2.5rem] shadow-sm space-y-6 border border-teal-200">
                 <div className="flex items-center justify-between border-b pb-4">
                   <h4 className="text-xl font-bold text-indigo-900">Алеф (Бык)</h4>
                   <span className="px-3 py-1 bg-teal-50 text-teal-700 rounded-full text-xs font-bold uppercase tracking-wider">Голова силы</span>
@@ -218,7 +215,7 @@ const App: React.FC = () => {
               </div>
 
               {/* Ain Evolution Card */}
-              <div className="bg-white p-8 rounded-[2.5rem] shadow-sm space-y-6 border border-slate-100">
+              <div className="bg-teal-50 p-8 rounded-[2.5rem] shadow-sm space-y-6 border border-teal-200">
                 <div className="flex items-center justify-between border-b pb-4">
                   <h4 className="text-xl font-bold text-indigo-900">Аин (Глаз)</h4>
                   <span className="px-3 py-1 bg-teal-50 text-teal-700 rounded-full text-xs font-bold uppercase tracking-wider">Прозрение</span>
@@ -247,9 +244,9 @@ const App: React.FC = () => {
               </div>
             </div>
 
-            <div className="text-center p-6 bg-white/50 border border-teal-100 text-teal-800 rounded-3xl">
-              <p className="text-sm font-medium italic">
-                Интересный факт: Почти весь латинский алфавит — это «перевернутые» или «отзеркаленные» образы древних букв иврита.
+            <div className="text-center p-7 bg-teal-600 text-white rounded-3xl">
+              <p className="text-lg font-serif italic">
+                Интересный факт: почти весь латинский алфавит — это «перевернутые» или «отзеркаленные» образы древних букв иврита
               </p>
             </div>
           </div>
@@ -272,7 +269,7 @@ const App: React.FC = () => {
                   className={`group relative py-3 rounded-2xl transition-all flex flex-col items-center justify-center border-2 ${
                     selectedLetter.letter === item.letter
                       ? 'bg-teal-600 text-white border-teal-500 shadow-lg -translate-y-1'
-                      : 'bg-white hover:bg-slate-50 border-slate-100 text-slate-700'
+                      : 'bg-white hover:bg-slate-50 border-slate-100 text-indigo-900'
                   }`}
                 >
                   <span className="text-2xl font-serif font-bold">{item.letter}</span>
@@ -346,7 +343,7 @@ const App: React.FC = () => {
                   <div className="flex justify-between"><span>Бет (ב)</span> <span>2</span></div>
                   <div className="flex justify-between"><span>Хей (ה)</span> <span>5</span></div>
                 </div>
-                <div className="pt-4 border-t flex justify-between font-bold text-2xl text-teal-700">
+                <div className="pt-4 border-t flex justify-between font-serif italic text-2xl text-teal-700">
                   <span>ИТОГО:</span> <span>1 + 5 + 2 + 5 = 13</span>
                 </div>
               </div>
@@ -359,15 +356,15 @@ const App: React.FC = () => {
                   <div className="flex justify-between"><span>Хет (ח)</span> <span>8</span></div>
                   <div className="flex justify-between"><span>Далет (ד)</span> <span>4</span></div>
                 </div>
-                <div className="pt-4 border-t flex justify-between font-bold text-2xl text-teal-700">
+                <div className="pt-4 border-t flex justify-between font-serif italic text-2xl text-teal-700">
                   <span>ИТОГО:</span> <span>1 + 8 + 4 = 13</span>
                 </div>
               </div>
             </div>
 
-            <div className="text-center p-8 bg-teal-600 text-white rounded-3xl shadow-xl">
-              <p className="text-xl font-serif italic">
-                "Совпадение этих чисел говорит о том, что в культуре иврита Любовь и Единство — это одна и та же математическая и духовная величина."
+            <div className="text-center p-7 bg-teal-600 text-white rounded-3xl shadow-xl">
+              <p className="text-lg font-serif italic">
+                Совпадение этих чисел говорит о том, что в культуре иврита Любовь и Единство — это одна и та же математическая и духовная величина
               </p>
             </div>
           </div>
