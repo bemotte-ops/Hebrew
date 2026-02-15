@@ -72,7 +72,7 @@ const App: React.FC = () => {
         </div>
       </header>
 
-      <main className="max-w-5xl mx-auto pb-24 px-6 space-y-20">
+      <main className="max-w-5xl mx-auto pb-24 px-6 space-y-15 mt-15">
 
         {/* Sequence Blocks */}
         <div className="space-y-12">

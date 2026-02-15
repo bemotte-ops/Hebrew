@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Inter:wght@400;700&display=swap');
 :root {
   --text: #6b6375;
   --text-h: #08060d;
@@ -12,7 +13,7 @@
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 
   --sans: 'Inter', system-ui, -apple-system, sans-serif;
-  --heading: 'Playfair Display', serif;
+  --heading: 'Patrick Hand', cursive;
   --mono: ui-monospace, Consolas, monospace;
 
   font: 18px/145% var(--sans);
@@ -89,4 +90,8 @@ code {
   background: var(--code-bg);
   padding: 4px 8px;
   border-radius: 4px;
+}
+
+.font-patrick {
+  font-family: 'Patrick Hand', cursive !important;
 }
