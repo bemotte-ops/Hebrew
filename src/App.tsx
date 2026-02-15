@@ -12,7 +12,8 @@ import {
   ArrowRight,
   Calculator,
   Zap,
-  Eye
+  Eye,
+  ChevronDown
 } from 'lucide-react';
 
 interface Letter {
@@ -53,6 +54,8 @@ const App: React.FC = () => {
     { letter: 'ש', name: 'Шин', proto: '𓌓', meaning: 'Зуб', evolution: 'Рисовалась как три резца или боевой лук. Это символ огня и разрушительной энергии, которая необходима, чтобы уничтожить старое', number: 300, examples: ['שלום (Мир)', 'שמים (Небеса)'], philosophy: 'Божественный огонь и баланс. Три ветви Шин символизируют истину, правосудие и мир', historyNote: 'Арабская Шин (ش).' },
     { letter: 'ת', name: 'Тав', proto: '𓏴', meaning: 'Знак / Печать', evolution: 'Изначально выглядела как крест или метка. Это была печать владельца или знак завершения работы. Тав ставит точку в алфавите', number: 400, examples: ['תורה (Учение)', 'תפילה (Молитва)'], philosophy: 'Завершенность, истина и печать Творца на творении. Тав учит доводить дело до финала', historyNote: 'Арабская Та (ت).' },
   ];
+
+  const sofitLetters = alphabet.filter(l => l.suffix);
 
   const [selectedLetter, setSelectedLetter] = useState<Letter>(alphabet[0]);
 
@@ -387,7 +390,7 @@ const App: React.FC = () => {
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
-              {sofitLetters.map((l) => (
+              {sofitLetters.map((l: Letter) => (
                 <div key={l.letter} className="bg-teal-50 rounded-3xl p-6 border border-teal-200 text-center space-y-4 hover:border-teal-200 transition-colors">
                   <div className="text-[10px] font-bold text-teal-600 uppercase tracking-widest">Буква {l.name}</div>
                   
