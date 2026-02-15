@@ -281,20 +281,21 @@ const App: React.FC = () => {
                <div className="grid md:grid-cols-12 gap-12 relative z-10">
                   
                   {/* LEFT COLUMN: VISUALS */}
-                  <div className="md:col-span-4 flex flex-col gap-8 items-center md:items-start">
+                  <div className="md:col-span-4 flex flex-col justify-between gap-6 items-center md:items-start">
                     {/* Left Top: Hieroglyph */}
                     <div className="w-full space-y-4">
-                      <span className="text-[10px] uppercase font-bold text-teal-600 tracking-widest block text-center md:text-left">Прото-иероглиф</span>
-                      <div className="w-32 h-32 md:w-40 md:h-40 bg-white rounded-3xl flex items-center justify-center border border-teal-200 shadow-inner text-10xl text-slate-500 mx-auto md:mx-0">
+                      <span className="text-[10px] uppercase font-bold text-center text-teal-600 tracking-widest block text-center">Прото-иероглиф</span>
+                      <div className="w-full h-32 md:h-48 bg-white rounded-3xl flex items-center justify-center border border-teal-200 shadow-inner text-10xl text-slate-500">
                         {selectedLetter.proto}
                       </div>
                     </div>
                     {/* Left Bottom: Modern Letter */}
-                    <div className="w-full space-y-4 pt-4">
-                      <span className="text-[10px] uppercase font-bold text-teal-600 tracking-widest block text-center md:text-left">Современная форма</span>
-                      <div className="text-9xl font-serif text-teal-600 leading-none text-center md:text-left font-bold">
+                    <div className="flex-grow flex items-center justify-center w-full py-4"></div>
+                      <span className="text-[10px] uppercase font-bold text-center text-teal-600 tracking-widest block text-center">Современная форма</span>
+                      <div className="text-10xl font-serif text-teal-600 leading-none text-center font-bold">
                         {selectedLetter.letter}
                       </div>
+                      <div className="w-full space-y-4">
                       <div className="bg-teal-600 text-white py-2 px-4 rounded-xl font-bold text-xs tracking-widest uppercase inline-block mx-auto md:mx-0">
                         Гематрия: {selectedLetter.number}
                       </div>
