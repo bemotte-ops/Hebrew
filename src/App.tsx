@@ -313,24 +313,24 @@ const App: React.FC = () => {
                 <div className="md:col-span-4 flex flex-col items-center justify-between bg-slate-50 rounded-[2.5rem] p-10 border border-indigo-900 min-h-[480px]">
                   
                   {/* Архетип */}
-                  <div className="text-center space-y-2">
+                  <div className="text-center space-y-1 w-full">
                     <span className="text-[10px] font-bold text-indigo-900 uppercase tracking-[0.2em] block">Архетип</span>
-                    <div className="text-[11rem] text-indigo-900 transform hover:scale-110 transition-transform duration-500 cursor-default">
+                    <div className="relative -mt-6 text-[11rem] leading-none text-indigo-900 transform hover:scale-105 transition-transform duration-500 cursor-default">
                       {selectedLetter.proto}
                     </div>
                   </div>
 
                   {/* Визуальный разделитель */}
                   <div className="flex flex-col items-center">
-                    <div className="h-8 w-px bg-gradient-to-b from-slate-200 to-transparent"></div>
-                    <ChevronDown className="text-slate-500 animate-pulse my-2" size={24} />
+                    <div className="h-6 w-px bg-gradient-to-b from-slate-200 to-transparent"></div>
+                    <ChevronDown className="text-slate-500 animate-pulse my-1" size={24} />
                     <div className="h-8 w-px bg-gradient-to-t from-slate-200 to-transparent"></div>
                   </div>
 
                   {/* Современная форма */}
-                  <div className="text-center space-y-4">
-                    <span className="text-[10px] font-bold text-teal-600 uppercase tracking-[0.2em] block">Современная форма</span>
-                    <div className="text-[10rem] font-serif text-teal-600 font-bold leading-none mb-12">
+                  <div className="text-center w-full flex flex-col items-center pt-4">
+                    <span className="text-[10px] font-bold text-teal-600 uppercase tracking-[0.2em] block mb-2">Современная форма</span>
+                    <div className="text-[10rem] font-serif text-teal-600 font-bold leading-none mb-8">
                       {selectedLetter.letter}
                     </div>
                     <div className="text-indigo-900 text-xl font-patrick uppercase tracking-widest">
