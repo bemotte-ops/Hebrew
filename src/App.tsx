@@ -182,63 +182,88 @@ const App: React.FC = () => {
             </p>
 
             <div className="grid md:grid-cols-2 gap-8">
-              {/* Alef Evolution Card */}
-              <div className="bg-teal-50 p-8 rounded-[2.5rem] shadow-sm space-y-6 border border-teal-200">
-                <div className="flex items-center justify-between border-b pb-4">
-                  <h4 className="text-xl font-bold text-indigo-900">Алеф (Бык)</h4>
-                  <span className="px-3 py-1 bg-teal-50 text-teal-700 rounded-full text-xs font-bold uppercase tracking-wider">Голова силы</span>
-                </div>
-                
-                <div className="flex items-center justify-around py-4">
-                  <div className="text-center">
-                    <span className="text-8xl block mb-1 text-slate-500">𓃾</span>
-                    <span className="text-[10px] uppercase font-bold text-slate-400">Иероглиф</span>
+          
+              {[
+                { 
+                  title: "Алеф (Бык)", 
+                  tag: "Голова силы", 
+                  proto: "𓃾", 
+                  hebrew: "א", 
+                  latin: "A", 
+                  desc: "Рога и морда быка со временем превратились в перекрещенные линии. В латыни символ перевернулся, став буквой «A»" 
+                },
+                { 
+                  title: "Аин (Глаз)", 
+                  tag: "Прозрение", 
+                  proto: "𓁹", 
+                  hebrew: "ע", 
+                  latin: "O", 
+                  desc: "Буква Аин изначально рисовалась как глаз. В латинском алфавите она упростилась до круга — буквы «O»" 
+                }
+              ].map((item, idx) => (
+                <div key={idx} className="bg-teal-50 p-10 rounded-[2.5rem] shadow-sm border border-teal-200 space-y-10">
+                  <div className="flex items-center justify-between border-b pb-4">
+                    <h4 className="text-xl font-bold text-indigo-900">{item.title}</h4>
+                    <span className="px-3 py-1 bg-teal-50 text-teal-700 rounded-full text-[10px] font-bold uppercase tracking-tighter">{item.tag}</span>
                   </div>
-                  <ArrowRight className="text-slate-400" />
-                  <div className="text-center">
-                    <span className="text-6xl block mb-1 font-serif text-teal-600">א</span>
-                    <span className="text-[10px] uppercase font-bold text-slate-400">Иврит</span>
-                  </div>
-                  <ArrowRight className="text-slate-400" />
-                  <div className="text-center">
-                    <span className="text-5xl block mb-1 font-serif text-indigo-900 font-bold">A</span>
-                    <span className="text-[10px] uppercase font-bold text-slate-400">Латынь</span>
-                  </div>
-                </div>
+              
+                  <div className="w-full">
+                    {/* ВЕРХНИЙ РЯД: СИМВОЛЫ */}
+                    <div className="grid grid-cols-5 gap-0 items-center justify-items-center w-full">
+                    
+                      {/* 1. Иероглиф - экстремальный подъем через -mt-12 и translate */}
+                      <div className="h-24 flex items-center justify-center">
+                        <span className="text-7xl md:text-8xl text-slate-500 select-none -mt-12 transform -translate-y-2">
+                          {item.proto}
+                        </span>
+                      </div>
+                    
+                      {/* Стрелка 1 */}
+                      <div className="h-24 flex items-center justify-center">
+                        <ArrowRight className="text-slate-300" size={24} />
+                      </div>
 
-                <p className="text-sm text-slate-500 leading-relaxed border-t pt-4">
-                  Рога и морда быка со временем превратились в перекрещенные линии. В латыни символ перевернулся рогами вниз, став буквой «A»
-                </p>
-              </div>
+                      {/* 2. Иврит */}
+                      <div className="h-24 flex items-center justify-center">
+                        <span className="text-6xl md:text-7xl font-serif text-teal-600 font-bold select-none">
+                          {item.hebrew}
+                        </span>
+                      </div>
 
-              {/* Ain Evolution Card */}
-              <div className="bg-teal-50 p-8 rounded-[2.5rem] shadow-sm space-y-6 border border-teal-200">
-                <div className="flex items-center justify-between border-b pb-4">
-                  <h4 className="text-xl font-bold text-indigo-900">Аин (Глаз)</h4>
-                  <span className="px-3 py-1 bg-teal-50 text-teal-700 rounded-full text-xs font-bold uppercase tracking-wider">Прозрение</span>
+                      {/* Стрелка 2 */}
+                      <div className="h-24 flex items-center justify-center">
+                        <ArrowRight className="text-slate-300" size={24} />
+                      </div>
+
+                      {/* 3. Латынь */}
+                      <div className="h-24 flex items-center justify-center">
+                        <span className="text-5xl md:text-6xl font-serif text-indigo-900 font-bold select-none">
+                          {item.latin}
+                        </span>
+                      </div>
+                    </div>
+
+                    {/* НИЖНИЙ РЯД: ПОДПИСИ (Жесткая фиксация на нижней линии) */}
+                    <div className="grid grid-cols-5 gap-0 w-full mt-4">
+                      <div className="flex justify-center items-end h-4">
+                        <span className="text-[10px] uppercase font-bold text-slate-500 tracking-widest leading-none">Иероглиф</span>
+                      </div>
+                      <div className="h-4"></div>
+                      <div className="flex justify-center items-end h-4">
+                        <span className="text-[10px] uppercase font-bold text-slate-500 tracking-widest leading-none">Иврит</span>
+                      </div>
+                      <div className="h-4"></div>
+                      <div className="flex justify-center items-end h-4">
+                        <span className="text-[10px] uppercase font-bold text-slate-500 tracking-widest leading-none">Латынь</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <p className="text-sm text-slate-500 text-patrick leading-relaxed border-t pt-6">
+                    {item.desc}
+                  </p>
                 </div>
-
-                <div className="flex items-center justify-around py-4">
-                  <div className="text-center">
-                    <span className="text-8xl block mb-1 text-slate-500">𓁹</span>
-                    <span className="text-[10px] uppercase font-bold text-slate-400">Иероглиф</span>
-                  </div>
-                  <ArrowRight className="text-slate-400" />
-                  <div className="text-center">
-                    <span className="text-6xl block mb-1 font-serif text-teal-600">ע</span>
-                    <span className="text-[10px] uppercase font-bold text-slate-400">Иврит</span>
-                  </div>
-                  <ArrowRight className="text-slate-400" />
-                  <div className="text-center">
-                    <span className="text-5xl block mb-1 font-serif text-indigo-900 font-bold">O</span>
-                    <span className="text-[10px] uppercase font-bold text-slate-400">Латынь</span>
-                  </div>
-                </div>
-
-                <p className="text-sm text-slate-500 leading-relaxed border-t pt-4">
-                  Буква Аин изначально рисовалась как глаз со зрачком. В греческом и латыни она упростилась до идеального круга — буквы «O»
-                </p>
-              </div>
+              ))}
             </div>
 
             <div className="text-center p-7 bg-teal-600 text-white rounded-3xl">
