@@ -345,18 +345,49 @@ const App: React.FC = () => {
           </div>
         </section>
 
-        {/* Sophit Explaination */}
-        <section className="bg-white p-10 rounded-[3rem] border border-teal-200">
-          <h2 className="text-4xl font-patrick mb-4 text-teal-700">Пять Букв Софит (Окончания)</h2>
-          <p className="text-slate-600 leading-relaxed mb-6">
-            В иврите пять букв — <strong>Каф, Мем, Нун, Пе и Цади</strong> — меняют форму, если стоят в конце слова. Это помогает визуально разделять слова
-          </p>
-          <div className="flex gap-4">
-            {['ך', 'ם', 'ן', 'ף', 'ץ'].map(s => (
-              <div key={s} className="bg-white w-14 h-14 rounded-2xl flex items-center justify-center border border-slate-200 shadow-sm">
-                <span className="text-3xl font-serif text-teal-600">{s}</span>
-              </div>
-            ))}
+        {/* Пять Букв Софит */}
+        <section className="bg-white p-10 md:p-14 rounded-[4rem] border border-teal-200 shadow-sm">
+          <div className="space-y-12">
+            <div className="flex items-center gap-4 text-indigo-900">
+              <h2 className="text-4xl font-patrick text-teal-600">Пять Букв Софит (Окончания)</h2>
+            </div>
+            
+            <p className="text-slate-600 text-lg leading-relaxed max-w-3xl">
+              В иврите есть пять букв, которые меняют своё начертание, если стоят в самом конце слова. Их называют <strong>«Софит»</strong> (конечные). Обычно их «хвост», загнутый влево, распрямляется и уходит вниз
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
+              {sofitLetters.map((l) => (
+                <div key={l.letter} className="bg-teal-50 rounded-3xl p-6 border border-teal-200 text-center space-y-4 hover:border-teal-200 transition-colors">
+                  <div className="text-[10px] font-bold text-teal-600 uppercase tracking-widest">Буква {l.name}</div>
+                  
+                  <div className="flex items-center justify-around py-2">
+                    <div className="flex flex-col items-center gap-2">
+                      <div className="text-5xl font-serif text-indigo-900">{l.letter}</div>
+                    </div>
+                    
+                    <div className="text-slate-500">
+                      <ArrowRight size={20} />
+                    </div>
+
+                    <div className="flex flex-col items-center gap-2">
+                      <div className="text-5xl font-serif text-teal-600 font-bold">{l.suffix}</div>
+                      <span className="text-[10px] text-teal-600 uppercase font-bold tracking-tighter">Софит</span>
+                    </div>
+                  </div>
+                  
+                  <div className="pt-2 border-t border-teal-200">
+                     <span className="text-xs font-medium text-teal-600">Гематрия: {l.number}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="p-6 bg-teal-600 rounded-3xl text-white text-patrick text-sm">
+               <p className="flex items-start gap-3">
+                 Гематрия букв Софит в классическом иврите совпадает с гематрией их обычных форм. Например, и Каф (כ), и Каф-софит (ך) равны 20
+               </p>
+            </div>
           </div>
         </section>
 
