@@ -84,9 +84,9 @@ const App: React.FC = () => {
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <h1 className="text-5xl md:text-8xl font-patrick mb-6 tracking-tight text-indigo-900">
             Иврит
-            <p className="text-teal-700">Код Бытия </p>
+            <p className="text-4xl text-indigo-900">Коды Бытия </p>
           </h1>
-          <p className="text-lg md:text-xl text-slate-800 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
             Исследуйте архитектуру древнейшего языка, где каждая буква является одновременно числом, символом и ключом к пониманию законов Жизни
           </p>
         </div>
