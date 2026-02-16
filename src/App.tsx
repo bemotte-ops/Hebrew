@@ -450,13 +450,27 @@ const App: React.FC = () => {
           </div>
         </section>
 
-        {/* Gematria Calculation Block */}
+                {/* Gematria Calculation Block */}
         <section className="bg-white p-10 md:p-14 rounded-[4rem] border border-teal-200 relative overflow-hidden">
           <div className="relative z-10 space-y-10">
             <div className="text-center space-y-3">
               <h2 className="text-4xl font-patrick text-teal-600">Гематрия: числовой код букв</h2>
             </div>
 
+            {/* Вступительный блок — ключ к пониманию системы */}
+            <div className="max-w-3xl mx-auto text-left space-y-4 bg-teal-50 p-6 rounded-3xl border border-teal-200">
+              <p className="text-lg text-slate-700">
+                В иврите форма буквы, её название и числовое значение образуют единый узел смысла. 
+                Возьмём первую букву — <span className="font-serif text-2xl text-teal-600">א</span> (Алеф). 
+                Её числовое значение — 1, что указывает на Единого Творца. Но если разложить саму форму Алеф, 
+                мы увидим, что она графически состоит из двух букв <span className="font-serif">י</span> (Йуд) и соединяющей их 
+                <span className="font-serif">ו</span> (Вав): <span className="font-mono">י (10) + ו (6) + י (10) = 26</span>. 
+                А 26 — это гематрия главного Имени Бога <span className="font-serif">יהוה</span> (Йуд-Хей-Вав-Хей). 
+                Так через форму одной буквы раскрывается связь Единицы с Творцом, а гематрия становится ключом 
+                к скрытым измерениям текста.
+              </p>
+            </div>
+        
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-teal-50 p-8 rounded-[2.5rem] shadow-sm space-y-6 border border-teal-200">
                 <h4 className="text-xl font-patrick text-indigo-900">Слово «Любовь» [Ахава]</h4>
@@ -471,7 +485,7 @@ const App: React.FC = () => {
                   <span>ИТОГО:</span> <span>1 + 5 + 2 + 5 = 13</span>
                 </div>
               </div>
-
+        
               <div className="bg-teal-50 p-8 rounded-[2.5rem] shadow-sm space-y-6 border border-teal-200">
                 <h4 className="text-xl font-patrick text-indigo-900">Слово «Единый» [Эхад]</h4>
                 <div className="text-4xl font-serif text-teal-600 border-b pb-4">אחד</div>
@@ -480,15 +494,15 @@ const App: React.FC = () => {
                   <div className="flex justify-between"><span>Хет (ח)</span> <span>8</span></div>
                   <div className="flex justify-between"><span>Далет (ד)</span> <span>4</span></div>
                 </div>
-                <div className="pt-4 border-t flex justify-between font-patrick text-2xl text-teal-700 mt-5">
+                <div className="pt-4 border-t flex justify-between font-patrick text-2xl text-teal-700">
                   <span>ИТОГО:</span> <span>1 + 8 + 4 = 13</span>
                 </div>
               </div>
             </div>
-
+        
             <div className="text-center p-7 bg-teal-600 text-white rounded-3xl shadow-xl">
               <p className="text-lg font-patrick">
-                Совпадение этих чисел говорит о том, что в культуре иврита Любовь и Единство — это одна и та же математическая и духовная величина
+                Совпадение чисел любви (אהבה) и единства (אחד) — 13 — не случайно. Оно обнажает закон, зашитый в ткань языка: подлинная любовь ведёт к единству, а истинное единство невозможно без любви. Как Алеф (1) раскрывается в высшем Имени (26), так и эти слова на глубинном уровне говорят об одном: мир держится на любви, а любовь стремится к Единому.
               </p>
             </div>
           </div>
