@@ -154,9 +154,9 @@ const App: React.FC = () => {
               <table className="w-full text-center border-collapse bg-white">
                 <thead className="bg-slate-50">
                   <tr>
-                    <th className="p-5 font-bold text-center text-slate-400 text-xs uppercase tracking-widest border-b border-slate-100">Слово на иврите</th>
-                    <th className="p-5 font-bold text-center text-slate-400 text-xs uppercase tracking-widest border-b border-slate-100">Транскрипция</th>
-                    <th className="p-5 font-bold text-center text-slate-400 text-xs uppercase tracking-widest border-b border-slate-100">Значение</th>
+                    <th className="p-5 font-bold text-center text-teal-700 text-xs uppercase tracking-widest border-b border-slate-100">Слово на иврите</th>
+                    <th className="p-5 font-bold text-center text-teal-700 text-xs uppercase tracking-widest border-b border-slate-100">Транскрипция</th>
+                    <th className="p-5 font-bold text-center text-teal-700 text-xs uppercase tracking-widest border-b border-slate-100">Значение</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-slate-50">
@@ -182,7 +182,7 @@ const App: React.FC = () => {
                   </tr>
                 </tbody>
               </table>
-              <div className="bg-teal-50 p-4 text-center text-slate-700 text-lg font-patrick">
+              <div className="bg-teal-50 p-4 text-center text-teal-700 text-lg font-patrick">
                 Общий корень: <span className="text-2xl"> כ - ת - ב </span>(Письменность)
               </div>
             </div>
@@ -286,9 +286,9 @@ const App: React.FC = () => {
               ))}
             </div>
 
-            <div className="text-left p-7 bg-teal-200 text-slate-700 rounded-3xl">
-              <p className="text-lg font-patrick">Интересный факт:</p>
-              <p className="text-lg font-patrick">почти весь латинский алфавит — это «перевернутые» или «отзеркаленные» образы древних букв иврита</p>
+            <div className="text-left p-7 bg-teal-50 text-slate-700 rounded-3xl border border-teal-200">
+              <p className="text-sm font-patrick">Интересный факт:</p>
+              <p className="text-sm font-patrick">почти весь латинский алфавит — это «перевернутые» или «отзеркаленные» образы древних букв иврита</p>
             </div>
           </div>
         </section>
@@ -581,7 +581,7 @@ const App: React.FC = () => {
                 <span className="font-serif text-5xl mr-2">יהוה</span> — Четыре буквы, в которых заключено всё
               </h2>
               <p className="text-slate-600 max-w-2xl mx-auto">
-                Тетраграмматон — самое священное Имя в иудаизме. Оно встречается в Танахе почти 7000 раз и скрывает в себе тайну бытия: «Он был, есть и будет».
+                Тетраграмматон — самое священное Имя в иудаизме. Оно встречается в Танахе почти 7000 раз и скрывает в себе тайну бытия: «Он Был, Есть и Будет»
               </p>
             </div>
         
@@ -621,7 +621,7 @@ const App: React.FC = () => {
         
             {/* Table with details */}
             <div className="overflow-x-auto rounded-3xl border border-teal-200">
-              <table className="w-full text-left">
+              <table className="w-full text-center">
                 <thead className="bg-teal-50 border-b border-teal-200">
                   <tr>
                     <th className="px-6 py-4 text-indigo-900 font-patrick uppercase text-xs">Буква</th>
