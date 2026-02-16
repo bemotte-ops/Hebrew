@@ -642,7 +642,7 @@ const App: React.FC = () => {
         
             {/* Timeline: История использования */}
             <div className="space-y-6">
-              <h3 className="text-2xl font-patrick text-indigo-900 text-center">История Имени: от произнесения к благоговению</h3>
+              <h3 className="text-2xl font-patrick text-indigo-900 text-center">История Имени: от Произнесения к Благоговению</h3>
               <div className="relative flex flex-col md:flex-row items-start md:items-center justify-between gap-4 py-8">
                 {/* Линия времени */}
                 <div className="absolute left-0 right-0 h-0.5 bg-teal-200 hidden md:block"></div>
