@@ -454,7 +454,7 @@ const App: React.FC = () => {
         <section className="bg-white p-10 md:p-14 rounded-[4rem] border border-teal-200 relative overflow-hidden">
           <div className="relative z-10 space-y-10">
             <div className="text-center space-y-3">
-              <h2 className="text-4xl font-patrick text-teal-600">Гематрия: числовой код</h2>
+              <h2 className="text-4xl font-patrick text-teal-600">Гематрия: числовой код букв</h2>
             </div>
 
             <div className="grid md:grid-cols-2 gap-8">
@@ -498,7 +498,7 @@ const App: React.FC = () => {
         <section className="bg-white p-8 md:p-12 rounded-[2.5rem] shadow-sm border border-teal-200 space-y-10">
           <div className="text-center w-full">
             <h2 className="text-4xl font-patrick text-teal-600">
-              Сводная матрица алфавита
+              Сводная матрица Алфавита
             </h2>
           </div>
 
