@@ -442,7 +442,7 @@ const App: React.FC = () => {
               ))}
             </div>
 
-            <div className="p-6 bg-teal-600 rounded-3xl text-white font-patrick text-sm">
+            <div className="p-6 bg-teal-50 rounded-3xl text-slate-700 font-patrick text-sm border border-teal-200">
                <p className="flex items-start gap-3">
                  Гематрия букв Софит в классическом иврите совпадает с гематрией их обычных форм. Например, и Каф (כ), и Каф-софит (ך) равны 20
                </p>
@@ -511,12 +511,12 @@ const App: React.FC = () => {
               </div>
             </div>
         
-            <div className="text-center p-7 bg-teal-600 text-white rounded-3xl shadow-xl max-w-3xl mx-auto">
+            <div className="text-left p-7 bg-white text-slate-700 rounded-3xl shadow-xl border border-teal-200">
               <p className="text-lg font-patrick">
-                Совпадение чисел любви (אהבה) и единства (אחד) — 13 — не случайно. 
-                Оно указывает на глубинный закон бытия: любовь и единство неразделимы. 
-                Как Алеф (1) раскрывается в четырёхбуквенном Имени <a href="#tetragrammaton" className="underline text-teal-200 hover:text-white transition-colors">Тетраграмматон</a> (26), 
-                так и эти слова говорят об одном: мир сотворён любовью и держится на ней, а высшая цель человека — через любовь прийти к Единому
+                Совпадение чисел Любви (אהבה) и Единства (אחד) — 13 — не случайно. 
+                Оно указывает на глубинный закон бытия: Любовь и Единство неразделимы. 
+                Как Алеф (1) раскрывается в Четырёхбуквенном Имени <a href="#tetragrammaton" className="underline text-teal-200 hover:text-white transition-colors">Тетраграмматон</a> (26), 
+                так и эти слова говорят об одном: мир сотворён Любовью и держится на ней, а высшая цель человека — через любовь прийти к Единому
               </p>
             </div>
           </div>
