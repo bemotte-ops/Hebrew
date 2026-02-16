@@ -559,7 +559,7 @@ const App: React.FC = () => {
       </main>
 
       {/* Footer Section */}
-      <footer className="bg-slate-400 text-white pt-32 pb-16 mt-20 rounded-t-[2.5rem] relative overflow-hidden">
+      <footer className="bg-indigo-900 text-white mt-20 rounded-t-[2.5rem] relative overflow-hidden">
          {/* Фоновая текстура футера с GitHub */}
          <div className="absolute inset-0 z-0 opacity-80">
            <img 
@@ -569,7 +569,7 @@ const App: React.FC = () => {
               onError={handleImageError}
            />
            {/* Наложение цвета и размытия */}
-           <div className="absolute inset-0 bg-slate-400/40 backdrop-blur-[1px]"></div>
+           <div className="absolute inset-0 bg-indigo-900/40 backdrop-blur-[1px]"></div>
          </div>
          
          <div className="max-w-4xl mx-auto px-6 text-center space-y-8 relative z-10">
