@@ -15,7 +15,10 @@ import {
   Eye,
   ChevronDown,
   Info,
-  Star
+  Star,
+  Landmark,
+  Search,
+  FileSearch2
 } from 'lucide-react';
 
 interface Letter {
@@ -645,20 +648,23 @@ const App: React.FC = () => {
               <h3 className="text-2xl font-patrick text-indigo-900 text-center">История Имени: от Произнесения к Благоговению</h3>
               <div className="relative flex flex-col md:flex-row items-start md:items-center justify-between gap-4 py-8">
                 {/* Линия времени */}
-                <div className="absolute left-0 right-0 h-0.5 bg-teal-200 hidden md:block"></div>
+                <div className="absolute left-0 right-0 h-0.5 bg-white hidden md:block"></div>
                 {[
-                  { period: 'До VI в. до н.э.', event: 'Имя произносилось первосвященником в Храме', icon: '🏛️' },
-                  { period: 'III в. до н.э.', event: 'Замена на «Адонай» при чтении', icon: '📖' },
-                  { period: 'Средневековье', event: 'Масореты добавляют огласовки от Адонай', icon: '✡️' },
-                  { period: 'XVI век', event: 'Появляется «Иегова» (JeHoWaH)', icon: '📜' },
-                  { period: 'XIX век', event: 'Реконструкция «Яхве» на основе древних источников', icon: '🔍' },
-                ].map((item, idx) => (
-                  <div key={idx} className="relative z-10 flex flex-col items-center text-center bg-white p-4 rounded-2xl border border-teal-200 w-full md:w-48">
-                    <span className="text-3xl mb-2">{item.icon}</span>
-                    <span className="text-xs font-bold text-teal-600">{item.period}</span>
-                    <span className="text-sm font-patrick text-indigo-900 mt-1">{item.event}</span>
-                  </div>
-                ))}
+                  { period: 'До VI в. до н.э.', event: 'Имя произносилось первосвященником в Храме', icon: Landmark },
+                  { period: 'III в. до н.э.', event: 'Замена на Адонай при чтении', icon: ScrollText },
+                  { period: 'Средневековье', event: 'Масореты добавляют огласовки от Адонай', icon: Sparkles },
+                  { period: 'XVI век', event: 'Прочтение и распространение Иегова (JeHoWaH)', icon: BookOpen },
+                  { period: 'XIX век', event: 'Реконструкция Яхве на основе древних источников', icon: FileSearch2 },
+                ].map((item, idx) => {
+                  const IconComponent = item.icon;
+                  return (
+                    <div key={idx} className="relative z-10 flex flex-col items-center text-center bg-white p-4 rounded-2xl border border-teal-200 w-full md:w-48">
+                      <IconComponent className="text-teal-700 w-8 h-8 mb-2" strokeWidth={1.5} />
+                      <span className="text-xs font-bold text-teal-600">{item.period}</span>
+                      <span className="text-sm font-patrick text-indigo-900 mt-1">{item.event}</span>
+                    </div>
+                  );
+                })}
               </div>
             </div>
         
