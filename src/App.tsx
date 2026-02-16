@@ -574,13 +574,13 @@ const App: React.FC = () => {
          
          <div className="max-w-4xl mx-auto px-6 text-center space-y-8 relative z-10">
             {/* Адаптивная декоративная строка алфавита */}
-            <div className="text-slate-200 text-xl md:text-4xl font-serif tracking-[0.3em] md:tracking-[1em] select-none break-all whitespace-normal max-w-full overflow-hidden">
+            <div className="text-slate-300 text-2xl md:text-2xl font-serif tracking-[0.3em] md:tracking-[1em] select-none break-all whitespace-normal max-w-full overflow-hidden">
               אבגדהוזחטיכלмנסעפצקרשת
             </div>
             <p className="text-slate-400 text-[10px] uppercase tracking-[0.3em] px-4">
               © 2026 Лингвистический проект "Код Бытия"
             </p>
-            <p className="text-slate-200 font-patrick text-sm italic">
+            <p className="text-slate-300 font-patrick text-sm italic">
                 Вначале было Слово...
             </p>
          </div>
