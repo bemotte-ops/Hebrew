@@ -512,12 +512,12 @@ const App: React.FC = () => {
               </div>
             </div>
         
-            <div className="text-left p-7 bg-white text-slate-700 rounded-3xl shadow-xl border border-teal-200">
+            <div className="text-left p-7 bg-slate-50 text-indigo-900 rounded-3xl shadow-xl border border-indigo-900">
               <p className="text-lg font-patrick">
                 Совпадение чисел Любви (אהבה) и Единства (אחד) — 13 — не случайно. 
                 Оно указывает на глубинный закон бытия: Любовь и Единство неразделимы. 
-                Как Алеф (1) раскрывается в Четырёхбуквенном Имени <a href="#tetragrammaton" className="underline text-teal-200 hover:text-white transition-colors">Тетраграмматон</a> (26), 
-                так и эти слова говорят об одном: мир сотворён Любовью и держится на ней, а высшая цель человека — через любовь прийти к Единому
+                Как Алеф (1) раскрывается в Четырёхбуквенном Имени <a href="#tetragrammaton" className="underline text-teal-600 hover:text-white transition-colors">Тетраграмматон</a> (26), 
+                так и эти слова говорят об одном: мир сотворён Любовью и держится на ней, а высшая Цель человека — через Любовь прийти к Единому
               </p>
             </div>
           </div>
