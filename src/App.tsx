@@ -150,13 +150,13 @@ const App: React.FC = () => {
             </p>
 
             {/* Shoresh Table */}
-            <div className="overflow-hidden border border-slate-200 rounded-3xl">
-              <table className="w-full text-left border-collapse bg-white">
+            <div className="overflow-hidden border border-teal-200 rounded-3xl">
+              <table className="w-full text-center border-collapse bg-white">
                 <thead className="bg-slate-50">
                   <tr>
-                    <th className="p-5 font-bold text-slate-400 text-xs uppercase tracking-widest border-b border-slate-100">Слово на иврите</th>
-                    <th className="p-5 font-bold text-slate-400 text-xs uppercase tracking-widest border-b border-slate-100">Транскрипция</th>
-                    <th className="p-5 font-bold text-slate-400 text-xs uppercase tracking-widest border-b border-slate-100">Значение</th>
+                    <th className="p-5 font-bold text-center text-slate-400 text-xs uppercase tracking-widest border-b border-slate-100">Слово на иврите</th>
+                    <th className="p-5 font-bold text-center text-slate-400 text-xs uppercase tracking-widest border-b border-slate-100">Транскрипция</th>
+                    <th className="p-5 font-bold text-center text-slate-400 text-xs uppercase tracking-widest border-b border-slate-100">Значение</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-slate-50">
@@ -182,7 +182,7 @@ const App: React.FC = () => {
                   </tr>
                 </tbody>
               </table>
-              <div className="bg-teal-600 p-4 text-center text-white text-lg font-patrick">
+              <div className="bg-teal-50 p-4 text-center text-slate-700 text-lg font-patrick">
                 Общий корень: <span className="text-2xl"> כ - ת - ב </span>(Письменность)
               </div>
             </div>
@@ -286,7 +286,7 @@ const App: React.FC = () => {
               ))}
             </div>
 
-            <div className="text-center p-7 bg-teal-600 text-white rounded-3xl">
+            <div className="text-left p-7 bg-teal-200 text-slate-700 rounded-3xl">
               <p className="text-lg font-patrick">Интересный факт:</p>
               <p className="text-lg font-patrick">почти весь латинский алфавит — это «перевернутые» или «отзеркаленные» образы древних букв иврита</p>
             </div>
@@ -512,7 +512,7 @@ const App: React.FC = () => {
               </div>
             </div>
         
-            <div className="text-left p-7 bg-slate-50 text-indigo-900 rounded-3xl shadow-xl border border-indigo-900">
+            <div className="text-left p-7 bg-slate-50 text-slate-700 rounded-3xl shadow-xl border border-indigo-900">
               <p className="text-lg font-patrick">
                 Совпадение чисел Любви (אהבה) и Единства (אחד) — 13 — не случайно. 
                 Оно указывает на глубинный закон бытия: Любовь и Единство неразделимы. 
