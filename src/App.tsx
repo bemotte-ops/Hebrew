@@ -547,7 +547,7 @@ const App: React.FC = () => {
       {/* Footer Section */}
       <footer className="bg-indigo-900 text-white py-24 mt-20 rounded-t-[2.5rem] relative overflow-hidden">
          {/* Фоновая текстура футера с GitHub */}
-         <div className="absolute inset-0 z-0 opacity-30">
+         <div className="absolute inset-0 z-0 opacity-50">
            <img 
               src={footerImage} 
               alt="Текстура камня"
@@ -560,7 +560,7 @@ const App: React.FC = () => {
          
          <div className="max-w-4xl mx-auto px-6 text-center space-y-8 relative z-10">
             {/* Адаптивная декоративная строка алфавита */}
-            <div className="text-teal-600 text-2xl md:text-4xl font-serif tracking-[0.3em] md:tracking-[1em] opacity-40 select-none break-all whitespace-normal max-w-full overflow-hidden">
+            <div className="text-teal-600 text-2xl md:text-4xl font-serif tracking-[0.3em] md:tracking-[1em] opacity-20 select-none break-all whitespace-normal max-w-full overflow-hidden">
               אבגדהוזחטיכלмנסעפצקרשת
             </div>
             <p className="text-slate-400 text-[10px] uppercase tracking-[0.3em] px-4">
