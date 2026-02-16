@@ -511,9 +511,12 @@ const App: React.FC = () => {
               </div>
             </div>
         
-            <div className="text-center p-7 bg-teal-600 text-white rounded-3xl shadow-xl">
+            <div className="text-center p-7 bg-teal-600 text-white rounded-3xl shadow-xl max-w-3xl mx-auto">
               <p className="text-lg font-patrick">
-                Совпадение чисел любви (אהבה) и единства (אחד) — 13 — не случайно. Оно обнажает закон, зашитый в ткань языка: подлинная любовь ведёт к единству, а истинное единство невозможно без любви. Как Алеф (1) раскрывается в высшем Имени (26), так и эти слова на глубинном уровне говорят об одном: мир держится на любви, а любовь стремится к Единому.
+                Совпадение чисел любви (אהבה) и единства (אחד) — 13 — не случайно. 
+                Оно указывает на глубинный закон бытия: любовь и единство неразделимы. 
+                Как Алеф (1) раскрывается в четырёхбуквенном Имени <a href="#tetragrammaton" className="underline text-teal-200 hover:text-white transition-colors">Тетраграмматон</a> (26), 
+                так и эти слова говорят об одном: мир сотворён любовью и держится на ней, а высшая цель человека — через любовь прийти к Единому
               </p>
             </div>
           </div>
@@ -567,6 +570,176 @@ const App: React.FC = () => {
           </div>
         </section>        
 
+        {/* Tetragrammaton Section */}
+        <section id="tetragrammaton" className="bg-white p-10 md:p-14 rounded-[4rem] border border-teal-200 relative overflow-hidden">
+          <div className="relative z-10 space-y-10">
+            
+            {/* Header */}
+            <div className="text-center space-y-3">
+              <h2 className="text-4xl font-patrick text-teal-600">
+                <span className="font-serif text-5xl mr-2">יהוה</span> — Четыре буквы, в которых заключено всё
+              </h2>
+              <p className="text-slate-600 max-w-2xl mx-auto">
+                Тетраграмматон — самое священное Имя в иудаизме. Оно встречается в Танахе почти 7000 раз и скрывает в себе тайну бытия: «Он был, есть и будет».
+              </p>
+            </div>
+        
+            {/* Four Squares Visualization */}
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+              {[
+                { letter: 'י', name: 'Йуд', meaning: 'Рука / Творение', number: 10, icon: '🤚' },
+                { letter: 'ה', name: 'Хей', meaning: 'Окно / Присутствие', number: 5, icon: '🪟' },
+                { letter: 'ו', name: 'Вав', meaning: 'Крюк / Связь', number: 6, icon: '🔗' },
+                { letter: 'ה', name: 'Хей', meaning: 'Окно / Завершение', number: 5, icon: '🪟' },
+              ].map((item, idx) => (
+                <div key={idx} className="bg-teal-50 p-6 rounded-[2.5rem] border border-teal-200 text-center space-y-3 hover:shadow-lg transition">
+                  <div className="text-7xl font-serif text-teal-600">{item.letter}</div>
+                  <div className="text-2xl font-patrick text-indigo-900">{item.name}</div>
+                  <div className="text-sm text-slate-500">{item.meaning}</div>
+                  <div className="w-12 h-12 mx-auto bg-teal-600 text-white rounded-full flex items-center justify-center text-xl font-bold">
+                    {item.number}
+                  </div>
+                </div>
+              ))}
+            </div>
+        
+            {/* Total 26 + Алеф connection */}
+            <div className="bg-teal-50 p-8 rounded-[2.5rem] border border-teal-200 flex flex-col md:flex-row items-center justify-between gap-6">
+              <div className="text-center md:text-left">
+                <span className="text-sm uppercase tracking-widest text-teal-600 font-bold">Сумма букв</span>
+                <div className="text-5xl font-patrick text-indigo-900">10 + 5 + 6 + 5 = <span className="text-teal-600">26</span></div>
+                <p className="text-slate-500 mt-2">Число 26 — гематрия Тетраграмматона</p>
+              </div>
+              <div className="text-slate-300 text-4xl">⇄</div>
+              <div className="text-center md:text-right">
+                <span className="text-sm uppercase tracking-widest text-teal-600 font-bold">Скрыто в букве Алеф</span>
+                <div className="text-3xl font-serif text-indigo-900">א = <span className="font-mono">י (10) + ו (6) + י (10)</span></div>
+                <p className="text-slate-500 mt-2">Форма Алеф раскрывает то же число 26</p>
+              </div>
+            </div>
+        
+            {/* Table with details */}
+            <div className="overflow-x-auto rounded-3xl border border-teal-200">
+              <table className="w-full text-left">
+                <thead className="bg-teal-50 border-b border-teal-200">
+                  <tr>
+                    <th className="px-6 py-4 text-indigo-900 font-patrick uppercase text-xs">Буква</th>
+                    <th className="px-6 py-4 text-indigo-900 font-patrick uppercase text-xs">Название</th>
+                    <th className="px-6 py-4 text-indigo-900 font-patrick uppercase text-xs">Символ</th>
+                    <th className="px-6 py-4 text-indigo-900 font-patrick uppercase text-xs">Число</th>
+                    <th className="px-6 py-4 text-indigo-900 font-patrick uppercase text-xs">Значение в Имени</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-100">
+                  <tr><td className="px-6 py-4 text-3xl font-serif text-teal-600">י</td><td className="px-6 py-4">Йуд</td><td className="px-6 py-4">Рука, точка творения</td><td className="px-6 py-4">10</td><td className="px-6 py-4">Начало, потенциал</td></tr>
+                  <tr><td className="px-6 py-4 text-3xl font-serif text-teal-600">ה</td><td className="px-6 py-4">Хей</td><td className="px-6 py-4">Окно, дыхание</td><td className="px-6 py-4">5</td><td className="px-6 py-4">Проявление в мире</td></tr>
+                  <tr><td className="px-6 py-4 text-3xl font-serif text-teal-600">ו</td><td className="px-6 py-4">Вав</td><td className="px-6 py-4">Крюк, соединение</td><td className="px-6 py-4">6</td><td className="px-6 py-4">Связь неба и земли</td></tr>
+                  <tr><td className="px-6 py-4 text-3xl font-serif text-teal-600">ה</td><td className="px-6 py-4">Хей (конечная)</td><td className="px-6 py-4">Завершённое проявление</td><td className="px-6 py-4">5</td><td className="px-6 py-4">Присутствие в итоге</td></tr>
+                </tbody>
+              </table>
+            </div>
+        
+            {/* Timeline: История использования */}
+            <div className="space-y-6">
+              <h3 className="text-2xl font-patrick text-indigo-900 text-center">История Имени: от произнесения к благоговению</h3>
+              <div className="relative flex flex-col md:flex-row items-start md:items-center justify-between gap-4 py-8">
+                {/* Линия времени */}
+                <div className="absolute left-0 right-0 h-0.5 bg-teal-200 hidden md:block"></div>
+                {[
+                  { period: 'До VI в. до н.э.', event: 'Имя произносилось первосвященником в Храме', icon: '🏛️' },
+                  { period: 'III в. до н.э.', event: 'Замена на «Адонай» при чтении', icon: '📖' },
+                  { period: 'Средневековье', event: 'Масореты добавляют огласовки от Адонай', icon: '✡️' },
+                  { period: 'XVI век', event: 'Появляется «Иегова» (JeHoWaH)', icon: '📜' },
+                  { period: 'XIX век', event: 'Реконструкция «Яхве» на основе древних источников', icon: '🔍' },
+                ].map((item, idx) => (
+                  <div key={idx} className="relative z-10 flex flex-col items-center text-center bg-white p-4 rounded-2xl border border-teal-200 w-full md:w-48">
+                    <span className="text-3xl mb-2">{item.icon}</span>
+                    <span className="text-xs font-bold text-teal-600">{item.period}</span>
+                    <span className="text-sm font-patrick text-indigo-900 mt-1">{item.event}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+        
+            {/* Связь с глаголом "быть" */}
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-teal-50 p-8 rounded-[2.5rem] border border-teal-200">
+                <h4 className="text-xl font-patrick text-indigo-900 mb-4">Грамматическая тайна</h4>
+                <p className="text-slate-600">Имя <span className="font-serif text-xl">יהוה</span> образовано от глагола <span className="font-serif text-xl">היה</span> (<em>hая</em> — «быть»). Это форма третьего лица будущего времени, но несёт оттенок настоящего и прошедшего. Буквально: «Он есть, был и будет».</p>
+                <div className="mt-6 flex items-center justify-center gap-4 text-3xl font-serif text-teal-600">
+                  <span>היה</span> <span className="text-slate-300">→</span> <span>יהוה</span>
+                </div>
+              </div>
+              <div className="bg-teal-50 p-8 rounded-[2.5rem] border border-teal-200">
+                <h4 className="text-xl font-patrick text-indigo-900 mb-4">Ответ Моисею</h4>
+                <p className="text-slate-600">Когда Моисей спросил: «Как Твоё имя?», Бог ответил: <span className="font-serif text-xl">אהיה אשר אהיה</span> — «Я буду тем, кем буду». Это первое лицо того же глагола: <span className="font-serif">אהיה</span> (Эхйе). Люди же, говоря о Нём, используют третье лицо: <span className="font-serif">יהוה</span>.</p>
+                <div className="mt-6 flex items-center justify-center gap-4 text-3xl font-serif text-teal-600">
+                  <span>אהיה</span> <span className="text-slate-300">⇄</span> <span>יהוה</span>
+                </div>
+              </div>
+            </div>
+        
+            {/* Замены имени */}
+            <div className="bg-indigo-900 text-white p-8 rounded-[2.5rem] border border-teal-200 flex flex-col md:flex-row items-center justify-around gap-6">
+              <div className="text-center">
+                <div className="text-3xl font-serif">יהוה</div>
+                <div className="text-xs uppercase tracking-widest mt-2">не произносится</div>
+              </div>
+              <ArrowRight className="text-teal-300" size={32} />
+              <div className="text-center">
+                <div className="text-3xl font-serif">אֲדֹנָי</div>
+                <div className="text-xs uppercase tracking-widest mt-2">Адонай (Господь)</div>
+              </div>
+              <ArrowRight className="text-teal-300" size={32} />
+              <div className="text-center">
+                <div className="text-3xl font-serif">הַשֵּׁם</div>
+                <div className="text-xs uppercase tracking-widest mt-2">ха-Шем (Имя)</div>
+              </div>
+            </div>
+        
+            {/* Теофорные имена */}
+            <div className="space-y-4">
+              <h3 className="text-2xl font-patrick text-indigo-900 text-center">Имена, несущие Имя</h3>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                {[
+                  { name: 'יְהוֹשֻׁעַ', translit: 'Йехошуа', meaning: 'Яхве спасает' },
+                  { name: 'יְשַׁעְיָהוּ', translit: 'Йешайаху', meaning: 'Яхве спасёт' },
+                  { name: 'יִרְמְיָהוּ', translit: 'Йирмейаху', meaning: 'Яхве возвысит' },
+                  { name: 'אֵלִיָּהוּ', translit: 'Элийаху', meaning: 'Мой Бог — Яхве' },
+                ].map((item, idx) => (
+                  <div key={idx} className="bg-teal-50 p-4 rounded-2xl border border-teal-200 text-center">
+                    <div className="text-2xl font-serif text-teal-600">{item.name}</div>
+                    <div className="text-sm font-patrick text-indigo-900 mt-1">{item.translit}</div>
+                    <div className="text-xs text-slate-500 mt-1">{item.meaning}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+        
+            {/* Откуда взялись Иегова и Яхве */}
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-teal-50 p-6 rounded-[2.5rem] border border-teal-200">
+                <h4 className="text-xl font-patrick text-indigo-900 mb-3">Иегова (JeHoWaH)</h4>
+                <p className="text-slate-600 text-sm">Масореты добавили к согласным <span className="font-serif">יהוה</span> гласные от <span className="font-serif">אֲדֹנָי</span> (Адонай), чтобы читатель не пытался произнести непроизносимое. В XVI веке христианские учёные прочли это как JeHoWaH — так родился «Иегова».</p>
+                <div className="mt-4 text-center text-2xl font-mono text-teal-600">YHWH + гласные Адонай = JeHoWaH</div>
+              </div>
+              <div className="bg-teal-50 p-6 rounded-[2.5rem] border border-teal-200">
+                <h4 className="text-xl font-patrick text-indigo-900 mb-3">Яхве (Yahweh)</h4>
+                <p className="text-slate-600 text-sm">Раннехристианские авторы (II–IV вв.) передавали имя как Ἰαβέ (Иаве) или Ἰαώ (Иао). Анализ сокращённой формы <span className="font-serif">יה</span> (Yah) и самаритянского произношения позволил реконструировать «Яхве».</p>
+                <div className="mt-4 text-center text-2xl font-mono text-teal-600">Древние источники → Яхве</div>
+              </div>
+            </div>
+        
+            {/* Заключительная цитата */}
+            <div className="text-center p-7 bg-teal-600 text-white rounded-3xl shadow-xl">
+              <p className="text-xl font-patrick italic">
+                «В имени יהוה сокрыто всё: прошлое, настоящее и будущее. Это не просто имя — это само Бытие, зашифрованное в четырёх буквах.»
+              </p>
+            </div>
+        
+          </div>
+        </section>
+        
       </main>
 
       {/* Footer Section */}
