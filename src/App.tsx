@@ -454,12 +454,12 @@ const App: React.FC = () => {
         <section className="bg-white p-10 md:p-14 rounded-[4rem] border border-teal-200 relative overflow-hidden">
           <div className="relative z-10 space-y-10">
             <div className="text-center space-y-3">
-              <h2 className="text-4xl font-patrick text-teal-600">Гематрия: числовой код букв</h2>
+              <h2 className="text-4xl font-patrick text-teal-600">Гематрия: числовой код языка</h2>
             </div>
 
             {/* Вступительный блок — ключ к пониманию системы */}
-            <div className="max-w-3xl mx-auto text-left space-y-4 bg-teal-50 p-6 rounded-3xl border border-teal-200">
-              <p className="text-lg text-slate-700">
+            <div className="text-left space-y-4 bg-white p-6 rounded-3xl border border-teal-200">
+              <p className="text-lg text-slate-600">
                 В иврите форма буквы, её название и числовое значение образуют единый узел смысла. 
                 Возьмём первую букву — <span className="font-serif text-2xl text-teal-600">א</span> (Алеф). 
                 Её числовое значение — 1, что указывает на Единого Творца. Но если разложить саму форму Алеф, 
