@@ -559,7 +559,7 @@ const App: React.FC = () => {
       </main>
 
       {/* Footer Section */}
-      <footer className="bg-indigo-900 text-white mt-20 rounded-t-[2.5rem] relative overflow-hidden">
+      <footer className="bg-indigo-900 text-white pt-48 pb-6 mt-20 rounded-t-[2.5rem] relative overflow-hidden">
          {/* Фоновая текстура футера с GitHub */}
          <div className="absolute inset-0 z-0 opacity-80">
            <img 
