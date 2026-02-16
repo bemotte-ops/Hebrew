@@ -460,20 +460,20 @@ const App: React.FC = () => {
             {/* Вступительный блок — ключ к пониманию системы */}
             <div className="text-lg text-slate-700">
               <p>
-                В иврите форма буквы, её название и числовое значение образуют единый узел смысла. Возьмём первую букву — <span className="font-serif text-2xl text-teal-600">א</span> [Алеф]. Её числовое значение — 1, что указывает на Единого Творца
-              </p>
-              <p>
+                В иврите форма буквы, её название и числовое значение образуют единый узел смысла. 
+                Возьмём первую букву — <span className="font-serif text-2xl text-teal-600">א</span> [Алеф]. 
+                Её числовое значение — 1, что указывает на Единого Творца.
                 Но если разложить саму форму Алеф, мы увидим, что она графически состоит из двух букв 
                 <span className="font-serif"> י</span> [Йуд] и соединяющей их 
-                <span className="font-serif"> ו</span> [Вав]
+                <span className="font-serif"> ו</span> [Вав]:
               </p>
-              <div className="text-center font-mono text-lg bg-white/50 p-2 rounded-xl">
+              <div className="text-center text-teal-600 font-mono text-lg bg-white/50 p-2 rounded-xl">
                 <span className="font-serif">י</span> (10) + <span className="font-serif">ו</span> (6) + <span className="font-serif">י</span> (10) = 26
               </div>
               <p className="text-lg text-slate-700">
-                А 26 — это гематрия главного Имени Бога <span className="font-serif">יהוה</span> [Йуд-Хей-Вав-Хей]
+                А 26 — это гематрия главного Имени Бога <span className="font-serif">יהוה</span> [Йуд-Хей-Вав-Хей]:
               </p>
-              <div className="text-center font-mono text-lg bg-white/50 p-2 rounded-xl">
+              <div className="text-center text-teal-600 font-mono text-lg bg-white/50 p-2 rounded-xl">
                 <span className="font-serif">י</span> (10) + <span className="font-serif">ה</span> (5) + <span className="font-serif">ו</span> (6) + <span className="font-serif">ה</span> (5) = 26
               </div>
               <p className="text-lg text-slate-700">
