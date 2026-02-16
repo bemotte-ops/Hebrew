@@ -73,7 +73,7 @@ const App: React.FC = () => {
 
       {/* Header Section */}
       <header className="relative pt-20 pb-24 px-6 bg-white/90 overflow-hidden rounded-b-[2.5rem]">
-        <div className="absolute inset-0 z-0 opacity-40">
+        <div className="absolute inset-0 z-0 opacity-60">
           <img 
             src={headerImage} 
             alt="Parchment Background" 
