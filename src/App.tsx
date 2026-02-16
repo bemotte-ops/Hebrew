@@ -559,7 +559,7 @@ const App: React.FC = () => {
       </main>
 
       {/* Footer Section */}
-      <footer className="bg-indigo-900 text-white py-24 mt-20 rounded-t-[2.5rem] relative overflow-hidden">
+      <footer className="bg-indigo-900 text-white pt-48 pb-24 mt-20 rounded-t-[2.5rem] relative overflow-hidden">
          {/* Фоновая текстура футера с GitHub */}
          <div className="absolute inset-0 z-0 opacity-80">
            <img 
@@ -574,13 +574,13 @@ const App: React.FC = () => {
          
          <div className="max-w-4xl mx-auto px-6 text-center space-y-8 relative z-10">
             {/* Адаптивная декоративная строка алфавита */}
-            <div className="text-teal-600 text-2xl md:text-4xl font-serif tracking-[0.3em] md:tracking-[1em] select-none break-all whitespace-normal max-w-full overflow-hidden">
+            <div className="white text-2xl md:text-4xl font-serif tracking-[0.3em] md:tracking-[1em] select-none break-all whitespace-normal max-w-full overflow-hidden">
               אבגדהוזחטיכלмנסעפצקרשת
             </div>
             <p className="text-slate-400 text-[10px] uppercase tracking-[0.3em] px-4">
               © 2026 Лингвистический проект "Код Бытия"
             </p>
-            <p className="text-teal-600 font-patrick text-sm italic">
+            <p className="text-white font-patrick text-sm italic">
                 Вначале было Слово...
             </p>
          </div>
