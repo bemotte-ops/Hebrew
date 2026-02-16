@@ -430,7 +430,7 @@ const App: React.FC = () => {
                       <div className="text-5xl font-serif text-indigo-900">{l.letter}</div>
                     </div>
                     
-                    <div className="text-slate-500">
+                    <div className="text-teal-700">
                       <ArrowRight size={20} />
                     </div>
 
