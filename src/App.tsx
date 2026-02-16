@@ -505,7 +505,7 @@ const App: React.FC = () => {
                   <div className="flex justify-between"><span>Хет (ח)</span> <span>8</span></div>
                   <div className="flex justify-between"><span>Далет (ד)</span> <span>4</span></div>
                 </div>
-                <div className="pt-4 border-t flex justify-between font-patrick text-2xl text-teal-700 mt-5">
+                <div className="pt-4 border-t flex justify-between font-patrick text-2xl text-teal-700 mt-15">
                   <span>ИТОГО:</span> <span>1 + 8 + 4 = 13</span>
                 </div>
               </div>
