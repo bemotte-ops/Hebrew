@@ -572,7 +572,7 @@ const App: React.FC = () => {
            <div className="absolute inset-0 bg-indigo-900/40 backdrop-blur-[1px]"></div>
          </div>
          
-         <div className="max-w-4xl mx-auto px-6 text-center space-y-8 relative z-10">
+         <div className="max-w-4xl mx-auto px-6 text-center space-y-4 relative z-10">
             {/* Адаптивная декоративная строка алфавита */}
             <div className="text-slate-300 text-2xl md:text-2xl font-serif tracking-[0.3em] md:tracking-[1em] select-none break-all whitespace-normal max-w-full overflow-hidden">
               אבגדהוזחטיכלмנסעפצקרשת
