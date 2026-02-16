@@ -659,9 +659,9 @@ const App: React.FC = () => {
                   const IconComponent = item.icon;
                   return (
                     <div key={idx} className="relative z-10 flex flex-col items-center text-center bg-white p-4 rounded-2xl border border-teal-200 w-full md:w-48">
+                      <span className="text-xs font-bold text-teal-600 mb-2">{item.period}</span>
                       <IconComponent className="text-teal-700 w-8 h-8 mb-2" strokeWidth={1.5} />
-                      <span className="text-xs font-bold text-teal-600">{item.period}</span>
-                      <span className="text-sm font-patrick text-indigo-900 mt-1">{item.event}</span>
+                      <span className="text-sm font-patrick text-indigo-900">{item.event}</span>
                     </div>
                   );
                 })}
