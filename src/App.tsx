@@ -619,29 +619,36 @@ const App: React.FC = () => {
                   number: 5
                 },
               ].map((item, idx) => (
-                <div key={idx} className="bg-teal-50 p-6 rounded-[2.5rem] border border-teal-200 text-center space-y-4 hover:shadow-lg transition group">
+                <div key={idx} className="bg-teal-50 p-6 rounded-[2.5rem] border border-teal-200 text-center space-y-4 hover:shadow-lg transition group flex flex-col">
                   
                   {/* Строка 1: символ буквы (крупно) */}
                   <div className="text-7xl font-serif text-teal-600">{item.letter}</div>
                   
-                  {/* Строка 2: название буквы */}
-                  <div className="text-2xl font-patrick text-indigo-900">{item.name}</div>
+                  {/* Строка 2: название буквы — с фиксированной минимальной высотой */}
+                  <div className="text-2xl font-patrick text-indigo-900 min-h-[80px] flex items-center justify-center">
+                    {item.name}
+                  </div>
                   
-                  {/* Разделительная черта */}
+                  {/* Разделительная черта 1 — длинная, тонкая, еле заметная */}
                   <div className="w-[80%] h-px bg-teal-100 mx-auto opacity-70"></div>
                   
                   {/* Строка 3: краткое значение (рука/окно/крюк) */}
-                  <div className="text-sm text-slate-500 pt-2">{item.meaning}</div>
+                  <div className="text-sm text-slate-500 pt-2 min-h-[40px] flex items-center justify-center">
+                    {item.meaning}
+                  </div>
                   
-                  {/* Строка 4: значение в имени Тетраграмматона */}
-                  <div className="text-xs font-patrick text-indigo-800 bg-white/50 p-2 rounded-xl border border-teal-100">
+                  {/* Строка 4: значение в имени Тетраграмматона — с фиксированной высотой */}
+                  <div className="text-xs font-patrick text-indigo-800 bg-white/50 p-2 rounded-xl border border-teal-100 min-h-[60px] flex items-center justify-center">
                     {item.value}
                   </div>
                   
-                  {/* Разделительная черта */}
+                  {/* Разделительная черта 2 — длинная, тонкая, еле заметная */}
                   <div className="w-[80%] h-px bg-teal-100 mx-auto opacity-70"></div>
                   
-                  {/* Строка 5: цифра в круге */}
+                  {/* Строка 5: подпись "Гематрия" — таким же шрифтом, как краткое значение */}
+                  <div className="text-sm text-slate-500">Гематрия</div>
+                  
+                  {/* Строка 6: цифра в круге */}
                   <div className="w-12 h-12 mx-auto bg-teal-600 text-white rounded-full flex items-center justify-center text-xl font-bold shadow-md">
                     {item.number}
                   </div>
