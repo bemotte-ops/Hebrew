@@ -18,7 +18,11 @@ import {
   Star,
   Landmark,
   Search,
-  FileSearch2
+  FileSearch2,
+  Hand,
+  DoorOpen,
+  Link2,
+  Square
 } from 'lucide-react';
 
 interface Letter {
@@ -591,20 +595,68 @@ const App: React.FC = () => {
             {/* Four Squares Visualization */}
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
               {[
-                { letter: 'י', name: 'Йуд', meaning: 'Рука / Творение', number: 10, icon: '🤚' },
-                { letter: 'ה', name: 'Хей', meaning: 'Окно / Присутствие', number: 5, icon: '🪟' },
-                { letter: 'ו', name: 'Вав', meaning: 'Крюк / Связь', number: 6, icon: '🔗' },
-                { letter: 'ה', name: 'Хей', meaning: 'Окно / Завершение', number: 5, icon: '🪟' },
-              ].map((item, idx) => (
-                <div key={idx} className="bg-teal-50 p-6 rounded-[2.5rem] border border-teal-200 text-center space-y-3 hover:shadow-lg transition">
-                  <div className="text-7xl font-serif text-teal-600">{item.letter}</div>
-                  <div className="text-2xl font-patrick text-indigo-900">{item.name}</div>
-                  <div className="text-sm text-slate-500">{item.meaning}</div>
-                  <div className="w-12 h-12 mx-auto bg-teal-600 text-white rounded-full flex items-center justify-center text-xl font-bold">
-                    {item.number}
+                { 
+                  letter: 'י', 
+                  name: 'Йуд', 
+                  meaning: 'Рука / Творение', 
+                  number: 10, 
+                  icon: Hand,
+                  value: 'Начало, потенциал, точка творения'
+                },
+                { 
+                  letter: 'ה', 
+                  name: 'Хей', 
+                  meaning: 'Окно / Присутствие', 
+                  number: 5, 
+                  icon: DoorOpen,
+                  value: 'Проявление в мире, дыхание жизни'
+                },
+                { 
+                  letter: 'ו', 
+                  name: 'Вав', 
+                  meaning: 'Крюк / Связь', 
+                  number: 6, 
+                  icon: Link2,
+                  value: 'Соединение неба и земли, вертикальная связь'
+                },
+                { 
+                  letter: 'ה', 
+                  name: 'Хей (конечная)', 
+                  meaning: 'Окно / Завершение', 
+                  number: 5, 
+                  icon: Square,
+                  value: 'Завершённое проявление, присутствие в итоге'
+                },
+              ].map((item, idx) => {
+                const IconComponent = item.icon;
+                return (
+                  <div key={idx} className="bg-teal-50 p-6 rounded-[2.5rem] border border-teal-200 text-center space-y-4 hover:shadow-lg transition group">
+                    {/* Иконка сверху — indigo-900 */}
+                    <div className="flex justify-center">
+                      <IconComponent className="text-indigo-900 w-8 h-8 opacity-80 group-hover:opacity-100 transition-opacity" strokeWidth={1.5} />
+                    </div>
+                    
+                    {/* Буква — крупно */}
+                    <div className="text-7xl font-serif text-teal-600">{item.letter}</div>
+                    
+                    {/* Название буквы */}
+                    <div className="text-2xl font-patrick text-indigo-900">{item.name}</div>
+                    
+                    {/* Символическое значение (кратко) */}
+                    <div className="text-sm text-slate-500 border-b border-teal-200 pb-2">{item.meaning}</div>
+                    
+                    {/* Числовое значение в круге */}
+                    <div className="w-12 h-12 mx-auto bg-teal-600 text-white rounded-full flex items-center justify-center text-xl font-bold shadow-md">
+                      {item.number}
+                    </div>
+                    
+                    {/* Значение в имени Тетраграмматона — НОВОЕ */}
+                    <div className="text-xs font-patrick text-indigo-800 bg-white/50 p-2 rounded-xl border border-teal-100 mt-2">
+                      {item.value}
+                    </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
         
             {/* Total 26 + Алеф connection */}
@@ -621,28 +673,7 @@ const App: React.FC = () => {
                 <p className="text-slate-500 mt-2">Форма Алеф раскрывает то же число 26</p>
               </div>
             </div>
-        
-            {/* Table with details */}
-            <div className="overflow-x-auto rounded-3xl border border-teal-200">
-              <table className="w-full text-center">
-                <thead className="bg-teal-50 border-b border-teal-200">
-                  <tr>
-                    <th className="px-6 py-4 text-indigo-900 font-patrick uppercase text-xs">Буква</th>
-                    <th className="px-6 py-4 text-indigo-900 font-patrick uppercase text-xs">Название</th>
-                    <th className="px-6 py-4 text-indigo-900 font-patrick uppercase text-xs">Символ</th>
-                    <th className="px-6 py-4 text-indigo-900 font-patrick uppercase text-xs">Число</th>
-                    <th className="px-6 py-4 text-indigo-900 font-patrick uppercase text-xs">Значение в Имени</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-slate-100">
-                  <tr><td className="px-6 py-4 text-3xl font-serif text-teal-600">י</td><td className="px-6 py-4">Йуд</td><td className="px-6 py-4">Рука, точка творения</td><td className="px-6 py-4">10</td><td className="px-6 py-4">Начало, потенциал</td></tr>
-                  <tr><td className="px-6 py-4 text-3xl font-serif text-teal-600">ה</td><td className="px-6 py-4">Хей</td><td className="px-6 py-4">Окно, дыхание</td><td className="px-6 py-4">5</td><td className="px-6 py-4">Проявление в мире</td></tr>
-                  <tr><td className="px-6 py-4 text-3xl font-serif text-teal-600">ו</td><td className="px-6 py-4">Вав</td><td className="px-6 py-4">Крюк, соединение</td><td className="px-6 py-4">6</td><td className="px-6 py-4">Связь неба и земли</td></tr>
-                  <tr><td className="px-6 py-4 text-3xl font-serif text-teal-600">ה</td><td className="px-6 py-4">Хей (конечная)</td><td className="px-6 py-4">Завершённое проявление</td><td className="px-6 py-4">5</td><td className="px-6 py-4">Присутствие в итоге</td></tr>
-                </tbody>
-              </table>
-            </div>
-        
+                
             {/* Timeline: История использования */}
             <div className="space-y-6">
               <h3 className="text-2xl font-patrick text-indigo-900 text-center">История Имени: от Произнесения к Благоговению</h3>
