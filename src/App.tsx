@@ -630,20 +630,20 @@ const App: React.FC = () => {
                   </div>
                   
                   {/* Разделительная черта 1 — длинная, тонкая, еле заметная */}
-                  <div className="w-[80%] h-px bg-teal-100 mx-auto opacity-70"></div>
+                  <div className="w-[80%] h-px bg-teal-100 mx-auto"></div>
                   
                   {/* Строка 3: краткое значение (рука/окно/крюк) */}
                   <div className="text-sm text-slate-500 pt-2 min-h-[40px] flex items-center justify-center">
                     {item.meaning}
                   </div>
                   
-                  {/* Строка 4: значение в имени Тетраграмматона — с фиксированной высотой */}
-                  <div className="text-xs font-patrick text-indigo-800 bg-white/50 p-2 rounded-xl border border-teal-100 min-h-[60px] flex items-center justify-center">
-                    {item.value}
+                  {/* Строка 4: значение в имени — фиксированная высота 60px, с ограничением строк */}
+                  <div className="text-xs font-patrick text-indigo-800 bg-white/50 p-2 rounded-xl border border-teal-100 h-[60px] flex items-center justify-center">
+                    <span className="line-clamp-2 text-center">{item.value}</span>
                   </div>
                   
                   {/* Разделительная черта 2 — длинная, тонкая, еле заметная */}
-                  <div className="w-[80%] h-px bg-teal-100 mx-auto opacity-70"></div>
+                  <div className="w-[80%] h-px bg-teal-100 mx-auto"></div>
                   
                   {/* Строка 5: подпись "Гематрия" — таким же шрифтом, как краткое значение */}
                   <div className="text-sm text-slate-500">Гематрия</div>
