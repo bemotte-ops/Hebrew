@@ -10,7 +10,6 @@ import {
   BookOpen,
   Compass,
   ArrowRight,
-  Calculator,
   Zap,
   Eye,
   ChevronDown,
@@ -18,13 +17,7 @@ import {
   Star,
   Landmark,
   Search,
-  FileSearch2,
-  Hand,
-  DoorOpen,
-  Link2,
-  Square,
-  ChevronsUpDown,
-  Window
+  FileSearch2
 } from 'lucide-react';
 
 interface Letter {
