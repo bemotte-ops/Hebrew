@@ -23,7 +23,8 @@ import {
   DoorOpen,
   Link2,
   Square,
-  ChevronsUpDown
+  ChevronsUpDown,
+  Window
 } from 'lucide-react';
 
 interface Letter {
