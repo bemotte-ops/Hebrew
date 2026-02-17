@@ -22,7 +22,8 @@ import {
   Hand,
   DoorOpen,
   Link2,
-  Square
+  Square,
+  ChevronsUpDown
 } from 'lucide-react';
 
 interface Letter {
@@ -608,7 +609,7 @@ const App: React.FC = () => {
                   name: 'Хей', 
                   meaning: 'Окно / Присутствие', 
                   number: 5, 
-                  icon: DoorOpen,
+                  icon: Window,
                   value: 'Проявление в мире, дыхание жизни'
                 },
                 { 
@@ -616,7 +617,7 @@ const App: React.FC = () => {
                   name: 'Вав', 
                   meaning: 'Крюк / Связь', 
                   number: 6, 
-                  icon: Link2,
+                  icon: ChevronsUpDown,
                   value: 'Соединение неба и земли, вертикальная связь'
                 },
                 { 
@@ -624,7 +625,7 @@ const App: React.FC = () => {
                   name: 'Хей (конечная)', 
                   meaning: 'Окно / Завершение', 
                   number: 5, 
-                  icon: Square,
+                  icon: Window,
                   value: 'Завершённое проявление, присутствие в итоге'
                 },
               ].map((item, idx) => {
