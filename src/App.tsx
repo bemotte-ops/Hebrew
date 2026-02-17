@@ -600,65 +600,61 @@ const App: React.FC = () => {
                 { 
                   letter: 'י', 
                   name: 'Йуд', 
-                  meaning: 'Рука / Творение', 
-                  number: 10, 
-                  icon: Hand,
-                  value: 'Начало, потенциал, точка творения'
+                  meaning: 'Рука / Творение',
+                  value: 'Начало, потенциал, точка творения',
+                  number: 10
                 },
                 { 
                   letter: 'ה', 
                   name: 'Хей', 
-                  meaning: 'Окно / Присутствие', 
-                  number: 5, 
-                  icon: Window,
-                  value: 'Проявление в мире, дыхание жизни'
+                  meaning: 'Окно / Присутствие',
+                  value: 'Проявление в мире, дыхание жизни',
+                  number: 5
                 },
                 { 
                   letter: 'ו', 
                   name: 'Вав', 
-                  meaning: 'Крюк / Связь', 
-                  number: 6, 
-                  icon: ChevronsUpDown,
-                  value: 'Соединение неба и земли, вертикальная связь'
+                  meaning: 'Крюк / Связь',
+                  value: 'Соединение неба и земли, вертикальная связь',
+                  number: 6
                 },
                 { 
                   letter: 'ה', 
                   name: 'Хей (конечная)', 
-                  meaning: 'Окно / Завершение', 
-                  number: 5, 
-                  icon: Window,
-                  value: 'Завершённое проявление, присутствие в итоге'
+                  meaning: 'Окно / Завершение',
+                  value: 'Завершённое проявление, присутствие в итоге',
+                  number: 5
                 },
-              ].map((item, idx) => {
-                const IconComponent = item.icon;
-                return (
-                  <div key={idx} className="bg-teal-50 p-6 rounded-[2.5rem] border border-teal-200 text-center space-y-4 hover:shadow-lg transition group">
-                    {/* Иконка сверху — indigo-900 */}
-                    <div className="flex justify-center">
-                      <IconComponent className="text-indigo-900 w-8 h-8 opacity-80 group-hover:opacity-100 transition-opacity" strokeWidth={1.5} />
-                    </div>
-                    
-                    {/* Буква — крупно */}
-                    <div className="text-7xl font-serif text-teal-600">{item.letter}</div>
-                    
-                    {/* Название буквы */}
-                    <div className="text-2xl font-patrick text-indigo-900">{item.name}</div>
-                    
-                    {/* Символическое значение (кратко) */}
-                    <div className="text-sm text-slate-500 border-b border-teal-200 pb-2">{item.meaning}</div>
-                    
-                    {/* Числовое значение в круге */}
-                    <div className="w-12 h-12 mx-auto bg-teal-600 text-white rounded-full flex items-center justify-center text-xl font-bold shadow-md">
-                      {item.number}
-                    </div>
-                    
-                    {/* Значение в имени Тетраграмматона — НОВОЕ */}
-                    <div className="text-xs font-patrick text-indigo-800 bg-white/50 p-2 rounded-xl border border-teal-100 mt-2">
-                      {item.value}
-                    </div>
+              ].map((item, idx) => (
+                <div key={idx} className="bg-teal-50 p-6 rounded-[2.5rem] border border-teal-200 text-center space-y-4 hover:shadow-lg transition group">
+                  
+                  {/* Строка 1: символ буквы (крупно) */}
+                  <div className="text-7xl font-serif text-teal-600">{item.letter}</div>
+                  
+                  {/* Строка 2: название буквы */}
+                  <div className="text-2xl font-patrick text-indigo-900">{item.name}</div>
+                  
+                  {/* Разделительная черта */}
+                  <div className="w-12 h-0.5 bg-teal-200 mx-auto"></div>
+                  
+                  {/* Строка 3: краткое значение (рука/окно/крюк) */}
+                  <div className="text-sm text-slate-500 pt-2">{item.meaning}</div>
+                  
+                  {/* Строка 4: значение в имени Тетраграмматона */}
+                  <div className="text-xs font-patrick text-indigo-800 bg-white/50 p-2 rounded-xl border border-teal-100">
+                    {item.value}
                   </div>
-                );
-              })}
+                  
+                  {/* Разделительная черта */}
+                  <div className="w-12 h-0.5 bg-teal-200 mx-auto"></div>
+                  
+                  {/* Строка 5: цифра в круге */}
+                  <div className="w-12 h-12 mx-auto bg-teal-600 text-white rounded-full flex items-center justify-center text-xl font-bold shadow-md">
+                    {item.number}
+                  </div>
+                  
+                </div>
+              ))}
             </div>
         
             {/* Total 26 + Алеф connection */}
