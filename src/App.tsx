@@ -628,7 +628,7 @@ const App: React.FC = () => {
                   <div className="text-2xl font-patrick text-indigo-900">{item.name}</div>
                   
                   {/* Разделительная черта */}
-                  <div className="w-12 h-0.5 bg-teal-200 mx-auto"></div>
+                  <div className="w-[80%] h-px bg-teal-100 mx-auto opacity-70"></div>
                   
                   {/* Строка 3: краткое значение (рука/окно/крюк) */}
                   <div className="text-sm text-slate-500 pt-2">{item.meaning}</div>
@@ -639,7 +639,7 @@ const App: React.FC = () => {
                   </div>
                   
                   {/* Разделительная черта */}
-                  <div className="w-12 h-0.5 bg-teal-200 mx-auto"></div>
+                  <div className="w-[80%] h-px bg-teal-100 mx-auto opacity-70"></div>
                   
                   {/* Строка 5: цифра в круге */}
                   <div className="w-12 h-12 mx-auto bg-teal-600 text-white rounded-full flex items-center justify-center text-xl font-bold shadow-md">
