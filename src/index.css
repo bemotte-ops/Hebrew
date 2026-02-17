@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Inter:wght@400;700&display=swap');
+
 :root {
   --text: #6b6375;
   --text-h: #08060d;
@@ -54,10 +55,9 @@ body {
   color: var(--text);
 }
 
-/* Принудительное применение стилей к корневому элементу */
+/* Корневой контейнер — теперь на всю ширину */
 #root {
-  width: 1126px;
-  max-width: 100%;
+  width: 100%;              /* всегда на всю ширину */
   margin: 0 auto;
   border-left: 1px solid var(--border);
   border-right: 1px solid var(--border);
@@ -81,7 +81,7 @@ h1 {
 
 @media (max-width: 1024px) {
   h1 { font-size: 36px; margin: 20px 0; }
-  #root { border-inline: none; }
+  #root { border-inline: none; }  /* убираем боковые границы на мобильных */
 }
 
 code {
