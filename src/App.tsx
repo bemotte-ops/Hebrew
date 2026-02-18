@@ -630,7 +630,7 @@ const App: React.FC = () => {
                   </div>
                   
                   {/* Разделительная черта 1 — длинная, тонкая, еле заметная */}
-                  <div className="w-[90%] h-0.5px bg-teal-200 mx-auto"></div>
+                  <div className="w-[90%] h-px bg-teal-200 mx-auto"></div>
                   
                   {/* Строка 3: краткое значение (рука/окно/крюк) */}
                   <div className="text-sm text-slate-500 pt-2 min-h-[40px] flex items-center justify-center">
@@ -643,7 +643,7 @@ const App: React.FC = () => {
                   </div>
                   
                   {/* Разделительная черта 2 — длинная, тонкая, еле заметная */}
-                  <div className="w-[90%] h-0.5px bg-teal-200 mx-auto"></div>
+                  <div className="w-[90%] h-px bg-teal-200 mx-auto"></div>
                   
                   {/* Строка 5: подпись "Гематрия" — таким же шрифтом, как краткое значение */}
                   <div className="text-sm text-slate-500">Гематрия</div>
