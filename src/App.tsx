@@ -475,59 +475,59 @@ const App: React.FC = () => {
             <div className="bg-teal-50 p-8 rounded-[2.5rem] border border-teal-200 flex flex-col md:flex-row items-center justify-between gap-6 my-12">
               
               {/* Левая часть: Сумма букв */}
-              <div className="text-center md:text-left flex-1">
-                <span className="text-sm uppercase tracking-widest text-teal-600 font-bold">Главное Имя Бога</span>
-                
-                {/* Формула Тетраграмматона */}
-                <div className="text-2xl md:text-3xl font-serif text-indigo-900 mt-2 flex items-center justify-center md:justify-start gap-1 flex-wrap">
-                  <span className="font-mono">י</span>
-                  <span className="text-slate-500">(10)</span>
-                  <span className="text-slate-500">+</span>
-                  <span className="font-mono">ה</span>
-                  <span className="text-slate-500">(5)</span>
-                  <span className="text-slate-500">+</span>
-                  <span className="font-mono">ו</span>
-                  <span className="text-slate-500">(6)</span>
-                  <span className="text-slate-500">+</span>
-                  <span className="font-mono">ה</span>
-                  <span className="text-slate-500">(5)</span>
-                  <span className="text-slate-500 mx-1">=</span>
-                  <span className="text-teal-600 text-3xl">26</span>
-                </div>
-                
-                <p className="text-sm text-slate-500 mt-1">
-                  Число 26 — гематрия Тетраграмматона
-                </p>
+            <div className="text-center md:text-left flex-1">
+              <span className="text-sm uppercase tracking-widest text-teal-600 font-bold">Главное Имя Бога</span>
+              
+              {/* Формула Тетраграмматона — адаптивный размер */}
+              <div className="text-xl md:text-2xl lg:text-3xl font-serif text-indigo-900 mt-2 flex items-center justify-center md:justify-start gap-0.5 sm:gap-1 flex-wrap">
+                <span className="font-mono text-lg sm:text-xl md:text-2xl lg:text-3xl">י</span>
+                <span className="text-slate-500 text-sm sm:text-base md:text-lg lg:text-xl">(10)</span>
+                <span className="text-slate-500 text-sm sm:text-base md:text-lg lg:text-xl">+</span>
+                <span className="font-mono text-lg sm:text-xl md:text-2xl lg:text-3xl">ה</span>
+                <span className="text-slate-500 text-sm sm:text-base md:text-lg lg:text-xl">(5)</span>
+                <span className="text-slate-500 text-sm sm:text-base md:text-lg lg:text-xl">+</span>
+                <span className="font-mono text-lg sm:text-xl md:text-2xl lg:text-3xl">ו</span>
+                <span className="text-slate-500 text-sm sm:text-base md:text-lg lg:text-xl">(6)</span>
+                <span className="text-slate-500 text-sm sm:text-base md:text-lg lg:text-xl">+</span>
+                <span className="font-mono text-lg sm:text-xl md:text-2xl lg:text-3xl">ה</span>
+                <span className="text-slate-500 text-sm sm:text-base md:text-lg lg:text-xl">(5)</span>
+                <span className="text-slate-500 text-sm sm:text-base md:text-lg lg:text-xl mx-1">=</span>
+                <span className="text-teal-600 text-xl sm:text-2xl md:text-3xl lg:text-4xl">26</span>
               </div>
               
-              {/* Стрелка-разделитель */}
-              <div className="text-slate-300 text-3xl hidden md:block">⇄</div>
-              <div className="text-slate-300 text-3xl md:hidden rotate-90">⇄</div>
+              <p className="text-sm text-slate-500 mt-1">
+                Число 26 — гематрия Тетраграмматона
+              </p>
+            </div>
+            
+            {/* Стрелка-разделитель */}
+            <div className="text-slate-300 text-3xl hidden md:block">⇄</div>
+            <div className="text-slate-300 text-3xl md:hidden rotate-90">⇄</div>
+            
+            {/* Правая часть: Скрыто в букве Алеф */}
+            <div className="text-center md:text-right flex-1">
+              <span className="text-sm uppercase tracking-widest text-teal-600 font-bold">Скрыто в букве Алеф</span>
               
-              {/* Правая часть: Скрыто в букве Алеф */}
-              <div className="text-center md:text-right flex-1">
-                <span className="text-sm uppercase tracking-widest text-teal-600 font-bold">Скрыто в букве Алеф</span>
-                
-                {/* Формула Алеф */}
-                <div className="text-2xl md:text-3xl font-serif text-indigo-900 mt-2 flex items-center justify-center md:justify-end gap-1 flex-wrap">
-                  <span className="text-teal-600 text-3xl">א</span>
-                  <span className="text-slate-500">=</span>
-                  <span className="font-mono">י</span>
-                  <span className="text-slate-500">(10)</span>
-                  <span className="text-slate-500">+</span>
-                  <span className="font-mono">ו</span>
-                  <span className="text-slate-500">(6)</span>
-                  <span className="text-slate-500">+</span>
-                  <span className="font-mono">י</span>
-                  <span className="text-slate-500">(10)</span>
-                  <span className="text-slate-500 mx-1">=</span>
-                  <span className="text-teal-600 text-3xl">26</span>
-                </div>
-                
-                <p className="text-sm text-slate-500 mt-1">
-                  Форма Алеф раскрывает то же число 26
-                </p>
+              {/* Формула Алеф — тоже адаптивный размер */}
+              <div className="text-xl md:text-2xl lg:text-3xl font-serif text-indigo-900 mt-2 flex items-center justify-center md:justify-end gap-0.5 sm:gap-1 flex-wrap">
+                <span className="text-teal-600 text-xl sm:text-2xl md:text-3xl lg:text-4xl">א</span>
+                <span className="text-slate-500 text-sm sm:text-base md:text-lg lg:text-xl">=</span>
+                <span className="font-mono text-lg sm:text-xl md:text-2xl lg:text-3xl">י</span>
+                <span className="text-slate-500 text-sm sm:text-base md:text-lg lg:text-xl">(10)</span>
+                <span className="text-slate-500 text-sm sm:text-base md:text-lg lg:text-xl">+</span>
+                <span className="font-mono text-lg sm:text-xl md:text-2xl lg:text-3xl">ו</span>
+                <span className="text-slate-500 text-sm sm:text-base md:text-lg lg:text-xl">(6)</span>
+                <span className="text-slate-500 text-sm sm:text-base md:text-lg lg:text-xl">+</span>
+                <span className="font-mono text-lg sm:text-xl md:text-2xl lg:text-3xl">י</span>
+                <span className="text-slate-500 text-sm sm:text-base md:text-lg lg:text-xl">(10)</span>
+                <span className="text-slate-500 text-sm sm:text-base md:text-lg lg:text-xl mx-1">=</span>
+                <span className="text-teal-600 text-xl sm:text-2xl md:text-3xl lg:text-4xl">26</span>
               </div>
+              
+              <p className="text-sm text-slate-500 mt-1">
+                Форма Алеф раскрывает то же число 26
+              </p>
+            </div>
               
             </div> {/* ← закрыли блок с формулами */}
         
