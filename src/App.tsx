@@ -467,7 +467,7 @@ const App: React.FC = () => {
                 Её числовое значение — 1, что указывает на Единого Творца.
                 Но если разложить саму форму Алеф, мы увидим, что она графически состоит из двух букв 
                 <span className="font-serif"> י</span> [Йуд] и соединяющей их 
-                <span className="font-serif"> ו</span> [Вав], что в сумме дает 26, а 26 — это гематрия главного Имени Бога <span className="font-serif">יהוה</span> [Йуд-Хей-Вав-Хей]:
+                <span className="font-serif"> ו</span> [Вав], что в сумме дает 26 и равно гематрии главного Имени Бога <span className="font-serif">יהוה</span> [Йуд-Хей-Вав-Хей]:
               </p>
               
               {/* Total 26 + Алеф connection */}
@@ -554,7 +554,7 @@ const App: React.FC = () => {
               <p className="text-lg font-patrick">
                 Совпадение чисел Любви (אהבה) и Единства (אחד) — 13 — не случайно. 
                 Оно указывает на глубинный закон бытия: Любовь и Единство неразделимы. 
-                Как Алеф (1) раскрывается в Четырёхбуквенном Имени <a href="#tetragrammaton" className="underline text-teal-600 hover:text-white transition-colors">Тетраграмматон</a> (26), 
+                Как Алеф (1) раскрывается в Четырёхбуквенном Имени Бога <a href="#tetragrammaton" className="underline text-teal-600 hover:text-white transition-colors">Тетраграмматон</a> (26), 
                 так и эти слова говорят об одном: мир сотворён Любовью и держится на ней, а высшая Цель человека — через Любовь прийти к Единому
               </p>
             </div>
