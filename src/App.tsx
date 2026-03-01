@@ -458,7 +458,7 @@ const App: React.FC = () => {
             <div className="text-center space-y-3">
               <h2 className="text-4xl font-patrick text-teal-600">Гематрия: числовой код языка</h2>
             </div>
-
+        
             {/* Вступительный блок — ключ к пониманию системы */}
             <div className="text-lg text-slate-700">
               <p>
@@ -467,59 +467,77 @@ const App: React.FC = () => {
                 Её числовое значение — 1, что указывает на Единого Творца.
                 Но если разложить саму форму Алеф, мы увидим, что она графически состоит из двух букв 
                 <span className="font-serif"> י</span> [Йуд] и соединяющей их 
-                <span className="font-serif"> ו</span> [Вав], что в сумме дает 26 и равно гематрии главного Имени Бога <span className="font-serif">יהוה</span> [Йуд-Хей-Вав-Хей]:
+                <span className="font-serif"> ו</span> [Вав], что в сумме дает 26 и равно гематрии главного Имени Бога <span className="font-serif">יהוה</span> [Йуд-Хей-Вав-Хей]
               </p>
-              
-              {/* Total 26 + Алеф connection */}
+            </div> {/* ← закрыли вступительный блок */}
+        
+            {/* Total 26 + Алеф connection */}
             <div className="bg-teal-50 p-8 rounded-[2.5rem] border border-teal-200 flex flex-col md:flex-row items-center justify-between gap-6 my-12">
               
               {/* Левая часть: Сумма букв */}
               <div className="text-center md:text-left flex-1">
-                <span className="text-sm uppercase tracking-widest text-teal-600 font-bold">Сумма букв</span>
-                <div className="text-4xl md:text-5xl font-patrick text-indigo-900 mt-2">
-                  10 + 5 + 6 + 5 = <span className="text-teal-600">26</span>
+                <span className="text-sm uppercase tracking-widest text-teal-600 font-bold">Главное Имя Бога</span>
+                
+                {/* Формула Тетраграмматона */}
+                <div className="text-2xl md:text-3xl font-serif text-indigo-900 mt-2 flex items-center justify-center md:justify-start gap-1 flex-wrap">
+                  <span className="font-mono">י</span>
+                  <span className="text-slate-500">(10)</span>
+                  <span className="text-slate-500">+</span>
+                  <span className="font-mono">ה</span>
+                  <span className="text-slate-500">(5)</span>
+                  <span className="text-slate-500">+</span>
+                  <span className="font-mono">ו</span>
+                  <span className="text-slate-500">(6)</span>
+                  <span className="text-slate-500">+</span>
+                  <span className="font-mono">ה</span>
+                  <span className="text-slate-500">(5)</span>
+                  <span className="text-slate-500 mx-1">=</span>
+                  <span className="text-teal-600 text-3xl">26</span>
                 </div>
+                
                 <p className="text-sm text-slate-500 mt-1">
                   Число 26 — гематрия Тетраграмматона
                 </p>
               </div>
-            
-              {/* Стрелка-разделитель (на десктопе горизонтальная, на мобильных вертикальная) */}
+              
+              {/* Стрелка-разделитель */}
               <div className="text-slate-300 text-3xl hidden md:block">⇄</div>
               <div className="text-slate-300 text-3xl md:hidden rotate-90">⇄</div>
-            
+              
               {/* Правая часть: Скрыто в букве Алеф */}
               <div className="text-center md:text-right flex-1">
                 <span className="text-sm uppercase tracking-widest text-teal-600 font-bold">Скрыто в букве Алеф</span>
                 
-                {/* Формула Алеф — аккуратно отформатирована */}
-                <div className="text-2xl md:text-3xl font-serif text-indigo-900 mt-2 flex items-center justify-center md:justify-end gap-1">
+                {/* Формула Алеф */}
+                <div className="text-2xl md:text-3xl font-serif text-indigo-900 mt-2 flex items-center justify-center md:justify-end gap-1 flex-wrap">
                   <span className="text-teal-600 text-3xl">א</span>
                   <span className="text-slate-500">=</span>
                   <span className="font-mono">י</span>
                   <span className="text-slate-500">(10)</span>
-                  <span>+</span>
+                  <span className="text-slate-500">+</span>
                   <span className="font-mono">ו</span>
                   <span className="text-slate-500">(6)</span>
-                  <span>+</span>
+                  <span className="text-slate-500">+</span>
                   <span className="font-mono">י</span>
                   <span className="text-slate-500">(10)</span>
+                  <span className="text-slate-500 mx-1">=</span>
+                  <span className="text-teal-600 text-3xl">26</span>
                 </div>
                 
                 <p className="text-sm text-slate-500 mt-1">
                   Форма Алеф раскрывает то же число 26
                 </p>
               </div>
-            
-            </div>
               
-              
-              <p className="text-lg text-slate-700 mt-8">
-                Так через форму одной буквы раскрывается связь Единицы с Творцом, а гематрия становится ключом 
-                к скрытым измерениям текста
-              </p>
-            </div>
+            </div> {/* ← закрыли блок с формулами */}
         
+            {/* Текст-связка после блока формул */}
+            <p className="text-lg text-slate-700">
+              Так через форму одной буквы раскрывается связь Единицы с Творцом, а гематрия становится ключом 
+              к скрытым измерениям текста
+            </p>
+        
+            {/* Карточки Любовь и Единство */}
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-teal-50 p-8 rounded-[2.5rem] shadow-sm space-y-6 border border-teal-200">
                 <h4 className="text-xl font-patrick text-indigo-900">Слово «Любовь» [Ахава]</h4>
@@ -544,21 +562,23 @@ const App: React.FC = () => {
                   <div className="flex justify-between"><span>Далет (ד)</span> <span>4</span></div>
                   <div className="flex justify-between opacity-0"><span>&nbsp;</span><span>&nbsp;</span></div>
                 </div>
-                <div className="pt-4 border-t flex justify-between font-patrick text-2xl text-teal-700 mt-15">
+                <div className="pt-4 border-t flex justify-between font-patrick text-2xl text-teal-700">
                   <span>ИТОГО:</span> <span>1 + 8 + 4 = 13</span>
                 </div>
               </div>
             </div>
         
+            {/* Финальный блок с выводом */}
             <div className="text-left p-7 bg-slate-50 text-slate-700 rounded-3xl shadow-xl border border-indigo-900">
               <p className="text-lg font-patrick">
                 Совпадение чисел Любви (אהבה) и Единства (אחד) — 13 — не случайно. 
                 Оно указывает на глубинный закон бытия: Любовь и Единство неразделимы. 
-                Как Алеф (1) раскрывается в Четырёхбуквенном Имени Бога <a href="#tetragrammaton" className="underline text-teal-600 hover:text-white transition-colors">Тетраграмматон</a> (26), 
+                Как Алеф (1) раскрывается в Четырёхбуквенном Имени Бога <a href="#tetragrammaton" className="underline text-teal-600 hover:text-teal-800 transition-colors">Тетраграмматон</a> (26), 
                 так и эти слова говорят об одном: мир сотворён Любовью и держится на ней, а высшая Цель человека — через Любовь прийти к Единому
               </p>
             </div>
-          </div>
+        
+          </div> {/* ← закрыли основной div с space-y-10 */}
         </section>
 
         {/* 4. Full Alphabet Table Summary - Updated Styles */}
