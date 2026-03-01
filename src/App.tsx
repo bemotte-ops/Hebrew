@@ -637,9 +637,9 @@ const App: React.FC = () => {
                     {item.meaning}
                   </div>
                   
-                  {/* Строка 4: значение в имени — фиксированная высота 60px, с ограничением строк */}
-                  <div className="text-xs font-patrick text-indigo-800 bg-white/50 p-2 rounded-xl border border-teal-100 h-[60px] flex items-center justify-center">
-                    <span className="line-clamp-2 text-center">{item.value}</span>
+                  {/* Строка 4: значение в имени Тетраграмматона — универсальная высота для всех */}
+                  <div className="text-xs font-patrick text-indigo-800 bg-white/50 p-2 rounded-xl border border-teal-100 h-[80px] flex items-center justify-center">
+                    <span className="text-center">{item.value}</span>
                   </div>
                   
                   {/* Разделительная черта 2 — длинная, тонкая, еле заметная */}
@@ -659,17 +659,45 @@ const App: React.FC = () => {
         
             {/* Total 26 + Алеф connection */}
             <div className="bg-teal-50 p-8 rounded-[2.5rem] border border-teal-200 flex flex-col md:flex-row items-center justify-between gap-6">
-              <div className="text-center md:text-left">
+              
+              {/* Левая часть: Сумма букв */}
+              <div className="text-center md:text-left flex-1">
                 <span className="text-sm uppercase tracking-widest text-teal-600 font-bold">Сумма букв</span>
-                <div className="text-5xl font-patrick text-indigo-900">10 + 5 + 6 + 5 = <span className="text-teal-600">26</span></div>
-                <p className="text-slate-500 mt-2">Число 26 — гематрия Тетраграмматона</p>
+                <div className="text-4xl md:text-5xl font-patrick text-indigo-900 mt-2">
+                  10 + 5 + 6 + 5 = <span className="text-teal-600">26</span>
+                </div>
+                <p className="text-sm text-slate-500 mt-1">
+                  Число 26 — гематрия Тетраграмматона
+                </p>
               </div>
-              <div className="text-slate-300 text-4xl">⇄</div>
-              <div className="text-center md:text-right">
+            
+              {/* Стрелка-разделитель (на десктопе горизонтальная, на мобильных вертикальная) */}
+              <div className="text-slate-300 text-3xl hidden md:block">⇄</div>
+              <div className="text-slate-300 text-3xl md:hidden rotate-90">⇄</div>
+            
+              {/* Правая часть: Скрыто в букве Алеф */}
+              <div className="text-center md:text-right flex-1">
                 <span className="text-sm uppercase tracking-widest text-teal-600 font-bold">Скрыто в букве Алеф</span>
-                <div className="text-3xl font-serif text-indigo-900">א = <span className="font-mono">י (10) + ו (6) + י (10)</span></div>
-                <p className="text-slate-500 mt-2">Форма Алеф раскрывает то же число 26</p>
+                
+                {/* Формула Алеф — аккуратно отформатирована */}
+                <div className="text-2xl md:text-3xl font-serif text-indigo-900 mt-2 flex items-center justify-center md:justify-end gap-1">
+                  <span className="text-teal-600 text-3xl">א</span>
+                  <span className="text-slate-500">=</span>
+                  <span className="font-mono">י</span>
+                  <span className="text-slate-500">(10)</span>
+                  <span>+</span>
+                  <span className="font-mono">ו</span>
+                  <span className="text-slate-500">(6)</span>
+                  <span>+</span>
+                  <span className="font-mono">י</span>
+                  <span className="text-slate-500">(10)</span>
+                </div>
+                
+                <p className="text-sm text-slate-500 mt-1">
+                  Форма Алеф раскрывает то же число 26
+                </p>
               </div>
+            
             </div>
                 
             {/* Timeline: История использования */}
@@ -769,7 +797,7 @@ const App: React.FC = () => {
             {/* Заключительная цитата */}
             <div className="text-center p-7 bg-teal-600 text-white rounded-3xl shadow-xl">
               <p className="text-xl font-patrick italic">
-                «В имени יהוה сокрыто всё: прошлое, настоящее и будущее. Это не просто имя — это само Бытие, зашифрованное в четырёх буквах.»
+                «В имени יהוה сокрыто всё: прошлое, настоящее и будущее. Это не просто имя — это само Бытие, зашифрованное в четырёх буквах»
               </p>
             </div>
         
