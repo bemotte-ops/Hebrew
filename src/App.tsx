@@ -467,14 +467,11 @@ const App: React.FC = () => {
                 Её числовое значение — 1, что указывает на Единого Творца.
                 Но если разложить саму форму Алеф, мы увидим, что она графически состоит из двух букв 
                 <span className="font-serif"> י</span> [Йуд] и соединяющей их 
-                <span className="font-serif"> ו</span> [Вав], что в сумме дает 26
-              </p>
-              <p className="text-lg text-slate-700">
-                А 26 — это гематрия главного Имени Бога <span className="font-serif">יהוה</span> [Йуд-Хей-Вав-Хей]:
+                <span className="font-serif"> ו</span> [Вав], что в сумме дает 26, а 26 — это гематрия главного Имени Бога <span className="font-serif">יהוה</span> [Йуд-Хей-Вав-Хей]:
               </p>
               
               {/* Total 26 + Алеф connection */}
-            <div className="bg-teal-50 p-8 rounded-[2.5rem] border border-teal-200 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div className="bg-teal-50 p-8 rounded-[2.5rem] border border-teal-200 flex flex-col md:flex-row items-center justify-between gap-6 my-12">
               
               {/* Левая часть: Сумма букв */}
               <div className="text-center md:text-left flex-1">
@@ -517,7 +514,7 @@ const App: React.FC = () => {
             </div>
               
               
-              <p className="text-lg text-slate-700">
+              <p className="text-lg text-slate-700 mt-8">
                 Так через форму одной буквы раскрывается связь Единицы с Творцом, а гематрия становится ключом 
                 к скрытым измерениям текста
               </p>
