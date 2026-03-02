@@ -546,7 +546,7 @@ const App: React.FC = () => {
               Так через форму одной буквы раскрывается связь Единицы с Творцом, а гематрия становится ключом 
               к скрытым измерениям текста
             </p>
-        
+                    
             {/* Карточки Любовь и Единство */}
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-teal-50 p-8 rounded-[2.5rem] shadow-sm space-y-6 border border-teal-200">
@@ -559,9 +559,11 @@ const App: React.FC = () => {
                   <div className="flex justify-between"><span>Хей (ה)</span> <span>5</span></div>
                 </div>
                 <div className="pt-4 border-t">
-                  <div className="flex flex-col sm:flex-row justify-between font-patrick text-2xl text-teal-700">
-                    <span>ИТОГО:</span>
-                    <span className="font-mono">1 + 5 + 2 + 5 = 13</span>
+                  <div className="flex flex-col sm:flex-row justify-between font-patrick">
+                    <span className="text-xl sm:text-2xl text-teal-700">ИТОГО:</span>
+                    <span className="text-sm sm:text-base md:text-lg lg:text-2xl font-mono text-teal-700 break-words">
+                      1 + 5 + 2 + 5 = 13
+                    </span>
                   </div>
                 </div>
               </div>
@@ -576,9 +578,11 @@ const App: React.FC = () => {
                   <div className="flex justify-between opacity-0"><span>&nbsp;</span><span>&nbsp;</span></div>
                 </div>
                 <div className="pt-4 border-t">
-                  <div className="flex flex-col sm:flex-row justify-between font-patrick text-2xl text-teal-700">
-                    <span>ИТОГО:</span>
-                    <span className="font-mono">1 + 8 + 4 = 13</span>
+                  <div className="flex flex-col sm:flex-row justify-between font-patrick">
+                    <span className="text-xl sm:text-2xl text-teal-700">ИТОГО:</span>
+                    <span className="text-sm sm:text-base md:text-lg lg:text-2xl font-mono text-teal-700 break-words">
+                      1 + 8 + 4 = 13
+                    </span>
                   </div>
                 </div>
               </div>
