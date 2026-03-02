@@ -123,7 +123,7 @@ const App: React.FC = () => {
               </p>
 
               {/* Linguistic Scheme */}
-              <div className="bg-slate-50 p-8 rounded-3xl border border-dashed border-slate-200">
+              <div className="p-8 rounded-3xl border border-dashed border-slate-200">
                  <div className="flex flex-col md:flex-row items-center justify-between gap-6">
                     <div className="text-center p-4 bg-white rounded-2xl shadow-sm border border-slate-100 w-full">
                        <span className="text-xs uppercase font-bold text-slate-400 block mb-1">Древняя Ветвь</span>
