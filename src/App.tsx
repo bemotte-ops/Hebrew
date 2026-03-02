@@ -384,10 +384,10 @@ const App: React.FC = () => {
                   </p>
                 </div>
         
-               {/* Две колонки внизу: Примеры слов и Заметка */}
-                <div className="flex flex-row gap-4">
+              {/* Две колонки внизу: Примеры слов и Заметка */}
+                <div className="flex flex-row gap-4 w-full">
                   {/* Левая колонка: Примеры слов */}
-                  <div className="flex-1 min-w-0 bg-white p-6 rounded-2xl border border-indigo-900">
+                  <div className="w-1/2 min-w-[140px] bg-white p-6 rounded-2xl border border-indigo-900">
                     <span className="text-[12px] uppercase font-bold text-indigo-900 block mb-3 flex items-center gap-2">
                       <Star size={12} /> Примеры слов
                     </span>
@@ -401,7 +401,7 @@ const App: React.FC = () => {
                   </div>
                 
                   {/* Правая колонка: Заметка */}
-                  <div className="flex-1 min-w-0 bg-white p-6 rounded-2xl border border-indigo-900">
+                  <div className="w-1/2 min-w-[140px] bg-white p-6 rounded-2xl border border-indigo-900">
                     <span className="text-[12px] uppercase font-bold text-indigo-900 block mb-3 flex items-center gap-2">
                       <Info size={12} /> Заметка
                     </span>
