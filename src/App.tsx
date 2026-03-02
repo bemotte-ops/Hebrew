@@ -547,8 +547,10 @@ const App: React.FC = () => {
               к скрытым измерениям текста
             </p>
                     
+            
             {/* Карточки Любовь и Единство */}
             <div className="grid md:grid-cols-2 gap-8">
+              {/* Карточка Любовь */}
               <div className="bg-teal-50 p-8 rounded-[2.5rem] shadow-sm space-y-6 border border-teal-200">
                 <h4 className="text-xl font-patrick text-indigo-900">Слово «Любовь» [Ахава]</h4>
                 <div className="text-4xl font-serif text-teal-600 border-b pb-4">אהבה</div>
@@ -558,16 +560,14 @@ const App: React.FC = () => {
                   <div className="flex justify-between"><span>Бет (ב)</span> <span>2</span></div>
                   <div className="flex justify-between"><span>Хей (ה)</span> <span>5</span></div>
                 </div>
-                <div className="pt-4 border-t">
-                  <div className="flex flex-col sm:flex-row justify-between font-patrick">
-                    <span className="text-xl sm:text-2xl text-teal-700">ИТОГО:</span>
-                    <span className="text-sm sm:text-base md:text-lg lg:text-2xl font-mono text-teal-700 break-words">
-                      1 + 5 + 2 + 5 = 13
-                    </span>
-                  </div>
+                <div className="pt-4 border-t text-center">
+                  <span className="text-lg sm:text-xl font-mono text-teal-700 whitespace-nowrap">
+                    1 + 5 + 2 + 5 = 13
+                  </span>
                 </div>
               </div>
             
+              {/* Карточка Единый */}
               <div className="bg-teal-50 p-8 rounded-[2.5rem] shadow-sm space-y-6 border border-teal-200">
                 <h4 className="text-xl font-patrick text-indigo-900">Слово «Единый» [Эхад]</h4>
                 <div className="text-4xl font-serif text-teal-600 border-b pb-4">אחד</div>
@@ -577,13 +577,10 @@ const App: React.FC = () => {
                   <div className="flex justify-between"><span>Далет (ד)</span> <span>4</span></div>
                   <div className="flex justify-between opacity-0"><span>&nbsp;</span><span>&nbsp;</span></div>
                 </div>
-                <div className="pt-4 border-t">
-                  <div className="flex flex-col sm:flex-row justify-between font-patrick">
-                    <span className="text-xl sm:text-2xl text-teal-700">ИТОГО:</span>
-                    <span className="text-sm sm:text-base md:text-lg lg:text-2xl font-mono text-teal-700 break-words">
-                      1 + 8 + 4 = 13
-                    </span>
-                  </div>
+                <div className="pt-4 border-t text-center">
+                  <span className="text-lg sm:text-xl font-mono text-teal-700 whitespace-nowrap">
+                    1 + 8 + 4 = 13
+                  </span>
                 </div>
               </div>
             </div>
