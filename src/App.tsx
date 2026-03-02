@@ -549,36 +549,36 @@ const App: React.FC = () => {
                     
             
             {/* Карточки Любовь и Единство */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
               {/* Карточка Любовь */}
-              <div className="bg-teal-50 p-8 rounded-[2.5rem] shadow-sm space-y-6 border border-teal-200 w-full">
-                <h4 className="text-xl font-patrick text-indigo-900 text-center md:text-left">Слово «Любовь» [Ахава]</h4>
-                <div className="text-4xl font-serif text-teal-600 border-b pb-4 text-center">אהבה</div>
-                <div className="space-y-2 font-mono text-sm text-slate-500">
-                  <div className="flex justify-between"><span>Алеф (א)</span> <span>1</span></div>
-                  <div className="flex justify-between"><span>Хей (ה)</span> <span>5</span></div>
-                  <div className="flex justify-between"><span>Бет (ב)</span> <span>2</span></div>
-                  <div className="flex justify-between"><span>Хей (ה)</span> <span>5</span></div>
+              <div className="bg-teal-50 p-4 sm:p-6 md:p-8 rounded-[1.5rem] md:rounded-[2.5rem] shadow-sm space-y-4 md:space-y-6 border border-teal-200 w-full">
+                <h4 className="text-lg sm:text-xl font-patrick text-indigo-900 text-center">Слово «Любовь» [Ахава]</h4>
+                <div className="text-3xl sm:text-4xl font-serif text-teal-600 border-b pb-3 md:pb-4 text-center">אהבה</div>
+                <div className="space-y-1.5 md:space-y-2 font-mono text-xs sm:text-sm text-slate-500">
+                  <div className="flex justify-between px-1"><span>Алеф (א)</span> <span>1</span></div>
+                  <div className="flex justify-between px-1"><span>Хей (ה)</span> <span>5</span></div>
+                  <div className="flex justify-between px-1"><span>Бет (ב)</span> <span>2</span></div>
+                  <div className="flex justify-between px-1"><span>Хей (ה)</span> <span>5</span></div>
                 </div>
-                <div className="pt-4 border-t text-center">
-                  <span className="text-lg sm:text-xl font-mono text-teal-700 whitespace-nowrap">
+                <div className="pt-3 md:pt-4 border-t text-center">
+                  <span className="text-base sm:text-lg md:text-xl font-mono text-teal-700 whitespace-nowrap">
                     1 + 5 + 2 + 5 = 13
                   </span>
                 </div>
               </div>
             
               {/* Карточка Единый */}
-              <div className="bg-teal-50 p-8 rounded-[2.5rem] shadow-sm space-y-6 border border-teal-200 w-full">
-                <h4 className="text-xl font-patrick text-indigo-900 text-center md:text-left">Слово «Единый» [Эхад]</h4>
-                <div className="text-4xl font-serif text-teal-600 border-b pb-4 text-center">אחד</div>
-                <div className="space-y-2 font-mono text-sm text-slate-500">
-                  <div className="flex justify-between"><span>Алеф (א)</span> <span>1</span></div>
-                  <div className="flex justify-between"><span>Хет (ח)</span> <span>8</span></div>
-                  <div className="flex justify-between"><span>Далет (ד)</span> <span>4</span></div>
-                  <div className="flex justify-between opacity-0"><span>&nbsp;</span><span>&nbsp;</span></div>
+              <div className="bg-teal-50 p-4 sm:p-6 md:p-8 rounded-[1.5rem] md:rounded-[2.5rem] shadow-sm space-y-4 md:space-y-6 border border-teal-200 w-full">
+                <h4 className="text-lg sm:text-xl font-patrick text-indigo-900 text-center">Слово «Единый» [Эхад]</h4>
+                <div className="text-3xl sm:text-4xl font-serif text-teal-600 border-b pb-3 md:pb-4 text-center">אחד</div>
+                <div className="space-y-1.5 md:space-y-2 font-mono text-xs sm:text-sm text-slate-500">
+                  <div className="flex justify-between px-1"><span>Алеф (א)</span> <span>1</span></div>
+                  <div className="flex justify-between px-1"><span>Хет (ח)</span> <span>8</span></div>
+                  <div className="flex justify-between px-1"><span>Далет (ד)</span> <span>4</span></div>
+                  <div className="flex justify-between opacity-0 px-1"><span>&nbsp;</span><span>&nbsp;</span></div>
                 </div>
-                <div className="pt-4 border-t text-center">
-                  <span className="text-lg sm:text-xl font-mono text-teal-700 whitespace-nowrap">
+                <div className="pt-3 md:pt-4 border-t text-center">
+                  <span className="text-base sm:text-lg md:text-xl font-mono text-teal-700 whitespace-nowrap">
                     1 + 8 + 4 = 13
                   </span>
                 </div>
