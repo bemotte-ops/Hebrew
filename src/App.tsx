@@ -382,29 +382,35 @@ const App: React.FC = () => {
                     </div>
 
                     <div className="grid grid-cols-2 gap-4">
-                       <div className="bg-white p-6 rounded-2xl border border-indigo-900">
+                        {/* Левая колонка: Примеры слов */}
+                        <div className="bg-white p-6 rounded-2xl border border-indigo-900">
                           <span className="text-[12px] uppercase font-bold text-indigo-900 block mb-3 flex items-center gap-2">
-                             <Star size={12} /> Примеры слов
+                            <Star size={12} /> Примеры слов
                           </span>
                           <div className="flex flex-wrap gap-2">
-                             {selectedLetter.examples.map(ex => (
-                               <span key={ex} className="text-sm font-medium text-indigo-900 bg-white px-3 py-1 rounded-lg shadow-sm border border-indigo-50">{ex}</span>
-                             ))}
-                          </div>
-                       </div>
-                       <div className="bg-white p-6 rounded-2xl border border-indigo-900">
-                          <span className="text-[12px] uppercase font-bold text-indigo-900 block mb-3 flex items-center gap-2">
-                             <Info size={12} /> Заметка
-                          </span>
-                          <div className="space-y-1">
-                              <div className="text-sm text-indigo-900 leading-normal">
-                                 {selectedLetter.historyNote}
-                              </div>
-                              <div className="text-sm font-patrick text-indigo-900">
-                                <strong>Кириллица:</strong> {selectedLetter.cyrillic}
-                              </div>
+                            {selectedLetter.examples.map(ex => (
+                              <span key={ex} className="text-sm font-medium text-indigo-900 bg-white px-3 py-1 rounded-lg shadow-sm border border-indigo-50">
+                                {ex}
+                              </span>
+                            ))}
                           </div>
                         </div>
+                      
+                        {/* Правая колонка: Заметка */}
+                        <div className="bg-white p-6 rounded-2xl border border-indigo-900">
+                          <span className="text-[12px] uppercase font-bold text-indigo-900 block mb-3 flex items-center gap-2">
+                            <Info size={12} /> Заметка
+                          </span>
+                          <div className="space-y-1">
+                            <div className="text-sm text-indigo-900 leading-normal">
+                              {selectedLetter.historyNote}
+                            </div>
+                            <div className="text-sm font-patrick text-indigo-900">
+                              <strong>Кириллица:</strong> {selectedLetter.cyrillic}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                 </div>
             </div>
