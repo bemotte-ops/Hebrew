@@ -295,13 +295,13 @@ const App: React.FC = () => {
           </div>
         </section>
 
-                {/* Alphabet Explorer (Compact) */}
+             {/* Alphabet Explorer (Compact) */}
         <section className="space-y-16">
           <div className="text-center space-y-3">
             <h2 className="text-4xl font-patrick text-teal-700">Генезис Символов</h2>
             <p className="text-slate-500">Выберите букву для изучения её истории и смысла</p>
           </div>
-
+        
           <div className="bg-white p-6 md:p-10 rounded-[3rem] shadow-sm border border-teal-200">
             {/* Grid with Numbers */}
             <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-11 gap-3 mb-12">
@@ -322,100 +322,104 @@ const App: React.FC = () => {
                 </button>
               ))}
             </div>
-
+        
             {/* Карточка: Использование Grid 12 колонок */}
             <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-stretch">
                 
-                {/* ЛЕВАЯ КОЛОНКА: Визуализация (4/12) */}
-                <div className="md:col-span-4 flex flex-col items-center justify-between bg-slate-50 rounded-[2.5rem] p-10 border border-indigo-900 min-h-[480px]">
-                  
-                  {/* Архетип */}
-                  <div className="text-center space-y-1 w-full">
-                    <span className="text-[12px] font-bold text-indigo-900 uppercase tracking-[0.2em] block">Архетип</span>
-                    <div className="relative -mt-6 text-[11rem] leading-none text-indigo-900 transform hover:scale-105 transition-transform duration-500 cursor-default">
-                      {selectedLetter.proto}
-                    </div>
-                  </div>
-
-                  {/* Визуальный разделитель */}
-                  <div className="flex flex-col items-center">
-                    <div className="h-6 w-px bg-gradient-to-b from-slate-200 to-transparent"></div>
-                    <ChevronDown className="text-slate-500 animate-pulse my-1" size={24} />
-                    <div className="h-8 w-px bg-gradient-to-t from-slate-200 to-transparent"></div>
-                  </div>
-
-                  {/* Современная форма */}
-                  <div className="text-center w-full flex flex-col items-center">
-                    <span className="text-[12px] font-bold text-teal-600 uppercase tracking-[0.2em] block">Современная форма</span>
-                    <div className="text-[10rem] font-serif text-teal-600 font-bold leading-none mb-4">
-                      {selectedLetter.letter}
-                    </div>
-                    <div className="text-indigo-900 text-xl font-patrick uppercase tracking-widest">
-                      Гематрия: {selectedLetter.number}
-                    </div>
+              {/* ЛЕВАЯ КОЛОНКА: Визуализация (4/12) */}
+              <div className="md:col-span-4 flex flex-col items-center justify-between bg-slate-50 rounded-[2.5rem] p-10 border border-indigo-900 min-h-[480px]">
+                
+                {/* Архетип */}
+                <div className="text-center space-y-1 w-full">
+                  <span className="text-[12px] font-bold text-indigo-900 uppercase tracking-[0.2em] block">Архетип</span>
+                  <div className="relative -mt-6 text-[11rem] leading-none text-indigo-900 transform hover:scale-105 transition-transform duration-500 cursor-default">
+                    {selectedLetter.proto}
                   </div>
                 </div>
-
-                {/* ПРАВАЯ КОЛОНКА: Информация (8/12) */}
-                <div className="md:col-span-8 flex flex-col justify-between gap-6">
-                    <div className="space-y-4">
-                        <div className="flex justify-between items-start">
-                          <h3 className="text-5xl font-patrick text-teal-600">
-                            {selectedLetter.name} — <span className="text-indigo-900">{selectedLetter.meaning}</span>
-                          </h3>
-                        </div>
-                        <div className="bg-white p-8 rounded-[2rem] border border-teal-200 backdrop-blur-sm">
-                            <h4 className="text-[12px] font-bold text-teal-600 uppercase mb-3 flex items-center gap-2 tracking-widest">
-                                <Zap size={14} /> Эволюция символа
-                            </h4>
-                            <p className="text-slate-500 text-sm leading-normal">{selectedLetter.evolution}</p>
-                        </div>
+        
+                {/* Визуальный разделитель */}
+                <div className="flex flex-col items-center">
+                  <div className="h-6 w-px bg-gradient-to-b from-slate-200 to-transparent"></div>
+                  <ChevronDown className="text-slate-500 animate-pulse my-1" size={24} />
+                  <div className="h-8 w-px bg-gradient-to-t from-slate-200 to-transparent"></div>
+                </div>
+        
+                {/* Современная форма */}
+                <div className="text-center w-full flex flex-col items-center">
+                  <span className="text-[12px] font-bold text-teal-600 uppercase tracking-[0.2em] block">Современная форма</span>
+                  <div className="text-[10rem] font-serif text-teal-600 font-bold leading-none mb-4">
+                    {selectedLetter.letter}
+                  </div>
+                  <div className="text-indigo-900 text-xl font-patrick uppercase tracking-widest">
+                    Гематрия: {selectedLetter.number}
+                  </div>
+                </div>
+              </div> {/* ← закрыли левую колонку */}
+        
+              {/* ПРАВАЯ КОЛОНКА: Информация (8/12) */}
+              <div className="md:col-span-8 flex flex-col justify-between gap-6">
+                
+                {/* Верхняя часть с названием и эволюцией */}
+                <div className="space-y-4">
+                  <div className="flex justify-between items-start">
+                    <h3 className="text-5xl font-patrick text-teal-600">
+                      {selectedLetter.name} — <span className="text-indigo-900">{selectedLetter.meaning}</span>
+                    </h3>
+                  </div>
+                  <div className="bg-white p-8 rounded-[2rem] border border-teal-200 backdrop-blur-sm">
+                    <h4 className="text-[12px] font-bold text-teal-600 uppercase mb-3 flex items-center gap-2 tracking-widest">
+                      <Zap size={14} /> Эволюция символа
+                    </h4>
+                    <p className="text-slate-500 text-sm leading-normal">{selectedLetter.evolution}</p>
+                  </div>
+                </div>
+                
+                {/* Философский смысл */}
+                <div className="bg-white p-8 rounded-[2rem] border border-teal-200 shadow-sm">
+                  <h4 className="text-[12px] font-bold text-teal-600 uppercase mb-3 flex items-center gap-2 tracking-widest">
+                    <ScrollText size={14} /> Философский смысл
+                  </h4>
+                  <p className="text-slate-500 text-sm leading-normal">
+                    {selectedLetter.philosophy}
+                  </p>
+                </div>
+        
+                {/* Две колонки внизу: Примеры слов и Заметка */}
+                <div className="grid grid-cols-2 gap-4">
+                  {/* Левая колонка: Примеры слов */}
+                  <div className="bg-white p-6 rounded-2xl border border-indigo-900">
+                    <span className="text-[12px] uppercase font-bold text-indigo-900 block mb-3 flex items-center gap-2">
+                      <Star size={12} /> Примеры слов
+                    </span>
+                    <div className="flex flex-wrap gap-2">
+                      {selectedLetter.examples.map(ex => (
+                        <span key={ex} className="text-sm font-medium text-indigo-900 bg-white px-3 py-1 rounded-lg shadow-sm border border-indigo-50">
+                          {ex}
+                        </span>
+                      ))}
                     </div>
-                    
-                    <div className="bg-white p-8 rounded-[2rem] border border-teal-200 shadow-sm flex-grow">
-                        <h4 className="text-[12px] font-bold text-teal-600 uppercase mb-3 flex items-center gap-2 tracking-widest">
-                            <ScrollText size={14} /> Философский смысл
-                        </h4>
-                        <p className="text-slate-500 text-sm leading-normal">
-                          {selectedLetter.philosophy}
-                        </p>
-                    </div>
-
-                    <div className="grid grid-cols-2 gap-4">
-                        {/* Левая колонка: Примеры слов */}
-                        <div className="bg-white p-6 rounded-2xl border border-indigo-900">
-                          <span className="text-[12px] uppercase font-bold text-indigo-900 block mb-3 flex items-center gap-2">
-                            <Star size={12} /> Примеры слов
-                          </span>
-                          <div className="flex flex-wrap gap-2">
-                            {selectedLetter.examples.map(ex => (
-                              <span key={ex} className="text-sm font-medium text-indigo-900 bg-white px-3 py-1 rounded-lg shadow-sm border border-indigo-50">
-                                {ex}
-                              </span>
-                            ))}
-                          </div>
-                        </div>
-                      
-                        {/* Правая колонка: Заметка */}
-                        <div className="bg-white p-6 rounded-2xl border border-indigo-900">
-                          <span className="text-[12px] uppercase font-bold text-indigo-900 block mb-3 flex items-center gap-2">
-                            <Info size={12} /> Заметка
-                          </span>
-                          <div className="space-y-1">
-                            <div className="text-sm text-indigo-900 leading-normal">
-                              {selectedLetter.historyNote}
-                            </div>
-                            <div className="text-sm font-patrick text-indigo-900">
-                              <strong>Кириллица:</strong> {selectedLetter.cyrillic}
-                            </div>
-                          </div>
-                        </div>
+                  </div>
+                
+                  {/* Правая колонка: Заметка */}
+                  <div className="bg-white p-6 rounded-2xl border border-indigo-900">
+                    <span className="text-[12px] uppercase font-bold text-indigo-900 block mb-3 flex items-center gap-2">
+                      <Info size={12} /> Заметка
+                    </span>
+                    <div className="space-y-1">
+                      <div className="text-sm text-indigo-900 leading-normal">
+                        {selectedLetter.historyNote}
+                      </div>
+                      <div className="text-sm font-patrick text-indigo-900">
+                        <strong>Кириллица:</strong> {selectedLetter.cyrillic}
                       </div>
                     </div>
-                </div>
-            </div>
-          </div>  
+                  </div>
+                </div> {/* ← закрыли сетку из двух колонок */}
+              </div> {/* ← закрыли правую колонку */}
+            </div> {/* ← закрыли основной grid 12 колонок */}
+          </div> {/* ← закрыли белый контейнер */}
         </section>
+
 
         {/* Пять Букв Софит */}
         <section className="bg-white p-10 md:p-14 rounded-[4rem] border border-teal-200 shadow-sm">
