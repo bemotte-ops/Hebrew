@@ -385,15 +385,15 @@ const App: React.FC = () => {
                 </div>
         
               {/* Две колонки внизу: Примеры слов и Заметка */}
-                <div className="flex flex-row gap-4 w-full">
+                <div className="flex flex-row flex-wrap gap-4 w-full">
                   {/* Левая колонка: Примеры слов */}
-                  <div className="w-1/2 min-w-[140px] bg-white p-6 rounded-2xl border border-indigo-900">
+                  <div className="flex-1 min-w-[200px] bg-white p-4 sm:p-6 rounded-2xl border border-indigo-900">
                     <span className="text-[12px] uppercase font-bold text-indigo-900 block mb-3 flex items-center gap-2">
                       <Star size={12} /> Примеры слов
                     </span>
                     <div className="flex flex-wrap gap-2">
                       {selectedLetter.examples.map(ex => (
-                        <span key={ex} className="text-sm font-medium text-indigo-900 bg-white px-3 py-1 rounded-lg shadow-sm border border-indigo-50">
+                        <span key={ex} className="text-xs sm:text-sm font-medium text-indigo-900 bg-white px-2 py-1 sm:px-3 sm:py-1 rounded-lg shadow-sm border border-indigo-50">
                           {ex}
                         </span>
                       ))}
@@ -401,15 +401,15 @@ const App: React.FC = () => {
                   </div>
                 
                   {/* Правая колонка: Заметка */}
-                  <div className="w-1/2 min-w-[140px] bg-white p-6 rounded-2xl border border-indigo-900">
+                  <div className="flex-1 min-w-[200px] bg-white p-4 sm:p-6 rounded-2xl border border-indigo-900">
                     <span className="text-[12px] uppercase font-bold text-indigo-900 block mb-3 flex items-center gap-2">
                       <Info size={12} /> Заметка
                     </span>
                     <div className="space-y-1">
-                      <div className="text-sm text-indigo-900 leading-normal">
+                      <div className="text-xs sm:text-sm text-indigo-900 leading-normal">
                         {selectedLetter.historyNote}
                       </div>
-                      <div className="text-sm font-patrick text-indigo-900">
+                      <div className="text-xs sm:text-sm font-patrick text-indigo-900">
                         <strong>Кириллица:</strong> {selectedLetter.cyrillic}
                       </div>
                     </div>
