@@ -114,7 +114,7 @@ const App: React.FC = () => {
         <div className="relative z-10 max-w-5xl mx-auto px-6">
           <div className="space-y-12">
             {/* 1. History Block */}
-            <section className="bg-white p-8 md:p-12 rounded-[2.5rem] shadow-sm border border-teal-200 space-y-8">
+            <section className="p-8 md:p-12 rounded-[2.5rem] shadow-sm border space-y-8">
               <div className="text-center space-y-3">
                 <h2 className="text-4xl font-patrick text-teal-700">Древо Жизни Языков</h2>
               </div>
@@ -147,7 +147,7 @@ const App: React.FC = () => {
             </section>
 
             {/* 2. Direction Block */}
-            <section className="p-8 md:p-12 rounded-[2.5rem] shadow-sm border border-teal-200 space-y-6">
+            <section className="p-8 md:p-12 rounded-[2.5rem] shadow-sm border space-y-6">
               <div className="text-center space-y-3">
                 <h2 className="text-4xl font-patrick text-teal-700">Вспять Потоку Времени</h2>
               </div>
