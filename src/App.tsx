@@ -551,9 +551,9 @@ const App: React.FC = () => {
             {/* Карточки Любовь и Единство */}
             <div className="grid md:grid-cols-2 gap-8">
               {/* Карточка Любовь */}
-              <div className="bg-teal-50 p-8 rounded-[2.5rem] shadow-sm space-y-6 border border-teal-200">
-                <h4 className="text-xl font-patrick text-indigo-900">Слово «Любовь» [Ахава]</h4>
-                <div className="text-4xl font-serif text-teal-600 border-b pb-4">אהבה</div>
+              <div className="bg-teal-50 p-8 rounded-[2.5rem] shadow-sm space-y-6 border border-teal-200 mx-auto w-full max-w-md md:max-w-none">
+                <h4 className="text-xl font-patrick text-indigo-900 text-center md:text-left">Слово «Любовь» [Ахава]</h4>
+                <div className="text-4xl font-serif text-teal-600 border-b pb-4 text-center">אהבה</div>
                 <div className="space-y-2 font-mono text-sm text-slate-500">
                   <div className="flex justify-between"><span>Алеф (א)</span> <span>1</span></div>
                   <div className="flex justify-between"><span>Хей (ה)</span> <span>5</span></div>
@@ -568,9 +568,9 @@ const App: React.FC = () => {
               </div>
             
               {/* Карточка Единый */}
-              <div className="bg-teal-50 p-8 rounded-[2.5rem] shadow-sm space-y-6 border border-teal-200">
-                <h4 className="text-xl font-patrick text-indigo-900">Слово «Единый» [Эхад]</h4>
-                <div className="text-4xl font-serif text-teal-600 border-b pb-4">אחד</div>
+              <div className="bg-teal-50 p-8 rounded-[2.5rem] shadow-sm space-y-6 border border-teal-200 mx-auto w-full max-w-md md:max-w-none">
+                <h4 className="text-xl font-patrick text-indigo-900 text-center md:text-left">Слово «Единый» [Эхад]</h4>
+                <div className="text-4xl font-serif text-teal-600 border-b pb-4 text-center">אחד</div>
                 <div className="space-y-2 font-mono text-sm text-slate-500">
                   <div className="flex justify-between"><span>Алеф (א)</span> <span>1</span></div>
                   <div className="flex justify-between"><span>Хет (ח)</span> <span>8</span></div>
