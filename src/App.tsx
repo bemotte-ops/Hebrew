@@ -169,7 +169,7 @@ const App: React.FC = () => {
         <div className="relative z-10 max-w-5xl mx-auto px-6">
           <div className="space-y-12">
             {/* 3. Shoresh Block */}
-            <section className="bg-white p-8 md:p-12 rounded-[2.5rem] shadow-sm border border-teal-200 space-y-8">
+            <section className="p-8 md:p-12 rounded-[2.5rem] shadow-sm border space-y-8">
               <div className="text-center space-y-3">
                 <h2 className="text-4xl font-patrick text-teal-700">Магия Трёх Букв</h2>
               </div>
@@ -217,7 +217,7 @@ const App: React.FC = () => {
             </section>
 
             {/* Evolution Section: ALEF and AIN */}
-            <section className="bg-white p-10 md:p-14 rounded-[4rem] border border-teal-200 relative overflow-hidden">
+            <section className="p-10 md:p-14 rounded-[4rem] border border-teal-200 relative overflow-hidden">
               <div className="relative z-10 space-y-10">
                 <div className="flex items-center justify-center gap-4 text-teal-700 w-full">
                   <h2 className="text-4xl text-center font-patrick text-teal-700">От Иероглифа к Цифре</h2>
